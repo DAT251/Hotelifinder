@@ -1,9 +1,8 @@
 # Hotelifinder
 
-DAT251 web app for Hotel Booking.
+### DAT251 web app for Hotel Booking.
 
-Teknologi - backend Java spring, frontend, react typescript(Tailwind).
+Frontend – react typescript(Tailwind)
+Backend – Java springboot (H2 database/SQL?)
 
-H2 database/SQL
-
-Metodikk - KANBAN Trello board
+Metodikk - [Jira board](https://dat250-gruppe3.atlassian.net/jira/software/projects/DAT251/boards/3?atlOrigin=eyJpIjoiYjkxZjY1Y2M1MTIxNGZiMGFhOWVlY2I2ODQ5YzBhNDEiLCJwIjoiaiJ9)
