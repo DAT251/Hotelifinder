@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -25,4 +23,26 @@ h1 {
   font-weight: 600;
 }
 
-@import 'tailwindcss';
+.ButtonGroup {
+  background-color: #e2d8d8;
+  color: black;
+}
+
+.SearchBG {
+  background-color: #e2d8d8;
+  color: black;
+  border-radius: 20px;
+}
+
+.Button:enabled {
+  background-color: #e2d8d8;
+  color: black;
+  text-transform: none;
+}
+
+.Filter:enabled {
+  background-color: #e2d8d8;
+  color: black;
+  text-transform: none;
+  border-radius: 20px;
+}
