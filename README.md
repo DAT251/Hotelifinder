@@ -11,7 +11,7 @@ React Typescript (Tailwind for styling)
 1. Navigate to correct folder `cd frontend`
 2. Install dependencies `npm install`
 3. Start server `npm run dev`
-4. Open browser at `http://localhost:5173/`
+4. Open browser at `http://localhost:3000/`
 
 #### Backend
 
