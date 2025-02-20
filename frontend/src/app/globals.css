@@ -23,6 +23,11 @@ h1 {
   font-weight: 600;
 }
 
+h2 {
+  font-size: medium;
+  font-weight: 800;
+}
+
 .ButtonGroup {
   background-color: #e2d8d8;
   color: black;
