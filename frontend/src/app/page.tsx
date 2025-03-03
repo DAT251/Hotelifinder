@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Header } from './components/header';
 import { Hotel } from './components/hotel';
 
@@ -34,6 +35,7 @@ export default function Home() {
         </div>
       </div>
       {/* footer? */}
+      <Link href='/activites'>Activities</Link>
     </div>
   );
 }
