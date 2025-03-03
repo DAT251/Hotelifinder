@@ -15,6 +15,8 @@ export default function HomePage() {
         </div>
         <Link href='/activity'>Activities</Link>
       </div>
+      {/* footer? */}
+      <Link href='/activites'>Activities</Link>
     </div>
   );
 }
