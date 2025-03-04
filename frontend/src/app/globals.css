@@ -18,36 +18,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@theme {
+  --color-dark-grey: #b9b9b9;
+  --color-light-grey: #e6e6e6;
+}
+
 h1 {
-  font-size: x-large;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: medium;
-  font-weight: 800;
-}
-
-.ButtonGroup {
-  background-color: #e2d8d8;
-  color: black;
-}
-
-.SearchBG {
-  background-color: #e2d8d8;
-  color: black;
-  border-radius: 20px;
-}
-
-.Button:enabled {
-  background-color: #e2d8d8;
-  color: black;
-  text-transform: none;
-}
-
-.Filter:enabled {
-  background-color: #e2d8d8;
-  color: black;
-  text-transform: none;
-  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
 }
