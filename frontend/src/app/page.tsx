@@ -1,39 +1,19 @@
 import { Header } from './components/header';
-import { Hotel } from './components/hotel';
 
-export default function Home() {
+import searchbar from './assets/searchbar.svg';
+import Image from 'next/image';
+
+export default function HomePage() {
   return (
-    <div className='flex flex-col justify-around items-center'>
+    <div className='flex flex-col'>
       <Header />
-      <div className='flex gap-8'>
-        <div className='flex flex-col gap-2'>
-          <Hotel
-            name='Bergen Børs Hotel'
-            numOfStars={4.5}
-            description='Formal hotel with restaurant/bar'
-            freeBreakfast={true}
-            freeWiFi={true}
-          />
-          <Hotel
-            name='Opus XVI, sn SLH Hotel'
-            numOfStars={4.6}
-            description='Genteel hotel with dining & event space'
-            freeBreakfast={true}
-            freeWiFi={true}
-          />
-          <Hotel
-            name='Skostredet Hotel'
-            numOfStars={4.3}
-            description='Formal hotel with restaurant/bar'
-            freeBreakfast={false}
-            freeWiFi={false}
-          />
-        </div>
+      <div className='flex flex-col items-center gap-8'>
         <div>
-          <p>Map</p>
+          <p>Where do you want to go?</p>
+          <Image src={searchbar} height='50' alt='' />
         </div>
+        <Link href='/activity'>Activities</Link>
       </div>
-      {/* footer? */}
     </div>
   );
 }
