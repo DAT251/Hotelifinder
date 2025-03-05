@@ -15,15 +15,12 @@ public class User {
     private String username;
     private String password;
 
-    @OneToMany(mappedBy = "user")
-    private List<Booking> bookings;
+    public User() {}
 
-    @OneToOne(mappedBy = "user")
-    private Preferences preferences;
-
-
-
-
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
 
 
@@ -51,19 +48,5 @@ public class User {
         this.password = password;
     }
 
-    public List<Booking> getBookings() {
-        return bookings;
-    }
 
-    public void setBookings(List<Booking> bookings) {
-        this.bookings = bookings;
-    }
-
-    public Preferences getPreferences() {
-        return preferences;
-    }
-
-    public void setPreferences(Preferences preferences) {
-        this.preferences = preferences;
-    }
 }
