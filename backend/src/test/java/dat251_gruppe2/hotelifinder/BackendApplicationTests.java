@@ -1,4 +1,4 @@
-package com.example.backend;
+package dat251_gruppe2.hotelifinder;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
