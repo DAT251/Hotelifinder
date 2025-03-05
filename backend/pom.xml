@@ -71,8 +71,22 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<configuration>
+							<excludeResources>
+								<exclude>**/data.sql</exclude>
+							</excludeResources>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
+
 		</plugins>
+
 	</build>
+
+
 
 </project>
