@@ -1,26 +1,7 @@
-export function Hotel({
-  name,
-  numOfStars,
-  description,
-  freeBreakfast,
-  freeWiFi,
-}: {
-  name: string;
-  numOfStars: number;
-  description: string;
-  freeBreakfast: boolean;
-  freeWiFi: boolean;
-}) {
+export default function Hotel({ name }: { name: string }) {
   return (
-    <div>
+    <div className='bg-light-grey w-[20em] p-4 rounded-[15px]'>
       <h2>{name}</h2>
-      <p>{'⭐️'.repeat(numOfStars)}</p>
-      <p>{description}</p>
-      <div className='flex flex-row gap-2'>
-        {/* tags */}
-        {freeBreakfast && <p>Gratis frokost</p>}
-        {freeWiFi && <p>Gratis Wi-Fi</p>}
-      </div>
     </div>
   );
 }
