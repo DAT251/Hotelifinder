@@ -21,6 +21,7 @@ body {
 @theme {
   --color-dark-grey: #b9b9b9;
   --color-light-grey: #e6e6e6;
+  --color-blue: #88e1f566;
 }
 
 h1 {
