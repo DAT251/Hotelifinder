@@ -4,7 +4,6 @@ package dat251_gruppe2.hotelifinder.controllers;
 import dat251_gruppe2.hotelifinder.domain.Address;
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
