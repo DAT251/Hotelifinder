@@ -4,12 +4,13 @@ public class Venue {
 
 	private String name;
 	private Address address;
-	private String website;
+	//private String website;
 	private String imageURL;
 
 	public Venue() {
 	}
 
+	/*
 	public String getWebsite() {
 		return website;
 	}
@@ -17,6 +18,8 @@ public class Venue {
 	public void setWebsite(String website) {
 		this.website = website;
 	}
+	*/
+
 
 	public String getImageURL() {
 		return imageURL;

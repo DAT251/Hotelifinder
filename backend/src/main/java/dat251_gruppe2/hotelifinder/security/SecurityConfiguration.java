@@ -17,7 +17,7 @@ public class SecurityConfiguration {
         http.authorizeHttpRequests(auth -> auth
                         .requestMatchers("/h2-console/**").permitAll()
 
-                        .anyRequest().authenticated()
+                        .anyRequest().permitAll()
                 );
 
         http.csrf(csrf -> csrf.disable());
