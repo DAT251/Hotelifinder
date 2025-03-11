@@ -4,8 +4,26 @@ public class Venue {
 
 	private String name;
 	private Address address;
+	private String website;
+	private String imageURL;
 
 	public Venue() {
+	}
+
+	public String getWebsite() {
+		return website;
+	}
+
+	public void setWebsite(String website) {
+		this.website = website;
+	}
+
+	public String getImageURL() {
+		return imageURL;
+	}
+
+	public void setImageURL(String imageURL) {
+		this.imageURL = imageURL;
 	}
 
 	public String getName() {
