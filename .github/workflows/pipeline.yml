@@ -2,9 +2,9 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ "DAT251-30-create-a-working-pipeline" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "DAT251-30-create-a-working-pipeline" ]
+    branches: [ "main" ]
 
 jobs:
   frontend:
