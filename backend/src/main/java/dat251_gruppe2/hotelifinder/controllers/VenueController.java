@@ -7,8 +7,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/venues")
@@ -26,6 +28,9 @@ public class VenueController {
         address1.setStreetNumber(2);
         address1.setPostalCode(5171);
         venue1.setAddress(address1);
+        List<String> tags1 = new ArrayList<>();
+        tags1.add("Shopping");
+        venue1.setTags(tags1);
 
         Venue venue2 = new Venue();
         venue2.setName("Fana Golfbane");
@@ -35,6 +40,9 @@ public class VenueController {
         address2.setStreetNumber(82);
         address2.setPostalCode(5239);
         venue2.setAddress(address2);
+        List<String> tags2 = new ArrayList<>();
+        tags2.add("Golf");
+        venue2.setTags(tags2);
 
         Venue venue3 = new Venue();
         venue3.setName("Lagunen");
@@ -44,6 +52,11 @@ public class VenueController {
         address3.setStreetNumber(3);
         address3.setPostalCode(5239);
         venue3.setAddress(address3);
+        List<String> tags3 = new ArrayList<>();
+        tags3.add("Shopping");
+        tags3.add("Bowling");
+        tags3.add("Cinema");
+        venue3.setTags(tags3);
 
         Venue venue4 = new Venue();
         venue4.setName("Oasen");
@@ -53,6 +66,11 @@ public class VenueController {
         address4.setStreetNumber(52);
         address4.setPostalCode(5147);
         venue4.setAddress(address4);
+        List<String> tags4 = new ArrayList<>();
+        tags4.add("Shopping");
+        tags4.add("Museum");
+        venue4.setTags(tags4);
+
 
         venues.put(1L, venue1);
         venues.put(2L, venue2);

@@ -1,11 +1,15 @@
 package dat251_gruppe2.hotelifinder.domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Venue {
 
 	private String name;
 	private Address address;
 	//private String website;
 	private String imageURL;
+	private List<String> tags = new ArrayList<>();
 
 	public Venue() {
 	}
@@ -43,6 +47,22 @@ public class Venue {
 
 	public void setAddress(Address address) {
 		this.address = address;
+	}
+
+	public List<String> getTags() {
+		return tags;
+	}
+
+	public void setTags(List<String> tags) {
+		this.tags = tags;
+	}
+
+	public void addTag(String tag) {
+		this.tags.add(tag);
+	}
+
+	public void removeTag(String tag) {
+		this.tags.remove(tag);
 	}
 
 }
