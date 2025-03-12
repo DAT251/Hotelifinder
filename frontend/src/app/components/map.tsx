@@ -1,13 +1,17 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { APIProvider, Map, useMap } from '@vis.gl/react-google-maps';
+import { APIProvider, Map, useMap, Marker } from '@vis.gl/react-google-maps';
 
 const api_key = process.env.NEXT_PUBLIC_API_KEY;
 const zoom = 12;
 const center = { lat: 60.391, lng: 5.322 };
 
-const startLocation: string = 'Lagunen Storsenter, Bergen, Norge';
-const destLocation: string = 'Vestkanten Storsenter, Bergen, Norge';
+const locations = [
+  { address: 'Lagunen Storsenter, Bergen, Norge', type: 'red' },
+  { address: 'Vestkanten Storsenter, Bergen, Norge', type: 'red' },
+  { address: 'Oasen Storsenter, Bergen, Norge', type: 'red' },
+  { address: 'Rogges vei 66 B, Bergen, Norge', type: 'blue' },
+];
 
 export default function MapComponent() {
   return (
@@ -20,13 +24,81 @@ export default function MapComponent() {
           gestureHandling={'greedy'}
           disableDefaultUI={false}
         >
-          <DirectionsRenderer />
+          <LocationMarkers locations={locations} />
         </Map>
       </APIProvider>
     </div>
   );
 }
 
+function LocationMarkers({ locations }:{ locations: { address: string; type: string }[] }) {
+  const map = useMap();
+  const [markers, setMarkers] = useState<{ location: google.maps.LatLngLiteral; type: string }[]>([]);
+
+
+  useEffect(() => {
+    if (!map) return;
+
+    const geocoder = new google.maps.Geocoder();
+
+
+    locations.forEach((loc) => {
+      geocoder.geocode({ address: loc.address }, (results, status) => {
+        if (status === 'OK' && results && results[0]) {
+          const position = results[0].geometry.location;
+          setMarkers((prevMarkers) => [
+            ...prevMarkers,
+            { location: { lat: position.lat(), lng: position.lng() }, type: loc.type },
+          ]);
+        }
+      });
+    });
+  }, [map, locations]);
+
+  useEffect(() => {
+    if (!map || markers.length === 0) return;
+
+    const bounds = new google.maps.LatLngBounds();
+    markers.forEach((marker) => bounds.extend(marker.location));
+    map.fitBounds(bounds);
+
+
+    const padding = 50;
+    map.panToBounds(bounds, padding);
+  }, [map, markers]);
+
+  return (
+      <>
+        {markers.map((marker, index) => (
+            <Marker key={index} position={marker.location}
+                    icon={{
+              url: marker.type === 'red'
+                  ? 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+                  : 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+            }}
+            />
+        ))}
+      </>
+  );
+}
+
+/*
+{markers.map((marker, index) => (
+            <Marker key={index} position={marker.location}
+                    icon={{
+                      url: marker.color === 'red'
+                          ? 'http://localhost:8080/images/img.png'
+                          : marker.color === 'konsert'
+                              ? 'http://localhost:8080/images/img_2.png'
+                              : 'http://localhost:8080/images/img_1.png',
+                      scaledSize: new google.maps.Size(40, 40),
+            }}
+            />
+        ))}
+ */
+
+
+/*
 function DirectionsRenderer() {
   const map = useMap();
   const [directions, setDirections] =
@@ -62,3 +134,5 @@ function DirectionsRenderer() {
 
   return null;
 }
+*/
+

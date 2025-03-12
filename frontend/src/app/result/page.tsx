@@ -10,7 +10,7 @@ export default function ResultPage() {
       <Header />
       <div className='flex flex-row justify-around items-center'>
         {/* left side */}
-        <div className='flex flex-col gap-y-8'>
+        <div className='flex flex-col gap-y-8 text-black'>
           <Hotel name='Fana Hotel' />
           <Hotel name='Sentrum Hotel' />
           <Hotel name='Vestkanten Motel' />
