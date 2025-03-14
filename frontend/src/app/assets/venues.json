@@ -1,0 +1,7 @@
+{
+  "venues": [
+    { "title": "Fana Golfbane", "tags": ["Golf"] },
+    { "title": "Lagunen", "tags": ["Shopping", "Bowling", "Kino"] },
+    { "title": "Vestkanten", "tags": ["Shopping", "Badeland", "Bowling"] }
+  ]
+}

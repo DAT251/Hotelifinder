@@ -1,6 +1,8 @@
+'use client';
 import Link from 'next/link';
 import { Header } from '../components/header';
 import Hotel from '../components/hotel';
+import MapComponent from '../components/map';
 
 export default function ResultPage() {
   return (
@@ -15,7 +17,7 @@ export default function ResultPage() {
         </div>
         {/* right side */}
         <div>
-          <p>Map</p>
+          <MapComponent />
         </div>
       </div>
       <Link href='/booking'>Booking</Link>
