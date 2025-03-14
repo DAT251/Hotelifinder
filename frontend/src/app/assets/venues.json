@@ -1,7 +1,42 @@
-{
-  "venues": [
-    { "title": "Fana Golfbane", "tags": ["Golf"] },
-    { "title": "Lagunen", "tags": ["Shopping", "Bowling", "Kino"] },
-    { "title": "Vestkanten", "tags": ["Shopping", "Badeland", "Bowling"] }
-  ]
-}
+[
+  {
+    "name": "Vestkanten",
+    "address": {
+      "postalCode": 5171,
+      "streetName": "Loddefjordveien",
+      "streetNumber": 2
+    },
+    "imageURL": "http://localhost:8080/images/vestkanten.jpg",
+    "tags": ["Shopping"]
+  },
+  {
+    "name": "Fana Golfbane",
+    "address": {
+      "postalCode": 5239,
+      "streetName": "Vestre Rå",
+      "streetNumber": 82
+    },
+    "imageURL": "http://localhost:8080/images/fanagolf.jpg",
+    "tags": ["Golf"]
+  },
+  {
+    "name": "Lagunen",
+    "address": {
+      "postalCode": 5239,
+      "streetName": "Laguneveien",
+      "streetNumber": 3
+    },
+    "imageURL": "http://localhost:8080/images/lagunen.jpg",
+    "tags": ["Shopping", "Bowling", "Cinema"]
+  },
+  {
+    "name": "Oasen",
+    "address": {
+      "postalCode": 5147,
+      "streetName": "Folke Bernadottes vei",
+      "streetNumber": 52
+    },
+    "imageURL": "http://localhost:8080/images/oasen.jpg",
+    "tags": ["Shopping", "Museum"]
+  }
+]
