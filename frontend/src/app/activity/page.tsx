@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { VenueCard } from '../components/venueCard';
 import { Header } from '../components/header';
 import { useEffect, useState } from 'react';
+import { Venue } from '../schema/venue';
 
 export default function ActivityPage() {
   const [venues, setVenues] = useState<Venue[]>([]);

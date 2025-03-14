@@ -1,4 +1,4 @@
-interface Venue {
+export interface Venue {
   name: string;
   address: {
     postalCode: number;
