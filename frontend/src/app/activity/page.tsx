@@ -7,12 +7,12 @@ import { useEffect, useState } from 'react';
 
 export default function ActivityPage() {
   const [venues, setVenues] = useState<Venue[]>([]);
-  const server = process.env.NEXT_PUBLIC_SERVER;
+  const server = process.env.NEXT_PUBLIC_SERVER + '/venues';
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(server + '/venues');
+        const response = await fetch(server);
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
