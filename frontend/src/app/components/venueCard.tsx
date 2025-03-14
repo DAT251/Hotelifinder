@@ -32,8 +32,8 @@ export function VenueCard({
       <h2 className='z-30 bg-light-grey/80 p-0.5 rounded-[20] text-center'>
         {name}
       </h2>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       {imageUrl.length > 0 ? (
+        // eslint-disable-next-line @next/next/no-img-element
         <img
           className='absolute top-0 self-center h-[200] w-[200] object-cover rounded-[20px] z-20'
           src={imageUrl}
