@@ -8,7 +8,8 @@ import { Venue } from '../schema/venue';
 
 export default function ActivityPage() {
   const [venues, setVenues] = useState<Venue[]>([]);
-  const server = process.env.NEXT_PUBLIC_SERVER + '/venues';
+  const [selectedVenues, setSelectedVenues] = useState<Venue[]>([]);
+  const server = "http://localhost:8080/api/v1" + '/venues';
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,28 +27,43 @@ export default function ActivityPage() {
     fetchData();
   }, [server]);
 
+  const handleVenueSelect = (venue: Venue) => {
+    setSelectedVenues(prev => {
+      if (prev.includes(venue)) {
+        return prev.filter(v => v !== venue);
+      } else {
+        return [...prev, venue];
+      }
+    });
+  };
+
   return (
     <div className='flex flex-col h-screen justify-center'>
-      <Header />
-      <div className='flex flex-col items-center'>
-        <div className='grid grid-cols-3 gap-14'>
-          {venues.map((venue, k) => (
-            <VenueCard
-              key={k}
-              name={venue.name}
-              tags={venue.tags}
-              imageUrl={venue.imageURL}
-            />
-          ))}
-          <div className='col-span-3' />
-          <Link
-            className='col-start-3 bg-blue self-end text-center content-center rounded-[20] h-12 drop-shadow-xl'
-            href='/result'
-          >
-            Confirm
-          </Link>
+        <Header />
+        <div className='flex flex-col items-center'>
+          <div className='grid grid-cols-3 gap-14'>
+            {venues.map((venue, k) => (
+                <VenueCard
+                    key={k}
+                    name={venue.name}
+                    tags={venue.tags}
+                    imageUrl={venue.imageURL}
+                    isChecked={selectedVenues.includes(venue)}
+                    onClick={() => handleVenueSelect(venue)}
+                />
+            ))}
+            <div className='col-span-3' />
+            <Link
+                className='col-start-3 bg-blue self-end text-center content-center rounded-[20] h-12 drop-shadow-xl'
+                href={{
+                  pathname: '/result',
+                  query: { venues: JSON.stringify(selectedVenues) },
+                }}
+            >
+              Confirm
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
   );
 }
