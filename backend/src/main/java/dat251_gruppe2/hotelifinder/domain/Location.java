@@ -4,23 +4,18 @@ public class Location {
 	private double latitude;
 	private double longitude;
 
-	private Double longitude;
-	private Double latitude;
-
-	public Double getLongitude() {
-		return longitude;
-	}
-
-	public void setLongitude(Double longitude) {
+	// Constructor, getters, and setters
+	public Location(double latitude, double longitude) {
+		this.latitude = latitude;
 		this.longitude = longitude;
 	}
 
-	public Double getLatitude() {
+	public double getLatitude() {
 		return latitude;
 	}
 
-	public void setLatitude(Double latitude) {
-		this.latitude = latitude;
+	public double getLongitude() {
+		return longitude;
 	}
 
 	/**
@@ -30,7 +25,7 @@ public class Location {
 	 * @return distance in meters
 	 */
 
-	//haversine formel
+	//haversine formel //trenger ikke
 	public double distanceTo(Location other) {
 		final int R = 6371; // Radius of the earth in kilometers
 		double latDistance = Math.toRadians(other.latitude - this.latitude);
