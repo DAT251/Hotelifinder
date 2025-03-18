@@ -34,9 +34,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
   }, [query, data]);
 
   return (
-    <div className="relative w-full max-w-3xl px-6 mx-auto flex justify-center">
+    <div className="w-full flex justify-center">
       <div className="relative w-full max-w-xl">
-        <div className="flex items-center bg-gray-300 rounded-full px-6 py-4 w-full">
+        <div className="flex bg-gray-300 rounded-full px-6 py-4">
           {/* Input Field */}
           <input
             type="text"
@@ -48,7 +48,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
                 window.location.href = `/activity`;
               }
             }}
-            className="flex-1 bg-transparent outline-none text-lg placeholder-black pr-14 w-full"
+            className="bg-transparent outline-none text-lg placeholder-black w-full"
           />
 
           {/* Button Container */}
@@ -75,7 +75,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
                 </div>
               </Link>
             ) : (
-              <div className="absolute w-12 h-12 inset-0 flex items-center justify-center rounded-full cursor-not-allowed opacity-50">
+              <div className="absolute w-12 h-12 flex items-center justify-center rounded-full cursor-not-allowed opacity-50">
                 <Image
                   src={SearchIcon}
                   alt="Search (disabled)"
@@ -90,12 +90,12 @@ const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
 
         {/* Dropdown (only visible when user types and has non-exact matches) */}
         {query && showDropdown && (
-          <ul className="absolute left-0 mt-2 w-full bg-gray-200 rounded-md shadow-lg z-10">
+          <ul className="mt-2 w-full bg-gray-200 rounded-2xl shadow-lg">
             {filteredResults.length > 0 ? (
               filteredResults.map((item) => (
                 <li
                   key={item.id}
-                  className="px-4 py-3 hover:bg-gray-300 cursor-pointer"
+                  className="px-4 py-3 hover:bg-gray-300 cursor-pointer rounded-2xl"
                   onClick={() => {
                     setQuery(item.name);
                     setSelectedId(item.id);
