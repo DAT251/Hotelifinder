@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/runtime": "^7.26.10",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@googlemaps/react-native-navigation-sdk": "^0.9.2",
