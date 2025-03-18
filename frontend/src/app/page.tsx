@@ -10,9 +10,9 @@ const hotelList = [
 
 export default function HomePage() {
   return (
-    <div className='flex flex-col h-screen justify-center items-center'>
+    <div className="flex flex-col h-screen justify-center items-center">
       <Header />
-        <SearchBar data={hotelList} />
+      <SearchBar data={hotelList} />
     </div>
   );
 }
