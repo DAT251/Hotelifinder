@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Header } from "./components/header";
 
 import SearchBar from "./components/searchbar";
@@ -12,12 +11,11 @@ const hotelList = [
 export default function HomePage() {
   return (
     <div className="flex flex-col">
+      {/* Fix: Ensure the Header does not take extra space */}
       <Header />
-      <div className="flex flex-col items-center gap-8">
-        <div>
-          <SearchBar data={hotelList} />
-        </div>
-        <Link href="/activity">Activities</Link>
+      {/* SearchBar should fill remaining space and be centered */}
+      <div className="flex justify-center content-center">
+        <SearchBar data={hotelList} />
       </div>
     </div>
   );
