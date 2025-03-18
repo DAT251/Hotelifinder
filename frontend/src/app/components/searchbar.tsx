@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import SearchIcon from "../assets/Search.svg";
 import PinkCircle from "../assets/Ellipse 1.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 interface SearchBarProps {
   data: { id: number; name: string }[];
@@ -12,63 +13,94 @@ interface SearchBarProps {
 const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
   const [query, setQuery] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
+  const [selectedId, setSelectedId] = useState<number | null>(null); // Store matched ID
 
   const filteredResults = data.filter((item) =>
     item.name.toLowerCase().includes(query.toLowerCase())
   );
 
-  // Function to autocomplete the search when an item is clicked
-  const handleSelect = (selectedValue: string) => {
-    setQuery(selectedValue); // Set the input field value
-    setShowDropdown(false); // Hide dropdown after selection
-  };
-
-  // Hide dropdown if input fully matches an item
   useEffect(() => {
-    if (
-      filteredResults.length === 1 &&
-      filteredResults[0].name.toLowerCase() === query.toLowerCase()
-    ) {
+    const matchedItem = data.find(
+      (item) => item.name.toLowerCase() === query.toLowerCase()
+    );
+
+    if (matchedItem) {
       setShowDropdown(false);
+      setSelectedId(matchedItem.id);
     } else {
       setShowDropdown(true);
+      setSelectedId(null);
     }
-  }, [query, filteredResults]);
+  }, [query, data]);
 
   return (
-    <div className="relative w-full max-w-3xl px-6 mx-auto">
-      {/* Search Box Container */}
+    <div className="relative w-full max-w-3xl px-6 mx-auto flex justify-center">
       <div className="relative w-full max-w-xl">
         <div className="flex items-center bg-gray-300 rounded-full px-6 py-4 w-full">
+          {/* Input Field */}
           <input
             type="text"
             placeholder="Where do you want to go?"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full bg-transparent outline-none text-lg placeholder-black"
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && selectedId !== null) {
+                window.location.href = `/activity/${selectedId}`;
+              }
+            }}
+            className="flex-1 bg-transparent outline-none text-lg placeholder-black pr-14 w-full"
           />
-          {/* Search Button with SVG Background */}
-          <button className="relative w-12 h-12 flex items-center justify-center">
-            <Image src={PinkCircle} alt="Button Background" layout="fill" />
+
+          {/* Button Container */}
+          <div className="relative w-12 h-12 flex items-center justify-center">
             <Image
-              src={SearchIcon}
-              alt="Search"
-              width={24}
-              height={24}
-              className="absolute"
+              src={PinkCircle}
+              alt="Button Background"
+              width={48}
+              height={48}
+              className="pointer-events-none"
             />
-          </button>
+
+            {/* Clickable Search Icon */}
+            {selectedId !== null ? (
+              <Link href={`/activity/${selectedId}`}>
+                <div className="absolute w-12 h-12 inset-0 flex items-center justify-center rounded-full">
+                  <Image
+                    src={SearchIcon}
+                    alt="Search"
+                    width={24}
+                    height={24}
+                    className="rounded-full"
+                  />
+                </div>
+              </Link>
+            ) : (
+              <div className="absolute w-12 h-12 inset-0 flex items-center justify-center rounded-full cursor-not-allowed opacity-50">
+                <Image
+                  src={SearchIcon}
+                  alt="Search (disabled)"
+                  width={24}
+                  height={24}
+                  className="rounded-full"
+                />
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Dropdown (only visible when user types and has non-exact matches) */}
         {query && showDropdown && (
-          <ul className="absolute left-0 mt-2 w-full bg-gray-200 rounded-md shadow-lg">
+          <ul className="absolute left-0 mt-2 w-full bg-gray-200 rounded-md shadow-lg z-10">
             {filteredResults.length > 0 ? (
               filteredResults.map((item) => (
                 <li
                   key={item.id}
                   className="px-4 py-3 hover:bg-gray-300 cursor-pointer"
-                  onClick={() => handleSelect(item.name)} // Autocomplete and hide dropdown
+                  onClick={() => {
+                    setQuery(item.name);
+                    setSelectedId(item.id);
+                    setShowDropdown(false);
+                  }}
                 >
                   {item.name}
                 </li>
