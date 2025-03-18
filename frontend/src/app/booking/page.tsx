@@ -2,7 +2,7 @@ import { Header } from '../components/header';
 
 export default function BookingPage() {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col h-screen justify-center'>
       <Header />
       <div className='flex flex-row justify-around'>
         {/* left side */}

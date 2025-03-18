@@ -6,7 +6,7 @@ import MapComponent from '../components/map';
 
 export default function ResultPage() {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col h-screen justify-center'>
       <Header />
       <div className='flex flex-row justify-around items-center'>
         {/* left side */}
