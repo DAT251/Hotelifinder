@@ -10,13 +10,9 @@ const hotelList = [
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col">
-      {/* Fix: Ensure the Header does not take extra space */}
+    <div className='flex flex-col h-screen justify-center items-center'>
       <Header />
-      {/* SearchBar should fill remaining space and be centered */}
-      <div className="flex justify-center content-center">
         <SearchBar data={hotelList} />
-      </div>
     </div>
   );
 }
