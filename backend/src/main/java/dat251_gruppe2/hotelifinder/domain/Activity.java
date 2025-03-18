@@ -3,15 +3,19 @@ package dat251_gruppe2.hotelifinder.domain;
 public class Activity {
 
 	private String name;
+	private Location location; // Location of the activity
 
-	public Activity() {
+	// Constructor, getters, and setters
+	public Activity(String name, Location location) {
+		this.name = name;
+		this.location = location;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public Location getLocation() {
+		return location;
 	}
 }
