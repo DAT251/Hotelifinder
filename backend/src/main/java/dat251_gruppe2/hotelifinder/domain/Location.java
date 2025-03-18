@@ -21,6 +21,14 @@ public class Location {
 		this.latitude = latitude;
 	}
 
+	/**
+	 * Calculate the distance between two locations
+	 *
+	 * @param other
+	 * @return distance in meters
+	 */
+
+	//haversine formel
 	public double distanceTo(Location other) {
 		final int R = 6371; // Radius of the earth in kilometers
 		double latDistance = Math.toRadians(other.latitude - this.latitude);
