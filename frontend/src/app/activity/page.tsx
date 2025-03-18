@@ -7,7 +7,7 @@ import venues from '../assets/venues.json';
 
 export default function ActivityPage() {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col h-screen justify-center'>
       <Header />
       <div className='flex flex-col items-center'>
         <div className='grid grid-cols-3 gap-14'>
