@@ -2,13 +2,14 @@ package dat251_gruppe2.hotelifinder.domain;
 
 import java.util.ArrayList;
 
+
 /**
  * Cluster
  */
-public class Cluster<Location> {
+public class Cluster {
 	private String name;
 	private Location center;
-	private ArrayList<Location> location;
+	private ArrayList<Location> locations;
 
 	public String getName() {
 		return name;
@@ -27,11 +28,28 @@ public class Cluster<Location> {
 	}
 
 	public ArrayList<Location> getLocation() {
-		return location;
+		return locations;
 	}
 
 	public void setLocation(ArrayList<Location> location) {
-		this.location = location;
+		this.locations = location;
 	}
 
-}
+
+	public Cluster groupLocations(Location location) {
+		if (center == null) {
+			throw new IllegalStateException("Center location is not set.");
+		}
+
+		if (center.distanceTo(location) <= 1000) { // hvorfor klarer den ikke å hente ut?
+			if (locations == null) {
+				locations = new ArrayList<>();
+			}
+			locations.add(location);
+		}
+		return this;
+	}
+
+	}
+
+
