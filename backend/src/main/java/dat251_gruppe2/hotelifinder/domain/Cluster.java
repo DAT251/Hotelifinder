@@ -41,11 +41,11 @@ public class Cluster {
 			throw new IllegalStateException("Center location is not set.");
 		}
 
-		if (center.distanceTo(location) <= 1000) { // hvorfor klarer den ikke å hente ut?
-			if (locations == null) {
+		if (center.distanceTo(location) <= 1000) { //Sjekker distansen mellom to punkter
+			if (locations == null) { // om det er en tom liste lag ny
 				locations = new ArrayList<>();
 			}
-			locations.add(location);
+			locations.add(location); //legg til i listen
 		}
 		return this;
 	}
