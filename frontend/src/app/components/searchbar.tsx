@@ -34,7 +34,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
   }, [query, data]);
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="relative w-full flex justify-center">
       <div className="relative w-full max-w-xl">
         <div className="flex bg-gray-300 rounded-full px-6 py-4">
           {/* Input Field */}
@@ -90,7 +90,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
 
         {/* Dropdown (only visible when user types and has non-exact matches) */}
         {query && showDropdown && (
-          <ul className="mt-2 w-full bg-gray-200 rounded-2xl shadow-lg">
+          <ul className="absolute left-0 mt-2 w-full bg-gray-200 rounded-2xl shadow-lg">
             {filteredResults.length > 0 ? (
               filteredResults.map((item) => (
                 <li
