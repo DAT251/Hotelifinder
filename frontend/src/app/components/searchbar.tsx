@@ -45,7 +45,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter" && selectedId !== null) {
-                window.location.href = `/activity/${selectedId}`;
+                window.location.href = `/activity`;
               }
             }}
             className="flex-1 bg-transparent outline-none text-lg placeholder-black pr-14 w-full"
@@ -63,7 +63,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ data }) => {
 
             {/* Clickable Search Icon */}
             {selectedId !== null ? (
-              <Link href={`/activity/${selectedId}`}>
+              <Link href={`/activity`}>
                 <div className="absolute w-12 h-12 inset-0 flex items-center justify-center rounded-full">
                   <Image
                     src={SearchIcon}
