@@ -6,7 +6,7 @@ import java.util.ArrayList;
 /**
  * Cluster
  */
-public class 	Cluster {
+public class Cluster {
 	private String name;
 	private Location center;
 	private ArrayList<Location> locations;
