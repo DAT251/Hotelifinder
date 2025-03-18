@@ -1,16 +1,33 @@
 package dat251_gruppe2.hotelifinder.domain;
 
-public class Hotel extends Location {
+public class Hotel  {
 
 	private String name;
 	private Address address;
 	private String website;
+	private Location location;
+	private int  totalTravelTime;
 
-	public Hotel() {
+	public Hotel(String name, Location location) {
+		this.location = location;
+		this.name = name;
+		this.totalTravelTime = 0;
 	}
 
 	public String getName() {
 		return name;
+	}
+
+	public int getTotalTravelTime() {
+		return totalTravelTime;
+	}
+
+	public void setTotalTravelTime(int totalTravelTime) {
+		this.totalTravelTime = totalTravelTime;
+	}
+
+	public Location getLocation() {
+		return location;
 	}
 
 	public void setName(String name) {
@@ -32,5 +49,7 @@ public class Hotel extends Location {
 	public void setWebsite(String website) {
 		this.website = website;
 	}
+
+
 
 }
