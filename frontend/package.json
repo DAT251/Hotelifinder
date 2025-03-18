@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/helpers": "^7.26.10",
     "@babel/runtime": "^7.26.10",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
