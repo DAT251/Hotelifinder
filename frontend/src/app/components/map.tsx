@@ -9,13 +9,28 @@ const api_key = process.env.NEXT_PUBLIC_API_KEY;
 const zoom = 12;
 const center = { lat: 59.9139, lng: 10.7522 };
 
-const MapContent = ({ selectedVenues  }) => {
+interface MapContentProps {
+  selectedVenues: Venue[];
+}
+
+const MapContent = ({ selectedVenues  }: MapContentProps) => {
   const [hotels, setHotels] = useState<any[]>([]);
   const [selectedPoint, setSelectedPoint] = useState<{ name: string; lat: number; lng: number } | null>(null);
   const [showInitialMarkers, setShowInitialMarkers] = useState(true);
   const [selectedHotel, setSelectedHotel] = useState<any | null>(null);
   const [geocodedVenues, setGeocodedVenues] = useState<{ name: string; lat: number; lng: number }[]>([]);
   const map = useMap();
+  const [directionsRenderers, setDirectionsRenderers] = useState<any[]>([]);
+  const [directionsService, setDirectionsService] = useState<any>(null);
+  const [transportLabels, setTransportLabels] = useState<any[]>([]);
+
+
+  useEffect(() => {
+    if (window.google && window.google.maps) {
+      setDirectionsService(new window.google.maps.DirectionsService());
+    }
+  }, [map]);
+
 
   useEffect(() => {
     const geocodeVenues = async () => {
@@ -100,6 +115,9 @@ const MapContent = ({ selectedVenues  }) => {
     setHotels([]);
     setShowInitialMarkers(true);
     setSelectedHotel(null);
+    setDirectionsRenderers([]);
+    transportLabels.forEach(label => label.setMap(null));
+    setTransportLabels([]);
 
     if(map){
       map.setCenter(center);
@@ -108,8 +126,94 @@ const MapContent = ({ selectedVenues  }) => {
   };
 
   const handleHotelClick = (hotel: any) => {
-    setSelectedHotel(hotel);
+    if (!window.google || !window.google.maps || !window.google.maps.places) {
+      console.error('Google Maps Places library not loaded');
+      return;
+    }
+
+    directionsRenderers.forEach(renderer => renderer.setMap(null));
+    setDirectionsRenderers([]);
+    transportLabels.forEach(label => label.setMap(null));
+    setTransportLabels([]);
+
+    const map = new window.google.maps.Map(document.createElement('div'));
+    const service = new window.google.maps.places.PlacesService(map);
+
+    const request = {
+      placeId: hotel.place_id,
+      fields: [
+        'name', 'geometry','rating', 'formatted_address', 'photos', 'website', 'formatted_phone_number', 'reviews'
+      ]
+    };
+
+    service.getDetails(request, (place, status) => {
+      if (status === window.google.maps.places.PlacesServiceStatus.OK && place) {
+        setSelectedHotel(place);
+      } else {
+        console.error('Places API error:', status);
+      }
+    });
   };
+
+  const showPublicTransportRoute = () => {
+    if (!selectedHotel || !window.google || !window.google.maps) {
+      console.error('Google Maps library not loaded');
+      return;
+    }
+
+    directionsRenderers.forEach(renderer => renderer.setMap(null));
+    setDirectionsRenderers([]);
+    setSelectedHotel(null);
+
+    transportLabels.forEach(label => label.setMap(null));
+    setTransportLabels([]);
+
+    const newDirectionsRenderers: any[] = [];
+    const newTransportLabels: any[] = [];
+
+    geocodedVenues.forEach((venue) => {
+      const request = {
+        origin: { lat: selectedHotel.geometry.location.lat(), lng: selectedHotel.geometry.location.lng() },
+        destination: { lat: venue.lat, lng: venue.lng },
+        travelMode: window.google.maps.TravelMode.TRANSIT,
+      };
+
+      directionsService.route(request, (result: any, status: any) => {
+        if (status === window.google.maps.DirectionsStatus.OK) {
+          const directionsRenderer = new window.google.maps.DirectionsRenderer({
+            directions: result,
+            map: map,
+            panel: document.getElementById("directionsPanel") as HTMLElement,
+          });
+
+          const route = result.routes[0];
+          const duration = route.legs[0].duration.text;
+
+
+          const overviewPath = route.overview_path;
+          const midpointIndex = Math.floor(overviewPath.length / 2);
+          const midpoint = overviewPath[midpointIndex];
+
+          const label = new window.google.maps.InfoWindow({
+            content: `<div style="color: black; font-weight: bold;">${duration}</div>`,
+            position: midpoint,
+          });
+
+          label.open(map);
+          newTransportLabels.push(label);
+
+          newDirectionsRenderers.push(directionsRenderer);
+          setDirectionsRenderers(newDirectionsRenderers);
+          setTransportLabels(newTransportLabels);
+        } else {
+          console.error('Directions request failed due to ' + status);
+        }
+      });
+    });
+  };
+
+
+
 
   return (
       <>
@@ -138,11 +242,16 @@ const MapContent = ({ selectedVenues  }) => {
                     lng: hotel.geometry.location.lng(),
                   }}
                   title={hotel.name}
+                  icon={{
+                    url: "http://localhost:8080/images/img.png",
+                    scaledSize: new window.google.maps.Size(50, 50),
+
+                  }}
                   onClick={() => handleHotelClick(hotel)}
               />
           ))}
 
-          {selectedHotel && (
+          {selectedHotel && selectedHotel.geometry && selectedHotel.geometry.location && (
               <InfoWindow
                   position={{
                     lat: selectedHotel.geometry.location.lat(),
@@ -151,25 +260,63 @@ const MapContent = ({ selectedVenues  }) => {
                   onCloseClick={() => setSelectedHotel(null)}
               >
                 <div style={{color: "black"}}>
-                  <h3>{selectedHotel.name}</h3>
+                  <h3 style={{fontWeight: 'bold'}}>{selectedHotel.name}</h3>
                   <p>Rating: {selectedHotel.rating || 'N/A'}</p>
-                  <p>Address: {selectedHotel.vicinity}</p>
+                  <p>Address: {selectedHotel.formatted_address}</p>
+                  {selectedHotel.formatted_phone_number && <p>Phone: {selectedHotel.formatted_phone_number}</p>}
+                  {selectedHotel.website && (
+                      <p>
+                        <a href={selectedHotel.website} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'blue' }}>
+                          Visit Website
+                        </a>
+                      </p>
+                  )}
+                  {selectedHotel.photos && selectedHotel.photos.length > 0 && (
+                      <img
+                          src={selectedHotel.photos[0].getUrl({maxWidth: 200})}
+                          alt="Hotel"
+                          style={{width: "200px", height: "auto", marginTop: "10px"}}
+                      />
+                  )}
+                  {selectedHotel.reviews && selectedHotel.reviews.length > 0 && (
+                      <div>
+                        <h4>Recent Reviews:</h4>
+                        <p>"{selectedHotel.reviews[0].text}"</p>
+                        <p>- {selectedHotel.reviews[0].author_name}</p>
+                      </div>
+                  )}
+
                 </div>
               </InfoWindow>
           )}
         </Map>
         {selectedPoint && (
-            <button
-                onClick={resetMap}
-                style={{
-                  marginTop: '10px',
-                  padding: '10px 20px',
-                  fontSize: '16px',
-                  cursor: 'pointer',
-                }}
-            >
-              Reset Map
-            </button>
+            <div>
+              <button
+                  onClick={resetMap}
+                  style={{
+                    marginTop: '10px',
+                    padding: '10px 20px',
+                    fontSize: '16px',
+                    cursor: 'pointer',
+                  }}
+              >
+                Reset Map
+              </button>
+
+              <button
+                  onClick={showPublicTransportRoute}
+                  style={{
+                    marginTop: '10px',
+                    padding: '10px 20px',
+                    fontSize: '16px',
+                    cursor: 'pointer',
+                  }}
+              >
+                Show Public Transport Route to My Venues
+              </button>
+            </div>
+
         )}
       </>
   );
