@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+    /** @type {import('next').NextConfig} */
+    images: {
+        domains: ['maps.googleapis.com'],
+    },
 };
 
 export default nextConfig;

@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 'use client';
 import React, { useState, useEffect } from 'react';
 import { APIProvider, Map, Marker, InfoWindow, useMap } from '@vis.gl/react-google-maps';
 import { useSearchParams } from 'next/navigation';
 import { Venue } from '../schema/venue';
+import Image from 'next/image';
 
 
 const api_key = process.env.NEXT_PUBLIC_API_KEY;
@@ -272,16 +275,18 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
                       </p>
                   )}
                   {selectedHotel.photos && selectedHotel.photos.length > 0 && (
-                      <img
-                          src={selectedHotel.photos[0].getUrl({maxWidth: 200})}
+                      <Image
+                          src={selectedHotel.photos[0].getUrl({ maxWidth: 200 })}
                           alt="Hotel"
-                          style={{width: "200px", height: "auto", marginTop: "10px"}}
+                          width={200}
+                          height={150}
+                          style={{ marginTop: "10px" }}
                       />
                   )}
                   {selectedHotel.reviews && selectedHotel.reviews.length > 0 && (
                       <div>
                         <h4>Recent Reviews:</h4>
-                        <p>"{selectedHotel.reviews[0].text}"</p>
+                        <p>&quot;{selectedHotel.reviews[0].text}&quot;</p>
                         <p>- {selectedHotel.reviews[0].author_name}</p>
                       </div>
                   )}
