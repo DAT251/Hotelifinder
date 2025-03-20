@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { CheckMark } from './checkmark';
 import imagePlaceholder from '@/app/assets/image-placeholder.svg';
 import Image from 'next/image';
