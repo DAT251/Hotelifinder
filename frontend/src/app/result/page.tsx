@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Header } from '../components/header';
 import Hotel from '../components/hotel';
 import MapComponent from '../components/map';
+import { Suspense } from 'react';
 
 export default function ResultPage() {
   return (
@@ -17,7 +18,9 @@ export default function ResultPage() {
         </div>
         {/* right side */}
         <div>
-          <MapComponent />
+            <Suspense fallback={<div>Loading map...</div>}>
+                <MapComponent />
+            </Suspense>
         </div>
       </div>
       <Link href='/booking'>Booking</Link>
