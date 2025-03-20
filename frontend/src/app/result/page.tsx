@@ -1,8 +1,8 @@
 'use client';
 import Link from 'next/link';
-import { Header } from '../components/header';
-import Hotel from '../components/hotel';
-import MapComponent from '../components/map';
+import { Header } from '@/components/header';
+import Hotel from '@/components/hotel';
+import MapComponent from '@/components/map';
 import { Suspense } from 'react';
 
 export default function ResultPage() {

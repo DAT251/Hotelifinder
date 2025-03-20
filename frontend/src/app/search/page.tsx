@@ -8,7 +8,7 @@ const hotelList = [
   { id: 3, name: 'Trondheim' },
 ];
 
-export default function HomePage() {
+export default function SearchPage() {
   return (
     <div className='flex flex-col h-screen justify-center items-center'>
       <Header />

@@ -1,5 +1,5 @@
 import { CheckMark } from './checkmark';
-import imagePlaceholder from '@/app/assets/image-placeholder.svg';
+import imagePlaceholder from '@/assets/image-placeholder.svg';
 import Image from 'next/image';
 
 export function VenueCard({
