@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Vestkanten",
+        "city": "Bergen",
+        "imageURL": "http://localhost:8080/images/vestkanten.jpg",
+        "address": {
+            "streetName": "Loddefjordveien",
+            "streetNumber": 2,
+            "postalCode": 5171
+        },
+        "tags": ["Shopping", "Water Park"]
+    },
+
+    {
+        "name": "Fana Golfbane",
+        "city": "Bergen",
+        "imageURL": "http://localhost:8080/images/fanagolf.jpg",
+        "address": {
+            "streetName": "Vestre Rå",
+            "streetNumber": 82,
+            "postalCode": 5239
+        },
+        "tags": ["Golf"]
+    },
+    {
+        "name": "Oasen",
+        "city": "Bergen",
+        "imageURL": "http://localhost:8080/images/oasen.jpg",
+        "address": {
+            "streetName": "Folke Bernadottes vei",
+            "streetNumber": 52,
+            "postalCode": 5147
+        },
+        "tags": ["Shopping", "Museum"]
+    },
+    {
+        "name": "Lagunen",
+        "city": "Bergen",
+        "imageURL": "http://localhost:8080/images/lagunen.jpg",
+        "address": {
+            "streetName": "Laguneveien",
+            "streetNumber": 3,
+            "postalCode": 5239
+        },
+        "tags": ["Shopping", "Bowling", "Cinema"]
+    },
+    {
+        "name": "Vigelandsparken",
+        "city": "Oslo",
+        "imageURL": "http://localhost:8080/images/vigeland.jpg",
+        "address": {
+            "streetName": "Nobels Gate",
+            "streetNumber": 32,
+            "postalCode": 268
+        },
+        "tags": ["Museum", "Park"]
+    },
+    {
+        "name": "Aker Brygge",
+        "city": "Oslo",
+        "imageURL": "http://localhost:8080/images/akerbrygge.jpg",
+        "address": {
+            "streetName": "Bryggegata",
+            "streetNumber": 3,
+            "postalCode": 250
+        },
+        "tags": ["Shopping", "Sightseeing"]
+    }
+]
