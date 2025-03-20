@@ -29,9 +29,19 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
 
 
   useEffect(() => {
-    if (window.google && window.google.maps) {
-      setDirectionsService(new window.google.maps.DirectionsService());
-    }
+    if (!map) return;
+
+    const handleTilesLoaded = () => {
+      if (window.google && window.google.maps) {
+        setDirectionsService(new window.google.maps.DirectionsService());
+      }
+    };
+
+    map.addListener('tilesloaded', handleTilesLoaded);
+
+    return () => {
+      window.google.maps.event.clearListeners(map, 'tilesloaded');
+    };
   }, [map]);
 
 
