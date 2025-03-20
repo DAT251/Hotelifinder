@@ -5,44 +5,57 @@ import { VenueCard } from '../components/venueCard';
 import { Header } from '../components/header';
 import { useEffect, useState } from 'react';
 import { Venue } from '../schema/venue';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 export default function ActivityPage() {
   const [venues, setVenues] = useState<Venue[]>([]);
-  const server = process.env.NEXT_PUBLIC_SERVER + '/venues';
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const city = searchParams.get('city'); // Get city from URL
 
   useEffect(() => {
+    if (!city) {
+      router.push('/'); // Redirect to homepage if no city is provided
+      return;
+    }
+
     const fetchData = async () => {
       try {
-        const response = await fetch(server);
+        const response = await fetch(`http://localhost:8080/api/v1/venues?city=${encodeURIComponent(city)}`);
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
         const result = await response.json();
         setVenues(result);
       } catch (error) {
-        throw new Error('Error ' + error);
+        console.error('Error fetching venues:', error);
       }
     };
     fetchData();
-  }, [server]);
+  }, [city]); // Only runs when city changes
 
   return (
     <div className='flex flex-col h-screen justify-center'>
       <Header />
       <div className='flex flex-col items-center'>
+        <h1 className='text-2xl font-bold text-center mt-4'>Venues in {city}</h1>
         <div className='grid grid-cols-3 gap-14'>
-          {venues.map((venue, k) => (
-            <VenueCard
-              key={k}
-              name={venue.name}
-              tags={venue.tags}
-              imageUrl={venue.imageURL}
-            />
-          ))}
+          {venues.length > 0 ? (
+            venues.map((venue, k) => (
+              <VenueCard
+                key={k}
+                name={venue.name}
+                tags={venue.tags}
+                imageUrl={venue.imageURL}
+              />
+            ))
+          ) : (
+            <p className='col-span-3 text-center text-gray-500'>No venues found in {city}.</p>
+          )}
           <div className='col-span-3' />
           <Link
             className='col-start-3 bg-blue self-end text-center content-center rounded-[20] h-12 drop-shadow-xl'
-            href='/result'
+            href={`/result?city=${city}`}
           >
             Confirm
           </Link>

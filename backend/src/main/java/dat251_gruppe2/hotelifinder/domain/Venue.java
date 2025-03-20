@@ -7,6 +7,7 @@ public class Venue {
 
 	private String name;
 	private Address address;
+	private String city;
 	//private String website;
 	private String imageURL;
 	private List<String> tags = new ArrayList<>();
@@ -35,6 +36,14 @@ public class Venue {
 
 	public String getName() {
 		return name;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getCity() {
+		return city;
 	}
 
 	public void setName(String name) {
