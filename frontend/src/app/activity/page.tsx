@@ -9,6 +9,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 
 export default function ActivityPage() {
   const [venues, setVenues] = useState<Venue[]>([]);
+  const [selectedVenues, setSelectedVenues] = useState<Venue[]>([]);
   const searchParams = useSearchParams();
   const router = useRouter();
   const city = searchParams.get('city'); // Get city from URL
@@ -34,6 +35,16 @@ export default function ActivityPage() {
     fetchData();
   }, [city]); // Only runs when city changes
 
+  const handleVenueSelect = (venue: Venue) => {
+    setSelectedVenues(prev => {
+      if (prev.includes(venue)) {
+        return prev.filter(v => v !== venue);
+      } else {
+        return [...prev, venue];
+      }
+    });
+  };
+
   return (
     <div className='flex flex-col h-screen justify-center'>
       <Header />
@@ -47,6 +58,8 @@ export default function ActivityPage() {
                 name={venue.name}
                 tags={venue.tags}
                 imageUrl={venue.imageURL}
+                isChecked={selectedVenues.includes(venue)}
+                onClick={() => handleVenueSelect(venue)}
               />
             ))
           ) : (
@@ -56,6 +69,10 @@ export default function ActivityPage() {
           <Link
             className='col-start-3 bg-blue self-end text-center content-center rounded-[20] h-12 drop-shadow-xl'
             href={`/result?city=${city}`}
+            onClick={() => {
+              localStorage.setItem("selectedVenues", JSON.stringify(selectedVenues));
+              
+            }}
           >
             Confirm
           </Link>

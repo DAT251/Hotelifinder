@@ -20,8 +20,8 @@ public class VenueController {
     }
 
     @GetMapping
-public ResponseEntity<List<Venue>> getVenues(@RequestParam String city) {
-    List<Venue> filteredVenues = venueService.getAllVenues().stream()
+    public ResponseEntity<List<Venue>> getVenues(@RequestParam String city) {
+        List<Venue> filteredVenues = venueService.getAllVenues().stream()
         .filter(venue -> venue.getCity().equalsIgnoreCase(city))
         .collect(Collectors.toList());
 

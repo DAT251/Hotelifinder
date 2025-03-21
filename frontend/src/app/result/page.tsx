@@ -3,8 +3,19 @@ import Link from 'next/link';
 import { Header } from '../components/header';
 import Hotel from '../components/hotel';
 import MapComponent from '../components/map';
+import { Suspense } from 'react';
+import { useState, useEffect } from 'react';
+
 
 export default function ResultPage() {
+  const [selectedVenues, setSelectedVenues] = useState([]);
+  useEffect(() => {
+    const storedVenues = localStorage.getItem("selectedVenues");
+    if (storedVenues) {
+      setSelectedVenues(JSON.parse(storedVenues));
+    }
+  }, []);
+
   return (
     <div className='flex flex-col h-screen justify-center'>
       <Header />
@@ -17,7 +28,9 @@ export default function ResultPage() {
         </div>
         {/* right side */}
         <div>
-          <MapComponent />
+            <Suspense fallback={<div>Loading map...</div>}>
+                <MapComponent />
+            </Suspense>
         </div>
       </div>
       <Link href='/booking'>Booking</Link>
