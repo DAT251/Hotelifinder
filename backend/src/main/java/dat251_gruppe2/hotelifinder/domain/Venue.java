@@ -6,10 +6,38 @@ import java.util.List;
 public class Venue {
 
 	private String name;
-	private Address address;
 	//private String website;
 	private String imageURL;
 	private List<String> tags = new ArrayList<>();
+	private Integer postalCode;
+
+	public Integer getStreetNumber() {
+		return streetNumber;
+	}
+
+	public void setStreetNumber(Integer streetNumber) {
+		this.streetNumber = streetNumber;
+	}
+
+	public String getStreetName() {
+		return streetName;
+	}
+
+	public void setStreetName(String streetName) {
+		this.streetName = streetName;
+	}
+
+	public Integer getPostalCode() {
+		return postalCode;
+	}
+
+	public void setPostalCode(Integer postalCode) {
+		this.postalCode = postalCode;
+	}
+
+	private String streetName;
+	private Integer streetNumber;
+
 
 	public Venue() {
 	}
@@ -39,14 +67,6 @@ public class Venue {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
 	}
 
 	public List<String> getTags() {
