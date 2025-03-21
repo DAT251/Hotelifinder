@@ -3,15 +3,46 @@ package dat251_gruppe2.hotelifinder.domain;
 public class Hotel  {
 
 	private String name;
-	private Address address;
 	private String website;
 	private Location location;
 	private int  totalTravelTime;
+	private Integer postalCode;
+	private String streetName;
+	private Integer streetNumber;
+
 
 	public Hotel(String name, Location location) {
 		this.location = location;
 		this.name = name;
 		this.totalTravelTime = 0;
+	}
+
+	public void setLocation(Location location) {
+		this.location = location;
+	}
+
+	public Integer getPostalCode() {
+		return postalCode;
+	}
+
+	public void setPostalCode(Integer postalCode) {
+		this.postalCode = postalCode;
+	}
+
+	public String getStreetName() {
+		return streetName;
+	}
+
+	public void setStreetName(String streetName) {
+		this.streetName = streetName;
+	}
+
+	public Integer getStreetNumber() {
+		return streetNumber;
+	}
+
+	public void setStreetNumber(Integer streetNumber) {
+		this.streetNumber = streetNumber;
 	}
 
 	public String getName() {
@@ -34,13 +65,6 @@ public class Hotel  {
 		this.name = name;
 	}
 
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
-	}
 
 	public String getWebsite() {
 		return website;
