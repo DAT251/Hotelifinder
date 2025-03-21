@@ -5,11 +5,11 @@ export const dynamic = 'force-dynamic';
 import Link from 'next/link';
 import { VenueCard } from '@/components/venueCard';
 import { Header } from '@/components/header';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { Venue } from '../schema/venue';
 import { useSearchParams, useRouter } from 'next/navigation';
 
-export default function ActivityPage() {
+function ActivityPageContent() {
   const [venues, setVenues] = useState<Venue[]>([]);
   const [selectedVenues, setSelectedVenues] = useState<Venue[]>([]);
   const searchParams = useSearchParams();
@@ -77,4 +77,11 @@ export default function ActivityPage() {
         </div>
       </div>
   );
+}
+
+  export default function ActivityPage() {
+    return (
+      <Suspense fallback={<div>Loading activity page...</div>}>
+        <ActivityPageContent />
+      </Suspense>);
 }
