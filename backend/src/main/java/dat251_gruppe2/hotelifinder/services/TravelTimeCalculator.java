@@ -1,4 +1,6 @@
-package dat251_gruppe2.hotelifinder.domain;
+package dat251_gruppe2.hotelifinder.services;
+
+import dat251_gruppe2.hotelifinder.domain.Location;
 
 public class TravelTimeCalculator {
 
