@@ -40,7 +40,6 @@ public class HotelRecommenderTest {
         assertTrue(bestMatch.getName().equals("Vetles hus"));
         assertTrue(recommender.getTravelTime(bestMatch) <= 1);
     }
-
     @Test
     void allHotelsRecommended() {
         List<Venue> selectedActivities = List.of(hiking);
