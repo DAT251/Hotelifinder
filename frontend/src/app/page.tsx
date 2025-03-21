@@ -1,18 +1,15 @@
-import { Header } from "./components/header";
-
-import SearchBar from "./components/searchbar";
-
-const hotelList = [
-  { id: 1, name: "Bergen" },
-  { id: 2, name: "Oslo" },
-  { id: 3, name: "Trondheim" },
-];
+import Image from 'next/image';
+import logo from '@/assets/hotelifinder-logo.png';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col h-screen justify-center items-center">
-      <Header />
-      <SearchBar data={hotelList} />
-    </div>
+    <Link href={'/search'}>
+      <div className='flex flex-col h-screen justify-center items-center'>
+        <div className='pt-6 bg-dark-blue rounded-[50]'>
+          <Image src={logo} alt='Hotelifinder logo' height={400} />
+        </div>
+      </div>
+    </Link>
   );
 }

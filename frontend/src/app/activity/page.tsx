@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { VenueCard } from '../components/venueCard';
-import { Header } from '../components/header';
+import { VenueCard } from '@/components/venueCard';
+import { Header } from '@/components/header';
 import { useEffect, useState } from 'react';
 import { Venue } from '../schema/venue';
 import { useSearchParams, useRouter } from 'next/navigation';
