@@ -33,7 +33,7 @@ export default function ActivityPage() {
       }
     };
     fetchData();
-  }, [city]); // Only runs when city changes
+  }, [city, router]); // Only runs when city changes
 
   const handleVenueSelect = (venue: Venue) => {
     setSelectedVenues(prev => {
