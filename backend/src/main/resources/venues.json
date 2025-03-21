@@ -6,9 +6,9 @@
         "address": {
             "streetName": "Loddefjordveien",
             "streetNumber": 2,
-            "postalCode": 5171
+            "postalCode": "5171"
         },
-        "tags": ["Shopping", "Water Park"]
+        "tags": ["Shopping", "Waterpark", "Bowling"]
     },
 
     {
@@ -18,7 +18,7 @@
         "address": {
             "streetName": "Vestre Rå",
             "streetNumber": 82,
-            "postalCode": 5239
+            "postalCode": "5239"
         },
         "tags": ["Golf"]
     },
@@ -29,7 +29,7 @@
         "address": {
             "streetName": "Folke Bernadottes vei",
             "streetNumber": 52,
-            "postalCode": 5147
+            "postalCode": "5147"
         },
         "tags": ["Shopping", "Museum"]
     },
@@ -40,30 +40,96 @@
         "address": {
             "streetName": "Laguneveien",
             "streetNumber": 3,
-            "postalCode": 5239
+            "postalCode": "5239"
         },
-        "tags": ["Shopping", "Bowling", "Cinema"]
+        "tags": ["Shopping", "Cinema"]
     },
     {
-        "name": "Vigelandsparken",
+        "name": "Oslo Sentrum",
         "city": "Oslo",
-        "imageURL": "http://localhost:8080/images/vigeland.jpg",
+        "imageURL": "http://localhost:8080/images/oslosentrum.jpg",
         "address": {
-            "streetName": "Nobels Gate",
-            "streetNumber": 32,
-            "postalCode": 268
+            "streetName": "Jernbanetorget",
+            "streetNumber": 1,
+            "postalCode": "0154"
         },
-        "tags": ["Museum", "Park"]
+        "tags": ["Shopping", "Sightseeing", "Opera"]
     },
     {
-        "name": "Aker Brygge",
+        "name": "Holmenkollen",
         "city": "Oslo",
-        "imageURL": "http://localhost:8080/images/akerbrygge.jpg",
+        "imageURL": "http://localhost:8080/images/holmenkollen.jpg",
         "address": {
-            "streetName": "Bryggegata",
-            "streetNumber": 3,
-            "postalCode": 250
+            "streetName": "Kongeveien",
+            "streetNumber": 40,
+            "postalCode": "0747"
         },
-        "tags": ["Shopping", "Sightseeing"]
+        "tags": ["Museum", "Sports"]
+    },
+    {
+        "name": "Frogner",
+        "city": "Oslo",
+        "imageURL": "http://localhost:8080/images/frogner.jpg",
+        "address": {
+            "streetName": "Frogner Plass",
+            "streetNumber": 1,
+            "postalCode": "0266"
+        },
+        "tags": ["Park", "Museum"]
+    },
+    {
+        "name": "Ullevål",
+        "city": "Oslo",
+        "imageURL": "http://localhost:8080/images/ullevaal.jpg",
+        "address": {
+            "streetName": "Sognsveien",
+            "streetNumber": 75,
+            "postalCode": "0855"
+        },
+        "tags": ["Football", "Concerts"]
+    },
+    {
+        "name": "Nidaros Cathedral",
+        "city": "Trondheim",
+        "imageURL": "http://localhost:8080/images/nidaros.jpg",
+        "address": {
+            "streetName": "Kongsgårdsveien",
+            "streetNumber": 2,
+            "postalCode": "7013"
+        },
+        "tags": ["Sightseeing"]
+    },
+    {
+        "name": "Sverresborg",
+        "city": "Trondheim",
+        "imageURL": "http://localhost:8080/images/sverresborg.jpg",
+        "address": {
+            "streetName": "Sverresborg Alle",
+            "streetNumber": 13,
+            "postalCode": "7020"
+        },
+        "tags": ["Museum", "Hiking"]
+    },
+    {
+        "name": "Rosendal Theater",
+        "city": "Trondheim",
+        "imageURL": "http://localhost:8080/images/rosendalteater.jpg",
+        "address": {
+            "streetName": "Innherredsveien",
+            "streetNumber": 73,
+            "postalCode": "7068"
+        },
+        "tags": ["Theater"]
+    },
+    {
+        "name": "Byhaven",
+        "city": "Trondheim",
+        "imageURL": "http://localhost:8080/images/byhaven.jpg",
+        "address": {
+            "streetName": "Olav Tryggvasons gt",
+            "streetNumber": 28,
+            "postalCode": "7011"
+        },
+        "tags": ["Shopping"]
     }
 ]
