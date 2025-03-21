@@ -68,6 +68,7 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
     if (map && showInitialMarkers && geocodedVenues.length > 0) {
       fitMapToBounds(geocodedVenues);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, showInitialMarkers, geocodedVenues]);
 
   const handleMarkerClick = (point: { name: string; lat: number; lng: number }) => {
