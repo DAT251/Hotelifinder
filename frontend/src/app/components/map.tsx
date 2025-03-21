@@ -10,7 +10,6 @@ import Image from 'next/image';
 
 const api_key = process.env.NEXT_PUBLIC_API_KEY;
 const zoom = 12;
-const center = { lat: 59.9139, lng: 10.7522 };
 
 interface MapContentProps {
   selectedVenues: Venue[];
@@ -26,6 +25,12 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
   const [directionsRenderers, setDirectionsRenderers] = useState<any[]>([]);
   const [directionsService, setDirectionsService] = useState<any>(null);
   const [transportLabels, setTransportLabels] = useState<any[]>([]);
+  const city = useSearchParams().get('city')?.toLowerCase();
+
+  let center = { lat: 59.9139, lng: 10.7522 }; // default to Oslo
+
+  if (city === 'Bergen') {center = { lat: 60.3913, lng: 5.3221 };}
+  if (city === 'Trondheim') {center = { lat: 63.4305, lng: 10.3951 };}
 
 
   useEffect(() => {
@@ -68,6 +73,7 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
     if (map && showInitialMarkers && geocodedVenues.length > 0) {
       fitMapToBounds(geocodedVenues);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, showInitialMarkers, geocodedVenues]);
 
   const handleMarkerClick = (point: { name: string; lat: number; lng: number }) => {
@@ -339,9 +345,20 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
 };
 
 export default function MapComponent() {
-  const searchParams = useSearchParams();
-  const venuesParam = searchParams.get('venues');
-  const selectedVenues = venuesParam ? JSON.parse(venuesParam) : [];
+  const [selectedVenues, setSelectedVenues] = useState<Venue[]>([]);
+
+useEffect(() => {
+  const storedVenues = localStorage.getItem("selectedVenues");
+  if (storedVenues) {
+    try {
+      setSelectedVenues(JSON.parse(storedVenues));
+    } catch (err) {
+      console.error("Error parsing stored venues:", err);
+    }
+  }
+}, []);
+
+
 
   return (
       <div>

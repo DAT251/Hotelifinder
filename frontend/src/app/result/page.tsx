@@ -4,8 +4,19 @@ import { Header } from '@/components/header';
 import Hotel from '@/components/hotel';
 import MapComponent from '@/components/map';
 import { Suspense } from 'react';
+import { useState, useEffect } from 'react';
+
 
 export default function ResultPage() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [selectedVenues, setSelectedVenues] = useState([]);
+  useEffect(() => {
+    const storedVenues = localStorage.getItem("selectedVenues");
+    if (storedVenues) {
+      setSelectedVenues(JSON.parse(storedVenues));
+    }
+  }, []);
+
   return (
     <div className='flex flex-col h-screen justify-center'>
       <Header />
