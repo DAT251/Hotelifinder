@@ -9,7 +9,7 @@ public class Venue {
 	//private String website;
 	private String imageURL;
 	private List<String> tags = new ArrayList<>();
-	private Integer postalCode;
+	private String postalCode;
 
 	public Integer getStreetNumber() {
 		return streetNumber;
@@ -27,11 +27,11 @@ public class Venue {
 		this.streetName = streetName;
 	}
 
-	public Integer getPostalCode() {
+	public String getPostalCode() {
 		return postalCode;
 	}
 
-	public void setPostalCode(Integer postalCode) {
+	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
 	}
 

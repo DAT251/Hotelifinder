@@ -25,7 +25,7 @@ public class VenueController {
         venue1.setImageURL("http://localhost:8080/images/vestkanten.jpg");
         venue1.setStreetName("Jernbanetorget");
         venue1.setStreetNumber(1);
-        venue1.setPostalCode(0154);
+        venue1.setPostalCode("0154");
         List<String> tags1 = new ArrayList<>();
         tags1.add("Shopping");
 
@@ -36,7 +36,7 @@ public class VenueController {
         venue2.setImageURL("http://localhost:8080/images/fanagolf.jpg");
         venue2.setStreetName("Kongeveien");
         venue2.setStreetNumber(40);
-        venue2.setPostalCode(0747);
+        venue2.setPostalCode("0747");
         List<String> tags2 = new ArrayList<>();
         tags2.add("Golf");
         venue2.setTags(tags2);
@@ -46,7 +46,7 @@ public class VenueController {
         venue3.setImageURL("http://localhost:8080/images/lagunen.jpg");
         venue3.setStreetName("Frogner plass");
         venue3.setStreetNumber(1);
-        venue3.setPostalCode(0266);
+        venue3.setPostalCode("0263");
         List<String> tags3 = new ArrayList<>();
         tags3.add("Shopping");
         tags3.add("Bowling");
@@ -58,7 +58,7 @@ public class VenueController {
         venue4.setImageURL("http://localhost:8080/images/oasen.jpg");
         venue4.setStreetName("Sognsveien");
         venue4.setStreetNumber(75);
-        venue4.setPostalCode(0855);
+        venue4.setPostalCode("0855");
         List<String> tags4 = new ArrayList<>();
         tags4.add("Shopping");
         tags4.add("Museum");

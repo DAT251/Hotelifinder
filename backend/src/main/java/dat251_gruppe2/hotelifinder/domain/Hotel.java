@@ -6,7 +6,7 @@ public class Hotel  {
 	private String website;
 	private Location location;
 	private int  totalTravelTime;
-	private Integer postalCode;
+	private String postalCode;
 	private String streetName;
 	private Integer streetNumber;
 
@@ -21,11 +21,11 @@ public class Hotel  {
 		this.location = location;
 	}
 
-	public Integer getPostalCode() {
+	public String getPostalCode() {
 		return postalCode;
 	}
 
-	public void setPostalCode(Integer postalCode) {
+	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
 	}
 
