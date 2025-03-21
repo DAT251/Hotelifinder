@@ -1,4 +1,7 @@
-package dat251_gruppe2.hotelifinder.domain;
+package dat251_gruppe2.hotelifinder.services;
+import dat251_gruppe2.hotelifinder.domain.Activity;
+import dat251_gruppe2.hotelifinder.domain.Hotel;
+
 import java.util.*;
 
 public class HotelRecommender {
