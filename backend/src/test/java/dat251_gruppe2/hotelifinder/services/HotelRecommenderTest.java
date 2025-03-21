@@ -3,6 +3,8 @@ package dat251_gruppe2.hotelifinder.services;
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 import dat251_gruppe2.hotelifinder.domain.Location;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
