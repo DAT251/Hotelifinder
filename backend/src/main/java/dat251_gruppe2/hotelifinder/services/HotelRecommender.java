@@ -23,7 +23,7 @@ public class HotelRecommender {
         for (Hotel hotel : hotels) {
             int totalTravelTime = 0;
             for (Activity activity : selectedActivities) {
-                int travelTime = TravelTimeCalculator.calculateTravelTime(hotel.getLocation(), activity.getLocation());
+                int travelTime = TravelTimeCalculator.calculateTravelTime(hotel.getLocation(), activity.getLocation());// Google maps API HER
                 totalTravelTime += travelTime;
             }
             hotel.setTotalTravelTime(totalTravelTime); // Store total travel time in the hotel object
