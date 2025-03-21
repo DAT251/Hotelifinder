@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import Link from 'next/link';
 import { VenueCard } from '@/components/venueCard';
 import { Header } from '@/components/header';
