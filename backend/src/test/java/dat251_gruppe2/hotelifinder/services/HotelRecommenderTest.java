@@ -2,12 +2,37 @@ package dat251_gruppe2.hotelifinder.services;
 import dat251_gruppe2.hotelifinder.domain.Activity;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 import dat251_gruppe2.hotelifinder.domain.Location;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.List;
 
 public class HotelRecommenderTest {
+
+    List<Hotel> hotels ;
+    List<Activity> selectedActivities;
+
+    @BeforeEach
+    public void setup(){
+
+        Activity hiking = new Activity("Hiking", new Location(59.9139, 10.7522));
+        Activity swimming = new Activity("Swimming", new Location(59.9145, 10.7510));
+        Activity sightseeing = new Activity("Sightseeing", new Location(59.9200, 10.7600));
+
+        Hotel hotel1 = new Hotel("Vetles hus", new Location(59.9139, 10.7522));
+        Hotel hotel2 = new Hotel("Magnus hus", new Location(59.9200, 10.7600));
+
+        hotels = List.of(hotel1, hotel2);
+        selectedActivities = List.of(hiking, swimming, sightseeing);
+
+        HotelRecommender recommender = new HotelRecommender(hotels);
+    }
+
+    @BeforeAll
+    public static void setupAll(){
+    }
 
     @Test
     void testRecommendHotels_SingleActivity() {
