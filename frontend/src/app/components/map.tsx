@@ -128,6 +128,7 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
     setHotels([]);
     setShowInitialMarkers(true);
     setSelectedHotel(null);
+    directionsRenderers.forEach(renderer => renderer.setMap(null));
     setDirectionsRenderers([]);
     transportLabels.forEach(label => label.setMap(null));
     setTransportLabels([]);
