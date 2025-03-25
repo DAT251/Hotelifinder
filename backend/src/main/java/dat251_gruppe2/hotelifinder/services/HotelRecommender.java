@@ -1,38 +1,82 @@
 package dat251_gruppe2.hotelifinder.services;
+
 import dat251_gruppe2.hotelifinder.domain.Activity;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 
 import java.util.*;
 
 public class HotelRecommender {
+    /**
+     * Input hotels
+     */
     private List<Hotel> hotels;
-
-    public HotelRecommender(List<Hotel> hotels) {
-        this.hotels = hotels;
-    }
+    /**
+     * Input activities
+     */
+    private List<Activity> selectedActivities;
 
     /**
-     * Recommends hotels based on the least total travel time to selected activities.
-     *
-     * @param selectedActivities The activities selected by the user.
-     * @return A list of hotels sorted by total travel time (ascending order).
+     * Calculated recommendations.
+     * This contains hotels with their total travel time.
      */
-    public List<Hotel> recommendHotels(List<Activity> selectedActivities) {
-        List<Hotel> recommendedHotels = new ArrayList<>();
+    private Map<Hotel, Integer> recommendations;
+    /**
+     * The same hotels as input, sorted by total travel time.
+     */
+    private List<Hotel> sortedHotels;
+
+    /**
+     * The strategy to calculate distance.
+     * To be changed to Google API in production.
+     */
+    private TravelTimeCalculator travelTimeService = new RawDistanceTravelTime();
+
+    public HotelRecommender(List<Hotel> hotels, List<Activity> selectedActivities) {
+        this.hotels = hotels;
+        this.selectedActivities = selectedActivities;
+
+        this.recommendations = calculateRecommendations();
+        this.sortedHotels = sortHotels(recommendations);
+    }
+
+    private Map<Hotel, Integer> calculateRecommendations() {
+        HashMap<Hotel, Integer> recommendations = new HashMap<Hotel, Integer>();
 
         for (Hotel hotel : hotels) {
             int totalTravelTime = 0;
             for (Activity activity : selectedActivities) {
-                int travelTime = TravelTimeCalculator.calculateTravelTime(hotel.getLocation(), activity.getLocation());// Google maps API HER
+                Integer travelTime = travelTimeService.calculateTravelTime(
+                        hotel.getLocation(),
+                        activity.getLocation());
                 totalTravelTime += travelTime;
             }
-            hotel.setTotalTravelTime(totalTravelTime); // Store total travel time in the hotel object
-            recommendedHotels.add(hotel);
+            recommendations.put(hotel, totalTravelTime);
         }
 
-        // Sort hotels by total travel time (ascending order)
-        recommendedHotels.sort(Comparator.comparingInt(Hotel::getTotalTravelTime));
+        return recommendations;
+    }
 
-        return recommendedHotels;
+    private List<Hotel> sortHotels(Map<Hotel, Integer> recommendations) {
+        sortedHotels = new ArrayList<Hotel>(recommendations.keySet());
+        sortedHotels.sort(Comparator.comparingInt(recommendations::get));
+        return sortedHotels;
+    }
+
+    public Hotel getBestHotel() {
+        Hotel hotel = this.sortedHotels.getFirst();
+        return hotel;
+    }
+
+    /**
+     * Get the recommended hotels.
+     *
+     * @return A list of hotels sorted by total travel time (ascending order).
+     */
+    public List<Hotel> getHotels() {
+        return sortedHotels;
+    }
+
+    public Integer getTravelTime(Hotel hotel) {
+        return recommendations.get(hotel);
     }
 }

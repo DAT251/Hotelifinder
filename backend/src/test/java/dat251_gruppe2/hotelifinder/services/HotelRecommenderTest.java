@@ -1,9 +1,8 @@
 package dat251_gruppe2.hotelifinder.services;
+
 import dat251_gruppe2.hotelifinder.domain.Activity;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 import dat251_gruppe2.hotelifinder.domain.Location;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -22,22 +21,25 @@ public class HotelRecommenderTest {
 
     @Test
     void singleActivity() {
-        HotelRecommender recommender = new HotelRecommender(hotels);
-
         List<Activity> selectedActivities = List.of(hiking);
 
-        List<Hotel> recommendedHotels = recommender.recommendHotels(selectedActivities);
+        HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
 
-        // Since hotel1 is at the activity location, its travel time should be minimal or zero.
-        assertTrue(recommendedHotels.stream().anyMatch(hotel -> hotel.getName().equals("Vetles hus") && hotel.getTotalTravelTime() <= 1));
+        Hotel bestMatch = recommender.getBestHotel();
+
+        // Since hotel1 is at the activity location, its travel time should be minimal
+        // or zero.
+        assertTrue(bestMatch.getName().equals("Vetles hus"));
+        assertTrue(recommender.getTravelTime(bestMatch) <= 1);
     }
+
     @Test
     void allHotelsRecommended() {
-        HotelRecommender recommender = new HotelRecommender(hotels);
-
         List<Activity> selectedActivities = List.of(hiking);
 
-        List<Hotel> recommendedHotels = recommender.recommendHotels(selectedActivities);
+        HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
+
+        List<Hotel> recommendedHotels = recommender.getHotels();
 
         assertEquals(2, recommendedHotels.size()); // Both hotels should be recommended
         assertTrue(recommendedHotels.contains(hotel1));
@@ -45,25 +47,26 @@ public class HotelRecommenderTest {
     }
 
     @Test
-    void travelTime() {
-        HotelRecommender recommender = new HotelRecommender(hotels);
+    void travelTimeAboveZero() {
 
         List<Activity> selectedActivities = List.of(hiking, swimming, sightseeing);
-        List<Hotel> recommendedHotels = recommender.recommendHotels(selectedActivities);
+        HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
 
-        //Verify that the total travel time is calculated.
-        assertTrue(recommendedHotels.stream().allMatch(hotel -> hotel.getTotalTravelTime() >= 0));
+        List<Hotel> recommendedHotels = recommender.getHotels();
+
+        // Verify that the total travel time is calculated.
+        assertTrue(recommendedHotels.stream().allMatch(hotel -> recommender.getTravelTime(hotel) >= 0));
     }
 
     @Test
     void emptyHotelList() {
         List<Hotel> hotels = List.of();
-        HotelRecommender recommender = new HotelRecommender(hotels);
-
         List<Activity> selectedActivities = List.of(hiking);
-        List<Hotel> recommendedHotels = recommender.recommendHotels(selectedActivities);
+
+        HotelRecommender recommender = new HotelRecommender(hotels, selectedActivities);
+
+        List<Hotel> recommendedHotels = recommender.getHotels();
 
         assertTrue(recommendedHotels.isEmpty()); // Should return an empty list when no hotels are available.
     }
-
 }
