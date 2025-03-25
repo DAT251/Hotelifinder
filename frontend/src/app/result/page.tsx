@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Header } from '@/components/header';
 import Hotel from '@/components/hotel';
 import MapComponent from '@/components/map';
-import { Suspense } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 
 export default function ResultPage() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
