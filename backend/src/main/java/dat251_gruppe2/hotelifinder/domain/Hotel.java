@@ -1,20 +1,17 @@
 package dat251_gruppe2.hotelifinder.domain;
 
-public class Hotel  {
+public class Hotel {
 
 	private String name;
 	private String website;
 	private Location location;
-	private int  totalTravelTime;
 	private String postalCode;
 	private String streetName;
 	private Integer streetNumber;
 
-
 	public Hotel(String name, Location location) {
 		this.location = location;
 		this.name = name;
-		this.totalTravelTime = 0;
 	}
 
 	public void setLocation(Location location) {
@@ -49,14 +46,6 @@ public class Hotel  {
 		return name;
 	}
 
-	public int getTotalTravelTime() {
-		return totalTravelTime;
-	}
-
-	public void setTotalTravelTime(int totalTravelTime) {
-		this.totalTravelTime = totalTravelTime;
-	}
-
 	public Location getLocation() {
 		return location;
 	}
@@ -65,7 +54,6 @@ public class Hotel  {
 		this.name = name;
 	}
 
-
 	public String getWebsite() {
 		return website;
 	}
@@ -73,7 +61,5 @@ public class Hotel  {
 	public void setWebsite(String website) {
 		this.website = website;
 	}
-
-
 
 }
