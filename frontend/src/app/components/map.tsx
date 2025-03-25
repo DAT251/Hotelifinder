@@ -10,13 +10,17 @@ import Image from 'next/image';
 
 const api_key = process.env.NEXT_PUBLIC_API_KEY;
 const zoom = 12;
-const center = { lat: 59.9139, lng: 10.7522 };
+let center = { lat: 59.9139, lng: 10.7522 };
 
 interface MapContentProps {
   selectedVenues: Venue[];
 }
 
 const MapContent = ({ selectedVenues  }: MapContentProps) => {
+  const city = useSearchParams().get('city')?.toLowerCase();
+
+  if (city === 'bergen') {center = { lat: 60.3913, lng: 5.3221 };} 
+  else if (city === 'trondheim') {center = { lat: 63.4305, lng: 10.3951 };} 
   const [hotels, setHotels] = useState<any[]>([]);
   const [selectedPoint, setSelectedPoint] = useState<{ name: string; lat: number; lng: number } | null>(null);
   const [showInitialMarkers, setShowInitialMarkers] = useState(true);
@@ -340,9 +344,19 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
 };
 
 export default function MapComponent() {
-  const searchParams = useSearchParams();
-  const venuesParam = searchParams.get('venues');
-  const selectedVenues = venuesParam ? JSON.parse(venuesParam) : [];
+  const [selectedVenues, setSelectedVenues] = useState<Venue[]>([]);
+
+useEffect(() => {
+  const storedVenues = localStorage.getItem("selectedVenues");
+  if (storedVenues) {
+    try {
+      setSelectedVenues(JSON.parse(storedVenues));
+    } catch (err) {
+      console.error("Error parsing stored venues:", err);
+    }
+  }
+}, []);
+
 
   return (
       <div>
