@@ -3,8 +3,6 @@ package dat251_gruppe2.hotelifinder.services;
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 import dat251_gruppe2.hotelifinder.domain.Location;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -40,11 +38,14 @@ public class HotelRecommenderTest {
         assertTrue(bestMatch.getName().equals("Vetles hus"));
         assertTrue(recommender.getTravelTime(bestMatch) <= 1);
     }
+
     @Test
     void allHotelsRecommended() {
         List<Venue> selectedActivities = List.of(hiking);
 
         HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
+
+        List<Hotel> recommendedHotels = recommender.getHotels();
 
         List<Hotel> recommendedHotels = recommender.getHotels();
 
