@@ -47,7 +47,6 @@ public class Venue {
 	}
 
 
-
 	public Venue() {
 	}
 

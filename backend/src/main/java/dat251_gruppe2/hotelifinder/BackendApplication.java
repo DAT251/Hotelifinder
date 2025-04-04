@@ -3,7 +3,6 @@ package dat251_gruppe2.hotelifinder;
 import dat251_gruppe2.hotelifinder.domain.*;
 import dat251_gruppe2.hotelifinder.repositories.HotelRepository;
 import dat251_gruppe2.hotelifinder.repositories.UserRepository;
-import dat251_gruppe2.hotelifinder.services.HotelRecommender;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -29,8 +28,6 @@ public class BackendApplication {
 	private void initDatabase() {
 		User user1 = new User("user1", "password");
 		User user2 = new User("user2", "password");
-
-
 
 		userRepository.saveAll(List.of(user1, user2));
 
