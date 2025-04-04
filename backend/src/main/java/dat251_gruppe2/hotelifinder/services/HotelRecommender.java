@@ -1,6 +1,6 @@
 package dat251_gruppe2.hotelifinder.services;
 
-import dat251_gruppe2.hotelifinder.domain.Activity;
+import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 
 import java.util.*;
@@ -13,7 +13,7 @@ public class HotelRecommender {
     /**
      * Input activities
      */
-    private List<Activity> selectedActivities;
+    private List<Venue> selectedActivities;
 
     /**
      * Calculated recommendations.
@@ -31,7 +31,7 @@ public class HotelRecommender {
      */
     private TravelTimeCalculator travelTimeService = new RawDistanceTravelTime();
 
-    public HotelRecommender(List<Hotel> hotels, List<Activity> selectedActivities) {
+    public HotelRecommender(List<Hotel> hotels, List<Venue> selectedActivities) {
         this.hotels = hotels;
         this.selectedActivities = selectedActivities;
 
@@ -44,10 +44,10 @@ public class HotelRecommender {
 
         for (Hotel hotel : hotels) {
             int totalTravelTime = 0;
-            for (Activity activity : selectedActivities) {
+            for (Venue venue : selectedActivities) {
                 Integer travelTime = travelTimeService.calculateTravelTime(
                         hotel.getLocation(),
-                        activity.getLocation());
+                        venue.getLocation());
                 totalTravelTime += travelTime;
             }
             recommendations.put(hotel, totalTravelTime);
