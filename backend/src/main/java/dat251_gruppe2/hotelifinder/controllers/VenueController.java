@@ -1,7 +1,5 @@
 package dat251_gruppe2.hotelifinder.controllers;
 
-
-import dat251_gruppe2.hotelifinder.domain.Address;
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -64,33 +62,29 @@ public class VenueController {
         tags4.add("Museum");
         venue4.setTags(tags4);
 
-
         venues.put(1L, venue1);
         venues.put(2L, venue2);
         venues.put(3L, venue3);
         venues.put(4L, venue4);
     }
 
-   @GetMapping
-   public ResponseEntity<Collection<Venue>> getVenues(){
-       if (venues.isEmpty()) {
-           return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
-       }
+    @GetMapping
+    public ResponseEntity<Collection<Venue>> getVenues() {
+        if (venues.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+        }
 
-       return ResponseEntity.ok(venues.values());
+        return ResponseEntity.ok(venues.values());
 
-   }
+    }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Venue> getVenues(@PathVariable Long id){
+    public ResponseEntity<Venue> getVenues(@PathVariable Long id) {
         if (!venues.containsKey(id)) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
         return ResponseEntity.ok(venues.get(id));
 
-
     }
-
-
 
 }

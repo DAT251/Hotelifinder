@@ -1,13 +1,25 @@
 package dat251_gruppe2.hotelifinder.domain;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "hotels")
 public class Hotel {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 
 	private String name;
 	private String website;
+	@Embedded
 	private Location location;
 	private String postalCode;
 	private String streetName;
 	private Integer streetNumber;
+
+	public Hotel() {
+	}
 
 	public Hotel(String name, Location location) {
 		this.location = location;
