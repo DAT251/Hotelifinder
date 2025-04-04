@@ -1,6 +1,6 @@
 package dat251_gruppe2.hotelifinder.services;
 
-import dat251_gruppe2.hotelifinder.domain.Activity;
+import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 import dat251_gruppe2.hotelifinder.domain.Location;
 import org.junit.jupiter.api.Test;
@@ -13,15 +13,21 @@ public class HotelRecommenderTest {
     private final Hotel hotel1 = new Hotel("Vetles hus", new Location(59.9139, 10.7522));
     private final Hotel hotel2 = new Hotel("Magnus hus", new Location(59.9200, 10.7600));
 
-    private final Activity hiking = new Activity("Hiking", new Location(59.9139, 10.7522));
-    private final Activity swimming = new Activity("Swimming", new Location(59.9145, 10.7510));
-    private final Activity sightseeing = new Activity("Sightseeing", new Location(59.9200, 10.7600));
+    private Venue hiking = new Venue();
+    private Venue swimming = new Venue();
+    private Venue sightseeing = new Venue();
 
     private final List<Hotel> hotels = List.of(hotel1, hotel2);
 
+    HotelRecommenderTest() {
+        this.hiking.setLocation(new Location(59.9139, 10.7522));
+        this.swimming.setLocation(new Location(59.9145, 10.7510));
+        this.sightseeing.setLocation(new Location(59.9200, 10.7600));
+    }
+
     @Test
-    void singleActivity() {
-        List<Activity> selectedActivities = List.of(hiking);
+    void singleVenue() {
+        List<Venue> selectedActivities = List.of(hiking);
 
         HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
 
@@ -35,7 +41,7 @@ public class HotelRecommenderTest {
 
     @Test
     void allHotelsRecommended() {
-        List<Activity> selectedActivities = List.of(hiking);
+        List<Venue> selectedActivities = List.of(hiking);
 
         HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
 
@@ -49,7 +55,7 @@ public class HotelRecommenderTest {
     @Test
     void travelTimeAboveZero() {
 
-        List<Activity> selectedActivities = List.of(hiking, swimming, sightseeing);
+        List<Venue> selectedActivities = List.of(hiking, swimming, sightseeing);
         HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
 
         List<Hotel> recommendedHotels = recommender.getHotels();
@@ -61,7 +67,7 @@ public class HotelRecommenderTest {
     @Test
     void emptyHotelList() {
         List<Hotel> hotels = List.of();
-        List<Activity> selectedActivities = List.of(hiking);
+        List<Venue> selectedActivities = List.of(hiking);
 
         HotelRecommender recommender = new HotelRecommender(hotels, selectedActivities);
 
