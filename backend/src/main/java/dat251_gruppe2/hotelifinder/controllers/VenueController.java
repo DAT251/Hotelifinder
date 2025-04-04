@@ -1,5 +1,6 @@
 package dat251_gruppe2.hotelifinder.controllers;
 
+import dat251_gruppe2.hotelifinder.domain.Location;
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.services.VenueService;
 import org.springframework.http.HttpStatus;
