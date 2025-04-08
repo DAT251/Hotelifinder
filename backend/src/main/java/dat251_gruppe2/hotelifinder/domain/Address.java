@@ -1,5 +1,7 @@
 package dat251_gruppe2.hotelifinder.domain;
+import jakarta.persistence.*;
 
+@Embeddable
 public class Address {
 
 	private String postalCode;

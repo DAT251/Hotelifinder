@@ -11,8 +11,9 @@ public class Venue {
 	//private String website;
 	private String imageURL;
 	private List<String> tags = new ArrayList<>();
-	private String postalCode;
 	private Location location;
+	private Address address;
+
 
 	public Location getLocation() {
 		return location;
@@ -23,31 +24,30 @@ public class Venue {
 	}
 
 	public Integer getStreetNumber() {
-		return streetNumber;
+		return this.address.getStreetNumber();
 	}
 
 	public void setStreetNumber(Integer streetNumber) {
-		this.streetNumber = streetNumber;
+		this.address.setStreetNumber(streetNumber);
 	}
 
 	public String getStreetName() {
-		return streetName;
+		return this.address.getStreetName();
 	}
 
 	public void setStreetName(String streetName) {
-		this.streetName = streetName;
+		this.address.setStreetName(streetName);
 	}
 
 	public String getPostalCode() {
-		return postalCode;
+		return this.address.getPostalCode();
 	}
 
 	public void setPostalCode(String postalCode) {
-		this.postalCode = postalCode;
+		this.address.setPostalCode(postalCode);
 	}
 
-	private String streetName;
-	private Integer streetNumber;
+
 
 	public Venue() {
 	}
