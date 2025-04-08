@@ -17,11 +17,10 @@ import java.util.stream.Collectors;
 @CrossOrigin
 public class VenueController {
 
-    @Autowired
     private final VenueService venueService;
 
-    public VenueController() throws IOException {
-       venueService = new VenueService();
+    public VenueController(VenueService venueService) {
+       this.venueService = venueService;
     }
 
     @GetMapping
