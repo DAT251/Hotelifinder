@@ -14,9 +14,9 @@ public class Hotel {
 	private String website;
 	@Embedded
 	private Location location;
-	private String postalCode;
-	private String streetName;
-	private Integer streetNumber;
+
+	@Embedded
+	private Address address;
 
 	public Hotel() {
 	}
@@ -31,27 +31,27 @@ public class Hotel {
 	}
 
 	public String getPostalCode() {
-		return postalCode;
+		return this.address.getPostalCode();
 	}
 
 	public void setPostalCode(String postalCode) {
-		this.postalCode = postalCode;
+		this.address.setPostalCode(postalCode);
 	}
 
 	public String getStreetName() {
-		return streetName;
+		return this.address.getStreetName();
 	}
 
 	public void setStreetName(String streetName) {
-		this.streetName = streetName;
+		this.address.setStreetName(streetName);
 	}
 
 	public Integer getStreetNumber() {
-		return streetNumber;
+		return this.address.getStreetNumber();
 	}
 
 	public void setStreetNumber(Integer streetNumber) {
-		this.streetNumber = streetNumber;
+		this.address.setStreetNumber(streetNumber);
 	}
 
 	public String getName() {
@@ -74,4 +74,11 @@ public class Hotel {
 		this.website = website;
 	}
 
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 }
