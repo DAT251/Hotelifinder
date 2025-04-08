@@ -21,9 +21,6 @@ public class Hotel {
 	public Hotel() {
 	}
 
-	public Hotel() {
-	}
-
 	public Hotel(String name, Location location) {
 		this.location = location;
 		this.name = name;

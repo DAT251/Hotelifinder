@@ -47,8 +47,6 @@ public class HotelRecommenderTest {
 
         List<Hotel> recommendedHotels = recommender.getHotels();
 
-        List<Hotel> recommendedHotels = recommender.getHotels();
-
         assertEquals(2, recommendedHotels.size()); // Both hotels should be recommended
         assertTrue(recommendedHotels.contains(hotel1));
         assertTrue(recommendedHotels.contains(hotel2));
