@@ -14,9 +14,10 @@ let center = { lat: 59.9139, lng: 10.7522 };
 
 interface MapContentProps {
   selectedVenues: Venue[];
+  recommendedHotels?: { name: string; lat: number; lng: number }[];
 }
 
-const MapContent = ({ selectedVenues  }: MapContentProps) => {
+const MapContent = ({ selectedVenues, recommendedHotels  }: MapContentProps) => {
   const city = useSearchParams().get('city')?.toLowerCase();
 
   if (city === 'bergen') {center = { lat: 60.3913, lng: 5.3221 };} 
@@ -30,6 +31,7 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
   const [directionsRenderers, setDirectionsRenderers] = useState<any[]>([]);
   const [directionsService, setDirectionsService] = useState<any>(null);
   const [transportLabels, setTransportLabels] = useState<any[]>([]);
+
 
 
   useEffect(() => {
@@ -270,6 +272,23 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
               />
           ))}
 
+          {recommendedHotels?.map((hotel, index) => {
+            const iconNumber = (index % 3) + 1;
+            const iconUrl = `http://localhost:8080/images/img_${iconNumber}.png`;
+
+            return (
+                <Marker
+                    key={`recommended-${index}`}
+                    position={{ lat: hotel.lat, lng: hotel.lng }}
+                    title={hotel.name}
+                    icon={{
+                      url: iconUrl,
+                      scaledSize: new window.google.maps.Size(50, 50),
+                    }}
+                />
+            );
+          })}
+
           {selectedHotel && selectedHotel.geometry && selectedHotel.geometry.location && (
               <InfoWindow
                   position={{
@@ -343,7 +362,7 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
   );
 };
 
-export default function MapComponent() {
+export default function MapComponent({ recommendedHotels }: { recommendedHotels?: { name: string; lat: number; lng: number }[] }) {
   const [selectedVenues, setSelectedVenues] = useState<Venue[]>([]);
 
 useEffect(() => {
@@ -361,7 +380,7 @@ useEffect(() => {
   return (
       <div>
         <APIProvider apiKey={api_key as string} libraries={['places']}>
-          <MapContent selectedVenues={selectedVenues} />
+          <MapContent selectedVenues={selectedVenues} recommendedHotels={recommendedHotels}/>
         </APIProvider>
       </div>
   );

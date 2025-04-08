@@ -73,7 +73,7 @@ public class HotelRecommender {
      * @return A list of hotels sorted by total travel time (ascending order).
      */
     public List<Hotel> getHotels() {
-        return sortedHotels;
+        return sortedHotels.stream().limit(3).toList();
     }
 
     public Integer getTravelTime(Hotel hotel) {

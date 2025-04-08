@@ -1,16 +1,30 @@
 'use client';
-import Link from 'next/link';
+
 import { Header } from '@/components/header';
-import Hotel from '@/components/hotel';
 import MapComponent from '@/components/map';
 import { Suspense, useEffect, useState } from 'react';
 import HotelRecommendations from '@/components/hotelRecommendations';
 
+type HotelData = {
+    name: string;
+    location: {
+        latitude: number;
+        longitude: number;
+    };
+    address: {
+        postalCode: string;
+        streetName: string;
+        streetNumber: number;
+    };
+};
 
 export default function ResultPage() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [selectedVenues, setSelectedVenues] = useState([]);
-  useEffect(() => {
+  const [recommendedHotels, setRecommendedHotels] = useState<HotelData[]>([]);
+
+
+    useEffect(() => {
     const storedVenues = localStorage.getItem("selectedVenues");
     if (storedVenues) {
       setSelectedVenues(JSON.parse(storedVenues));
@@ -23,12 +37,16 @@ export default function ResultPage() {
         <div className='flex flex-row justify-around items-center h-full'>
             {/* left side */}
             <div className='flex flex-col gap-y-8'>
-                <HotelRecommendations/>
+                <HotelRecommendations onHotelsFetched={(hotels) => setRecommendedHotels(hotels)} />
             </div>
             {/* right side */}
             <div>
                 <Suspense fallback={<div>Loading map...</div>}>
-                    <MapComponent/>
+                    <MapComponent recommendedHotels={recommendedHotels.map(hotel => ({
+                        name: hotel.name,
+                        lat: hotel.location.latitude,
+                        lng: hotel.location.longitude
+                    }))} />
                 </Suspense>
             </div>
         </div>

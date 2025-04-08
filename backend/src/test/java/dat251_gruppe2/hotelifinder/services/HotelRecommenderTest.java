@@ -1,5 +1,6 @@
 package dat251_gruppe2.hotelifinder.services;
 
+import dat251_gruppe2.hotelifinder.domain.Address;
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 import dat251_gruppe2.hotelifinder.domain.Location;
@@ -10,8 +11,8 @@ import java.util.List;
 
 public class HotelRecommenderTest {
 
-    private final Hotel hotel1 = new Hotel("Vetles hus", new Location(59.9139, 10.7522));
-    private final Hotel hotel2 = new Hotel("Magnus hus", new Location(59.9200, 10.7600));
+    private final Hotel hotel1 = new Hotel("Vetles hus", new Location(59.9139, 10.7522), new Address());
+    private final Hotel hotel2 = new Hotel("Magnus hus", new Location(59.9200, 10.7600), new Address());
 
     private Venue hiking = new Venue();
     private Venue swimming = new Venue();
