@@ -12,6 +12,7 @@ public class Venue {
 	private String imageURL;
 	private List<String> tags = new ArrayList<>();
 	private Location location;
+	private Address address;
 
 
 	public Location getLocation() {
@@ -45,6 +46,7 @@ public class Venue {
 	public void setPostalCode(String postalCode) {
 		this.address.setPostalCode(postalCode);
 	}
+
 
 
 	public Venue() {
