@@ -7,7 +7,6 @@ public class Venue {
 
 	private String name;
 	private Address address;
-	private String city;
 	//private String website;
 	private String imageURL;
 	private List<String> tags = new ArrayList<>();
@@ -52,14 +51,15 @@ public class Venue {
 	}
 
 	/*
-	 * public String getWebsite() {
-	 * return website;
-	 * }
-	 * 
-	 * public void setWebsite(String website) {
-	 * this.website = website;
-	 * }
-	 */
+	public String getWebsite() {
+		return website;
+	}
+
+	public void setWebsite(String website) {
+		this.website = website;
+	}
+	*/
+
 
 	public String getImageURL() {
 		return imageURL;
@@ -73,16 +73,16 @@ public class Venue {
 		return name;
 	}
 
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public List<String> getTags() {
