@@ -8,9 +8,6 @@ public class Location {
 	private double latitude;
 	private double longitude;
 
-	private double latitude;
-	private double longitude;
-
 	// Constructor, getters, and setters
 	public Location() {
 	}
