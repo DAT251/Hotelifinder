@@ -3,10 +3,12 @@ package dat251_gruppe2.hotelifinder.controllers;
 import dat251_gruppe2.hotelifinder.domain.Location;
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.services.VenueService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,10 +16,12 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/v1/venues")
 @CrossOrigin
 public class VenueController {
+
+    @Autowired
     private final VenueService venueService;
 
-    public VenueController(VenueService venueService) {
-        this.venueService = venueService;
+    public VenueController() throws IOException {
+       venueService = new VenueService();
     }
 
     @GetMapping

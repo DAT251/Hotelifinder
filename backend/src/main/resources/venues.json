@@ -8,6 +8,10 @@
             "streetNumber": 2,
             "postalCode": "5171"
         },
+        "location": {
+            "latitude": 60.3962,
+            "longitude": 5.3094
+        },
         "tags": ["Shopping", "Waterpark", "Bowling"]
     },
 
@@ -20,6 +24,10 @@
             "streetNumber": 82,
             "postalCode": "5239"
         },
+        "location": {
+        "latitude": 6685881.5643,
+        "longitude": 5.3100442
+    },
         "tags": ["Golf"]
     },
     {
@@ -30,7 +38,10 @@
             "streetName": "Folke Bernadottes vei",
             "streetNumber": 52,
             "postalCode": "5147"
-        },
+        },    "location": {
+        "latitude": 60.3489559,
+        "longitude": 5.2917955
+    },
         "tags": ["Shopping", "Museum"]
     },
     {
@@ -41,7 +52,10 @@
             "streetName": "Laguneveien",
             "streetNumber": 3,
             "postalCode": "5239"
-        },
+        }, "location": {
+        "latitude": 60.2962474,
+        "longitude": 5.3273734
+    },
         "tags": ["Shopping", "Cinema"]
     },
     {
@@ -52,6 +66,10 @@
             "streetName": "Jernbanetorget",
             "streetNumber": 1,
             "postalCode": "0154"
+        },
+        "location": {
+            "latitude": 59.9108748,
+            "longitude": 10.7507367
         },
         "tags": ["Shopping", "Sightseeing", "Opera"]
     },
@@ -64,8 +82,14 @@
             "streetNumber": 40,
             "postalCode": "0747"
         },
+        "location": {
+        "latitude": 59.9647125,
+        "longitude": 10.6665728
+    },
+
         "tags": ["Museum", "Sports"]
     },
+
     {
         "name": "Frogner",
         "city": "Oslo",
@@ -75,6 +99,10 @@
             "streetNumber": 1,
             "postalCode": "0266"
         },
+        "location": {
+        "latitude": 59.922676,
+        "longitude": 10.7055405
+    },
         "tags": ["Park", "Museum"]
     },
     {
@@ -85,6 +113,10 @@
             "streetName": "Sognsveien",
             "streetNumber": 75,
             "postalCode": "0855"
+        },
+        "location": {
+            "latitude": 59.9485577,
+            "longitude": 10.7328228
         },
         "tags": ["Football", "Concerts"]
     },
@@ -97,6 +129,10 @@
             "streetNumber": 2,
             "postalCode": "7013"
         },
+        "location": {
+            "latitude": 63.4305,
+            "longitude": 10.3951
+        },
         "tags": ["Sightseeing"]
     },
     {
@@ -107,6 +143,10 @@
             "streetName": "Sverresborg Alle",
             "streetNumber": 13,
             "postalCode": "7020"
+        },
+        "location": {
+            "latitude": 63.4261,
+            "longitude": 10.3922
         },
         "tags": ["Museum", "Hiking"]
     },
@@ -119,6 +159,10 @@
             "streetNumber": 73,
             "postalCode": "7068"
         },
+        "location": {
+            "latitude": 63.4305,
+            "longitude": 10.3951
+        },
         "tags": ["Theater"]
     },
     {
@@ -129,6 +173,10 @@
             "streetName": "Olav Tryggvasons gt",
             "streetNumber": 28,
             "postalCode": "7011"
+        },
+        "location": {
+            "latitude": 63.4305,
+            "longitude": 10.3951
         },
         "tags": ["Shopping"]
     }
