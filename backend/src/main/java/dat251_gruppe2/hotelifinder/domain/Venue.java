@@ -6,6 +6,8 @@ import java.util.List;
 public class Venue {
 
 	private String name;
+
+
 	private Address address;
 	private String city;
 	//private String website;
@@ -14,6 +16,13 @@ public class Venue {
 	private Location location;
 
 
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 
 	public Location getLocation() {
 		return location;
