@@ -59,6 +59,36 @@
         "tags": ["Shopping", "Cinema"]
     },
     {
+        "name": "Akvariet",
+        "city": "Bergen",
+        "imageURL": "http://localhost:8080/images/akvariet.png",
+        "address": {
+            "streetName": "Nordnesbakken",
+            "streetNumber": 4,
+            "postalCode": "5005"
+        },
+        "location": {
+            "latitude": 60.39707,
+            "longitude": 5.30883
+        },
+        "tags": ["Aquarium", "Family"]
+    },
+    {
+        "name": "Koengen",
+        "city": "Bergen",
+        "imageURL": "http://localhost:8080/images/koengen.png",
+        "address": {
+            "streetName": "Koengen",
+            "streetNumber": 1,
+            "postalCode": "5003"
+        },
+        "location": {
+            "latitude": 60.3971,
+            "longitude": 5.3223
+        },
+        "tags": ["Park", "Events", "Concerts"]
+    },
+    {
         "name": "Oslo Sentrum",
         "city": "Oslo",
         "imageURL": "http://localhost:8080/images/oslosentrum.jpg",
@@ -121,6 +151,36 @@
         "tags": ["Football", "Concerts"]
     },
     {
+        "name": "Tøyenbadet",
+        "city": "Oslo",
+        "imageURL": "http://localhost:8080/images/tøyenbadet.png",
+        "address": {
+            "streetName": "Helgesens gate",
+            "streetNumber": 90,
+            "postalCode": "0563"
+        },
+        "location": {
+            "latitude": 59.921,
+            "longitude": 10.776
+        },
+        "tags": ["Swimming"]
+    },
+    {
+        "name": "Aker Brygge",
+        "city": "Oslo",
+        "imageURL": "http://localhost:8080/images/akerbrygge.png",
+        "address": {
+            "streetName": "Bryggegata",
+            "streetNumber": 9,
+            "postalCode": "0250"
+        },
+        "location": {
+            "latitude": 59.90918,
+            "longitude": 10.73056
+        },
+        "tags": ["Shopping", "Dining", "Museum"]
+    },
+    {
         "name": "Nidaros Cathedral",
         "city": "Trondheim",
         "imageURL": "http://localhost:8080/images/nidaros.jpg",
@@ -179,5 +239,35 @@
             "longitude": 10.3951
         },
         "tags": ["Shopping"]
+    },
+    {
+        "name": "Rockheim",
+        "city": "Trondheim",
+        "imageURL": "http://localhost:8080/images/rockheim.png",
+        "address": {
+            "streetName": "Brattørkaia",
+            "streetNumber": 14,
+            "postalCode": "7010"
+        },
+        "location": {
+            "latitude": 63.4375,
+            "longitude": 10.4032
+        },
+        "tags": ["Museum", "Music"]
+    },
+    {
+        "name": "Ladeparken",
+        "city": "Trondheim",
+        "imageURL": "http://localhost:8080/images/ladeparken.png",
+        "address": {
+            "streetName": "Haakon VIIs gate",
+            "streetNumber": 2,
+            "postalCode": "7041"
+        },
+        "location": {
+            "latitude": 63.4451,
+            "longitude": 10.4485
+        },
+        "tags": ["Park", "Playground", "Walking"]
     }
 ]

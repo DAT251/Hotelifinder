@@ -237,7 +237,7 @@ const MapContent = ({ selectedVenues  }: MapContentProps) => {
   return (
       <>
         <Map
-            style={{ width: '60vw', height: '50vh', maxWidth: '800px' }}
+            style={{ width: '60vw', height: '80vh', maxWidth: '800px' }}
             defaultCenter={center}
             defaultZoom={zoom}
             gestureHandling={'greedy'}

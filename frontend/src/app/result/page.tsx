@@ -4,6 +4,8 @@ import { Header } from '@/components/header';
 import Hotel from '@/components/hotel';
 import MapComponent from '@/components/map';
 import { Suspense, useEffect, useState } from 'react';
+import HotelRecommendations from '@/components/hotelRecommendations';
+
 
 export default function ResultPage() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -18,21 +20,19 @@ export default function ResultPage() {
   return (
     <div className='flex flex-col h-screen justify-center'>
       <Header />
-      <div className='flex flex-row justify-around items-center'>
-        {/* left side */}
-        <div className='flex flex-col gap-y-8'>
-          <Hotel name='Fana Hotel' />
-          <Hotel name='Sentrum Hotel' />
-          <Hotel name='Vestkanten Motel' />
+        <div className='flex flex-row justify-around items-center h-full'>
+            {/* left side */}
+            <div className='flex flex-col gap-y-8'>
+                <HotelRecommendations/>
+            </div>
+            {/* right side */}
+            <div>
+                <Suspense fallback={<div>Loading map...</div>}>
+                    <MapComponent/>
+                </Suspense>
+            </div>
         </div>
-        {/* right side */}
-        <div>
-            <Suspense fallback={<div>Loading map...</div>}>
-                <MapComponent />
-            </Suspense>
-        </div>
-      </div>
-      <Link href='/booking'>Booking</Link>
+        {/* <Link href='/booking'>Booking</Link> */}
     </div>
   );
 }
