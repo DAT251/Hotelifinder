@@ -12,8 +12,15 @@ public class Venue {
 	private String imageURL;
 	private List<String> tags = new ArrayList<>();
 	private Location location;
-	private Address address;
+	private	String city;
 
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
 
 	public Location getLocation() {
 		return location;
