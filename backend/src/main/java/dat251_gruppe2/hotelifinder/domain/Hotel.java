@@ -21,38 +21,17 @@ public class Hotel {
 	public Hotel() {
 	}
 
-	public Hotel(String name, Location location) {
+	public Hotel(String name, Location location, Address address) {
 		this.location = location;
 		this.name = name;
+		this.address = address;
 	}
 
 	public void setLocation(Location location) {
 		this.location = location;
 	}
 
-	public String getPostalCode() {
-		return this.address.getPostalCode();
-	}
 
-	public void setPostalCode(String postalCode) {
-		this.address.setPostalCode(postalCode);
-	}
-
-	public String getStreetName() {
-		return this.address.getStreetName();
-	}
-
-	public void setStreetName(String streetName) {
-		this.address.setStreetName(streetName);
-	}
-
-	public Integer getStreetNumber() {
-		return this.address.getStreetNumber();
-	}
-
-	public void setStreetNumber(Integer streetNumber) {
-		this.address.setStreetNumber(streetNumber);
-	}
 
 	public String getName() {
 		return name;
