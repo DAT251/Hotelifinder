@@ -1,0 +1,3429 @@
+{
+  "metadata": {
+    "generated_at": "2025-04-10T10:49:00.854Z",
+    "hotel_count": 60,
+    "venue_count": 6
+  },
+  "hotels": [
+    {
+      "name": "Anker Hotel",
+      "location": {
+        "lat": 59.9176955,
+        "lng": 10.7579343
+      },
+      "address": {
+        "streetNumber": "55",
+        "streetName": "Storgata",
+        "postalCode": "0182"
+      },
+      "rating": 3.9,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.2 km",
+          "distance_meters": 1178,
+          "duration_text": "9 mins",
+          "duration_seconds": 565
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "12.7 km",
+          "distance_meters": 12682,
+          "duration_text": "58 mins",
+          "duration_seconds": 3501
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "4.6 km",
+          "distance_meters": 4612,
+          "duration_text": "21 mins",
+          "duration_seconds": 1268
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "7.2 km",
+          "distance_meters": 7183,
+          "duration_text": "27 mins",
+          "duration_seconds": 1623
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "1.3 km",
+          "distance_meters": 1272,
+          "duration_text": "12 mins",
+          "duration_seconds": 740
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.9 km",
+          "distance_meters": 2883,
+          "duration_text": "19 mins",
+          "duration_seconds": 1136
+        }
+      ]
+    },
+    {
+      "name": "Karl Johan Hotel",
+      "location": {
+        "lat": 59.91400759999999,
+        "lng": 10.7388541
+      },
+      "address": {
+        "streetNumber": "33",
+        "streetName": "Karl Johans gate",
+        "postalCode": "0162"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.8 km",
+          "distance_meters": 750,
+          "duration_text": "10 mins",
+          "duration_seconds": 595
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.3 km",
+          "distance_meters": 11315,
+          "duration_text": "51 mins",
+          "duration_seconds": 3033
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.5 km",
+          "distance_meters": 2527,
+          "duration_text": "13 mins",
+          "duration_seconds": 789
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.8 km",
+          "distance_meters": 5815,
+          "duration_text": "19 mins",
+          "duration_seconds": 1155
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.0 km",
+          "distance_meters": 2974,
+          "duration_text": "18 mins",
+          "duration_seconds": 1053
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.9 km",
+          "distance_meters": 884,
+          "duration_text": "13 mins",
+          "duration_seconds": 763
+        }
+      ]
+    },
+    {
+      "name": "Oslo Hotel Apartments",
+      "location": {
+        "lat": 59.91341129999999,
+        "lng": 10.7778258
+      },
+      "address": {
+        "streetNumber": "52",
+        "streetName": "Brinken",
+        "postalCode": "0654"
+      },
+      "rating": 3.7,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.1 km",
+          "distance_meters": 2143,
+          "duration_text": "11 mins",
+          "duration_seconds": 681
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "13.3 km",
+          "distance_meters": 13343,
+          "duration_text": "55 mins",
+          "duration_seconds": 3323
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "7.5 km",
+          "distance_meters": 7493,
+          "duration_text": "32 mins",
+          "duration_seconds": 1891
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.9 km",
+          "distance_meters": 6905,
+          "duration_text": "20 mins",
+          "duration_seconds": 1216
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "1.3 km",
+          "distance_meters": 1251,
+          "duration_text": "8 mins",
+          "duration_seconds": 496
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "3.8 km",
+          "distance_meters": 3841,
+          "duration_text": "23 mins",
+          "duration_seconds": 1394
+        }
+      ]
+    },
+    {
+      "name": "Scandic Byporten Oslo",
+      "location": {
+        "lat": 59.911873,
+        "lng": 10.7511217
+      },
+      "address": {
+        "streetNumber": "6",
+        "streetName": "Jernbanetorget",
+        "postalCode": "0154"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.1 km",
+          "distance_meters": 146,
+          "duration_text": "2 mins",
+          "duration_seconds": 125
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.5 km",
+          "distance_meters": 11547,
+          "duration_text": "49 mins",
+          "duration_seconds": 2913
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.7 km",
+          "distance_meters": 3749,
+          "duration_text": "17 mins",
+          "duration_seconds": 992
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.0 km",
+          "distance_meters": 6046,
+          "duration_text": "17 mins",
+          "duration_seconds": 1035
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.3 km",
+          "distance_meters": 2325,
+          "duration_text": "13 mins",
+          "duration_seconds": 796
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.0 km",
+          "distance_meters": 2020,
+          "duration_text": "14 mins",
+          "duration_seconds": 860
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Europa",
+      "location": {
+        "lat": 59.91798350000001,
+        "lng": 10.7349734
+      },
+      "address": {
+        "streetNumber": "31",
+        "streetName": "Sankt Olavs Gate",
+        "postalCode": "0166"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.7 km",
+          "distance_meters": 1687,
+          "duration_text": "10 mins",
+          "duration_seconds": 617
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "10.7 km",
+          "distance_meters": 10707,
+          "duration_text": "49 mins",
+          "duration_seconds": 2949
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.0 km",
+          "distance_meters": 3003,
+          "duration_text": "18 mins",
+          "duration_seconds": 1096
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.2 km",
+          "distance_meters": 5206,
+          "duration_text": "18 mins",
+          "duration_seconds": 1071
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.7 km",
+          "distance_meters": 3736,
+          "duration_text": "21 mins",
+          "duration_seconds": 1232
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.1 km",
+          "distance_meters": 1124,
+          "duration_text": "16 mins",
+          "duration_seconds": 976
+        }
+      ]
+    },
+    {
+      "name": "Saga Hotel Oslo, WorldHotels Crafted",
+      "location": {
+        "lat": 59.9228764,
+        "lng": 10.7204265
+      },
+      "address": {
+        "streetNumber": "39",
+        "streetName": "Eilert Sundts gate",
+        "postalCode": "0259"
+      },
+      "rating": 4.5,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.8 km",
+          "distance_meters": 2836,
+          "duration_text": "18 mins",
+          "duration_seconds": 1077
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "9.3 km",
+          "distance_meters": 9340,
+          "duration_text": "55 mins",
+          "duration_seconds": 3324
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "1.9 km",
+          "distance_meters": 1871,
+          "duration_text": "16 mins",
+          "duration_seconds": 932
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "3.8 km",
+          "distance_meters": 3844,
+          "duration_text": "24 mins",
+          "duration_seconds": 1446
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "4.8 km",
+          "distance_meters": 4849,
+          "duration_text": "28 mins",
+          "duration_seconds": 1656
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.5 km",
+          "distance_meters": 2492,
+          "duration_text": "21 mins",
+          "duration_seconds": 1280
+        }
+      ]
+    },
+    {
+      "name": "Quality Hotel Expo",
+      "location": {
+        "lat": 59.90183450000001,
+        "lng": 10.6270625
+      },
+      "address": {
+        "streetNumber": "20",
+        "streetName": "Snarøyveien",
+        "postalCode": "1360"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "9.2 km",
+          "distance_meters": 9193,
+          "duration_text": "33 mins",
+          "duration_seconds": 1950
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "18.0 km",
+          "distance_meters": 18047,
+          "duration_text": "1 hour 18 mins",
+          "duration_seconds": 4670
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "6.2 km",
+          "distance_meters": 6224,
+          "duration_text": "26 mins",
+          "duration_seconds": 1537
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "9.5 km",
+          "distance_meters": 9479,
+          "duration_text": "37 mins",
+          "duration_seconds": 2205
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "11.4 km",
+          "distance_meters": 11350,
+          "duration_text": "44 mins",
+          "duration_seconds": 2616
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "8.3 km",
+          "distance_meters": 8258,
+          "duration_text": "34 mins",
+          "duration_seconds": 2045
+        }
+      ]
+    },
+    {
+      "name": "Home Hotel Folketeateret",
+      "location": {
+        "lat": 59.9139388,
+        "lng": 10.7505243
+      },
+      "address": {
+        "streetNumber": "21-23",
+        "streetName": "Storgata",
+        "postalCode": "0184"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.4 km",
+          "distance_meters": 419,
+          "duration_text": "6 mins",
+          "duration_seconds": 332
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.7 km",
+          "distance_meters": 11680,
+          "duration_text": "51 mins",
+          "duration_seconds": 3033
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "4.0 km",
+          "distance_meters": 4028,
+          "duration_text": "18 mins",
+          "duration_seconds": 1092
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.2 km",
+          "distance_meters": 6179,
+          "duration_text": "19 mins",
+          "duration_seconds": 1155
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "1.7 km",
+          "distance_meters": 1738,
+          "duration_text": "13 mins",
+          "duration_seconds": 804
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.3 km",
+          "distance_meters": 2298,
+          "duration_text": "16 mins",
+          "duration_seconds": 960
+        }
+      ]
+    },
+    {
+      "name": "Home Hotel Gabelshus",
+      "location": {
+        "lat": 59.91372399999999,
+        "lng": 10.7089686
+      },
+      "address": {
+        "streetNumber": "16",
+        "streetName": "Gabels gate",
+        "postalCode": "0272"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.7 km",
+          "distance_meters": 2711,
+          "duration_text": "15 mins",
+          "duration_seconds": 874
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "12.0 km",
+          "distance_meters": 11955,
+          "duration_text": "59 mins",
+          "duration_seconds": 3539
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "1.3 km",
+          "distance_meters": 1264,
+          "duration_text": "12 mins",
+          "duration_seconds": 727
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.5 km",
+          "distance_meters": 6454,
+          "duration_text": "26 mins",
+          "duration_seconds": 1541
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "5.9 km",
+          "distance_meters": 5880,
+          "duration_text": "35 mins",
+          "duration_seconds": 2098
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.0 km",
+          "distance_meters": 2021,
+          "duration_text": "18 mins",
+          "duration_seconds": 1092
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Opera",
+      "location": {
+        "lat": 59.90948330000001,
+        "lng": 10.7532056
+      },
+      "address": {
+        "streetNumber": "4",
+        "streetName": "Dronning Eufemias gate",
+        "postalCode": "0191"
+      },
+      "rating": 4.4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.3 km",
+          "distance_meters": 294,
+          "duration_text": "4 mins",
+          "duration_seconds": 246
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.9 km",
+          "distance_meters": 11897,
+          "duration_text": "54 mins",
+          "duration_seconds": 3210
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.4 km",
+          "distance_meters": 3402,
+          "duration_text": "18 mins",
+          "duration_seconds": 1053
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.4 km",
+          "distance_meters": 6407,
+          "duration_text": "22 mins",
+          "duration_seconds": 1332
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.6 km",
+          "distance_meters": 2650,
+          "duration_text": "18 mins",
+          "duration_seconds": 1069
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.5 km",
+          "distance_meters": 2456,
+          "duration_text": "21 mins",
+          "duration_seconds": 1289
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Gyldenløve",
+      "location": {
+        "lat": 59.9251776,
+        "lng": 10.7223636
+      },
+      "address": {
+        "streetNumber": "20",
+        "streetName": "Bogstadveien",
+        "postalCode": "0355"
+      },
+      "rating": 4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.8 km",
+          "distance_meters": 2818,
+          "duration_text": "17 mins",
+          "duration_seconds": 996
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "9.2 km",
+          "distance_meters": 9204,
+          "duration_text": "53 mins",
+          "duration_seconds": 3176
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "1.6 km",
+          "distance_meters": 1552,
+          "duration_text": "11 mins",
+          "duration_seconds": 654
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "3.4 km",
+          "distance_meters": 3390,
+          "duration_text": "22 mins",
+          "duration_seconds": 1336
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "5.9 km",
+          "distance_meters": 5933,
+          "duration_text": "29 mins",
+          "duration_seconds": 1728
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "3.8 km",
+          "distance_meters": 3844,
+          "duration_text": "24 mins",
+          "duration_seconds": 1429
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Vika Atrium",
+      "location": {
+        "lat": 59.9112534,
+        "lng": 10.7239414
+      },
+      "address": {
+        "streetNumber": "45",
+        "streetName": "Munkedamsveien",
+        "postalCode": "0250"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.4 km",
+          "distance_meters": 2431,
+          "duration_text": "14 mins",
+          "duration_seconds": 813
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.0 km",
+          "distance_meters": 11027,
+          "duration_text": "54 mins",
+          "duration_seconds": 3252
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.1 km",
+          "distance_meters": 2086,
+          "duration_text": "13 mins",
+          "duration_seconds": 766
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.5 km",
+          "distance_meters": 5530,
+          "duration_text": "23 mins",
+          "duration_seconds": 1374
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "4.1 km",
+          "distance_meters": 4072,
+          "duration_text": "26 mins",
+          "duration_seconds": 1535
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.7 km",
+          "distance_meters": 676,
+          "duration_text": "10 mins",
+          "duration_seconds": 615
+        }
+      ]
+    },
+    {
+      "name": "Hotel Bristol",
+      "location": {
+        "lat": 59.91532169999999,
+        "lng": 10.7393716
+      },
+      "address": {
+        "streetNumber": "7",
+        "streetName": "Kristian IVs gate",
+        "postalCode": "0164"
+      },
+      "rating": 4.5,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.2 km",
+          "distance_meters": 1185,
+          "duration_text": "9 mins",
+          "duration_seconds": 528
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.3 km",
+          "distance_meters": 11302,
+          "duration_text": "50 mins",
+          "duration_seconds": 3023
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.6 km",
+          "distance_meters": 3648,
+          "duration_text": "22 mins",
+          "duration_seconds": 1307
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.8 km",
+          "distance_meters": 5802,
+          "duration_text": "19 mins",
+          "duration_seconds": 1145
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.1 km",
+          "distance_meters": 3054,
+          "duration_text": "18 mins",
+          "duration_seconds": 1072
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.1 km",
+          "distance_meters": 1063,
+          "duration_text": "15 mins",
+          "duration_seconds": 899
+        }
+      ]
+    },
+    {
+      "name": "Oslo Youth Hostel Haraldsheim",
+      "location": {
+        "lat": 59.9409861,
+        "lng": 10.7884482
+      },
+      "address": {
+        "streetNumber": "4",
+        "streetName": "Haraldsheimveien",
+        "postalCode": "0587"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "4.8 km",
+          "distance_meters": 4821,
+          "duration_text": "24 mins",
+          "duration_seconds": 1414
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "12.0 km",
+          "distance_meters": 12034,
+          "duration_text": "1 hour 5 mins",
+          "duration_seconds": 3908
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "8.2 km",
+          "distance_meters": 8224,
+          "duration_text": "42 mins",
+          "duration_seconds": 2547
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "4.9 km",
+          "distance_meters": 4907,
+          "duration_text": "21 mins",
+          "duration_seconds": 1231
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.0 km",
+          "distance_meters": 3012,
+          "duration_text": "20 mins",
+          "duration_seconds": 1173
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "6.8 km",
+          "distance_meters": 6798,
+          "duration_text": "39 mins",
+          "duration_seconds": 2349
+        }
+      ]
+    },
+    {
+      "name": "Radisson Blu Plaza Hotel, Oslo",
+      "location": {
+        "lat": 59.91240399999999,
+        "lng": 10.7559371
+      },
+      "address": {
+        "streetNumber": "3",
+        "streetName": "Sonja Henies plass",
+        "postalCode": "0185"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.5 km",
+          "distance_meters": 475,
+          "duration_text": "7 mins",
+          "duration_seconds": 402
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.7 km",
+          "distance_meters": 11703,
+          "duration_text": "51 mins",
+          "duration_seconds": 3063
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "4.4 km",
+          "distance_meters": 4388,
+          "duration_text": "23 mins",
+          "duration_seconds": 1404
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.2 km",
+          "distance_meters": 6202,
+          "duration_text": "20 mins",
+          "duration_seconds": 1185
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.1 km",
+          "distance_meters": 2062,
+          "duration_text": "16 mins",
+          "duration_seconds": 959
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.2 km",
+          "distance_meters": 2197,
+          "duration_text": "19 mins",
+          "duration_seconds": 1134
+        }
+      ]
+    },
+    {
+      "name": "Scandic Solli",
+      "location": {
+        "lat": 59.91384469999999,
+        "lng": 10.7211961
+      },
+      "address": {
+        "streetNumber": "68",
+        "streetName": "Parkveien",
+        "postalCode": "0254"
+      },
+      "rating": 3.9,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.8 km",
+          "distance_meters": 2829,
+          "duration_text": "16 mins",
+          "duration_seconds": 933
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.1 km",
+          "distance_meters": 11051,
+          "duration_text": "54 mins",
+          "duration_seconds": 3234
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "1.5 km",
+          "distance_meters": 1525,
+          "duration_text": "9 mins",
+          "duration_seconds": 549
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.6 km",
+          "distance_meters": 5554,
+          "duration_text": "23 mins",
+          "duration_seconds": 1356
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "4.8 km",
+          "distance_meters": 4770,
+          "duration_text": "27 mins",
+          "duration_seconds": 1590
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.9 km",
+          "distance_meters": 949,
+          "duration_text": "9 mins",
+          "duration_seconds": 554
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Ullevaal Stadion",
+      "location": {
+        "lat": 59.9498072,
+        "lng": 10.7361179
+      },
+      "address": {
+        "streetNumber": "77C",
+        "streetName": "Sognsveien",
+        "postalCode": "0855"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "6.3 km",
+          "distance_meters": 6306,
+          "duration_text": "20 mins",
+          "duration_seconds": 1207
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.5 km",
+          "distance_meters": 11470,
+          "duration_text": "58 mins",
+          "duration_seconds": 3450
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "4.3 km",
+          "distance_meters": 4287,
+          "duration_text": "25 mins",
+          "duration_seconds": 1528
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "0.3 km",
+          "distance_meters": 330,
+          "duration_text": "4 mins",
+          "duration_seconds": 260
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "8.3 km",
+          "distance_meters": 8282,
+          "duration_text": "30 mins",
+          "duration_seconds": 1772
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "5.8 km",
+          "distance_meters": 5762,
+          "duration_text": "26 mins",
+          "duration_seconds": 1560
+        }
+      ]
+    },
+    {
+      "name": "Scandic Sjølyst",
+      "location": {
+        "lat": 59.9204186,
+        "lng": 10.6828037
+      },
+      "address": {
+        "streetNumber": "28",
+        "streetName": "Karenslyst Allé",
+        "postalCode": "0278"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "5.3 km",
+          "distance_meters": 5302,
+          "duration_text": "17 mins",
+          "duration_seconds": 996
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "13.8 km",
+          "distance_meters": 13787,
+          "duration_text": "1 hour 4 mins",
+          "duration_seconds": 3842
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.1 km",
+          "distance_meters": 2130,
+          "duration_text": "11 mins",
+          "duration_seconds": 688
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "8.3 km",
+          "distance_meters": 8290,
+          "duration_text": "26 mins",
+          "duration_seconds": 1544
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "8.4 km",
+          "distance_meters": 8438,
+          "duration_text": "35 mins",
+          "duration_seconds": 2073
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "4.0 km",
+          "distance_meters": 4031,
+          "duration_text": "18 mins",
+          "duration_seconds": 1099
+        }
+      ]
+    },
+    {
+      "name": "Citybox Oslo",
+      "location": {
+        "lat": 59.91034560000001,
+        "lng": 10.7472907
+      },
+      "address": {
+        "streetNumber": "6",
+        "streetName": "Prinsens gate",
+        "postalCode": "0152"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.3 km",
+          "distance_meters": 268,
+          "duration_text": "4 mins",
+          "duration_seconds": 215
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.8 km",
+          "distance_meters": 11798,
+          "duration_text": "52 mins",
+          "duration_seconds": 3119
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.1 km",
+          "distance_meters": 3068,
+          "duration_text": "13 mins",
+          "duration_seconds": 778
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.3 km",
+          "distance_meters": 6297,
+          "duration_text": "21 mins",
+          "duration_seconds": 1241
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.6 km",
+          "distance_meters": 2572,
+          "duration_text": "17 mins",
+          "duration_seconds": 997
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.6 km",
+          "distance_meters": 1587,
+          "duration_text": "12 mins",
+          "duration_seconds": 722
+        }
+      ]
+    },
+    {
+      "name": "Grand Hotel Oslo",
+      "location": {
+        "lat": 59.9137238,
+        "lng": 10.7394509
+      },
+      "address": {
+        "streetNumber": "31",
+        "streetName": "Karl Johans gate",
+        "postalCode": "0159"
+      },
+      "rating": 4.4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.7 km",
+          "distance_meters": 697,
+          "duration_text": "9 mins",
+          "duration_seconds": 550
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.3 km",
+          "distance_meters": 11261,
+          "duration_text": "50 mins",
+          "duration_seconds": 2988
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.5 km",
+          "distance_meters": 2545,
+          "duration_text": "13 mins",
+          "duration_seconds": 803
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.8 km",
+          "distance_meters": 5761,
+          "duration_text": "19 mins",
+          "duration_seconds": 1110
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.9 km",
+          "distance_meters": 2921,
+          "duration_text": "17 mins",
+          "duration_seconds": 1008
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.9 km",
+          "distance_meters": 902,
+          "duration_text": "13 mins",
+          "duration_seconds": 772
+        }
+      ]
+    },
+    {
+      "name": "Radisson Blu Scandinavia Hotel, Oslo",
+      "location": {
+        "lat": 59.91857129999999,
+        "lng": 10.7339016
+      },
+      "address": {
+        "streetNumber": "30",
+        "streetName": "Holbergs gate",
+        "postalCode": "0166"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.7 km",
+          "distance_meters": 1715,
+          "duration_text": "10 mins",
+          "duration_seconds": 597
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "10.8 km",
+          "distance_meters": 10780,
+          "duration_text": "50 mins",
+          "duration_seconds": 3010
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.0 km",
+          "distance_meters": 2970,
+          "duration_text": "18 mins",
+          "duration_seconds": 1076
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.3 km",
+          "distance_meters": 5279,
+          "duration_text": "19 mins",
+          "duration_seconds": 1132
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.1 km",
+          "distance_meters": 3137,
+          "duration_text": "20 mins",
+          "duration_seconds": 1206
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.2 km",
+          "distance_meters": 1212,
+          "duration_text": "17 mins",
+          "duration_seconds": 1047
+        }
+      ]
+    },
+    {
+      "name": "Home Hotel Bastion",
+      "location": {
+        "lat": 59.90819130000001,
+        "lng": 10.7450702
+      },
+      "address": {
+        "streetNumber": "7",
+        "streetName": "Skippergata",
+        "postalCode": "0152"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.5 km",
+          "distance_meters": 539,
+          "duration_text": "7 mins",
+          "duration_seconds": 440
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "12.1 km",
+          "distance_meters": 12069,
+          "duration_text": "56 mins",
+          "duration_seconds": 3344
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.3 km",
+          "distance_meters": 3339,
+          "duration_text": "17 mins",
+          "duration_seconds": 1003
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.6 km",
+          "distance_meters": 6579,
+          "duration_text": "24 mins",
+          "duration_seconds": 1466
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.3 km",
+          "distance_meters": 3295,
+          "duration_text": "21 mins",
+          "duration_seconds": 1247
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.1 km",
+          "distance_meters": 2124,
+          "duration_text": "20 mins",
+          "duration_seconds": 1209
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Spectrum",
+      "location": {
+        "lat": 59.914075,
+        "lng": 10.7559904
+      },
+      "address": {
+        "streetNumber": "7",
+        "streetName": "Brugata",
+        "postalCode": "0186"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.6 km",
+          "distance_meters": 613,
+          "duration_text": "8 mins",
+          "duration_seconds": 508
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "12.3 km",
+          "distance_meters": 12251,
+          "duration_text": "52 mins",
+          "duration_seconds": 3110
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "4.3 km",
+          "distance_meters": 4259,
+          "duration_text": "22 mins",
+          "duration_seconds": 1293
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.8 km",
+          "distance_meters": 6751,
+          "duration_text": "21 mins",
+          "duration_seconds": 1232
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.0 km",
+          "distance_meters": 2005,
+          "duration_text": "15 mins",
+          "duration_seconds": 913
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.7 km",
+          "distance_meters": 2745,
+          "duration_text": "20 mins",
+          "duration_seconds": 1181
+        }
+      ]
+    },
+    {
+      "name": "Voksenåsen Hotell, BW Signature Collection",
+      "location": {
+        "lat": 59.9752705,
+        "lng": 10.6654984
+      },
+      "address": {
+        "streetNumber": "4",
+        "streetName": "Ullveien",
+        "postalCode": "0791"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "14.9 km",
+          "distance_meters": 14938,
+          "duration_text": "48 mins",
+          "duration_seconds": 2878
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "5.9 km",
+          "distance_meters": 5864,
+          "duration_text": "39 mins",
+          "duration_seconds": 2340
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "12.9 km",
+          "distance_meters": 12919,
+          "duration_text": "51 mins",
+          "duration_seconds": 3079
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "14.6 km",
+          "distance_meters": 14608,
+          "duration_text": "57 mins",
+          "duration_seconds": 3402
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "16.9 km",
+          "distance_meters": 16907,
+          "duration_text": "57 mins",
+          "duration_seconds": 3443
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "14.4 km",
+          "distance_meters": 14394,
+          "duration_text": "54 mins",
+          "duration_seconds": 3231
+        }
+      ]
+    },
+    {
+      "name": "Hotell Bondeheimen",
+      "location": {
+        "lat": 59.9147074,
+        "lng": 10.7403558
+      },
+      "address": {
+        "streetNumber": "2",
+        "streetName": "Kristian IVs gate",
+        "postalCode": "0159"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.1 km",
+          "distance_meters": 1103,
+          "duration_text": "8 mins",
+          "duration_seconds": 459
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.2 km",
+          "distance_meters": 11220,
+          "duration_text": "49 mins",
+          "duration_seconds": 2950
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.6 km",
+          "distance_meters": 3566,
+          "duration_text": "21 mins",
+          "duration_seconds": 1238
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.7 km",
+          "distance_meters": 5720,
+          "duration_text": "18 mins",
+          "duration_seconds": 1072
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.5 km",
+          "distance_meters": 2526,
+          "duration_text": "18 mins",
+          "duration_seconds": 1068
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.0 km",
+          "distance_meters": 1032,
+          "duration_text": "14 mins",
+          "duration_seconds": 867
+        }
+      ]
+    },
+    {
+      "name": "Comfort Hotel Børsparken",
+      "location": {
+        "lat": 59.90947989999999,
+        "lng": 10.7473541
+      },
+      "address": {
+        "streetNumber": "4",
+        "streetName": "Tollbugata",
+        "postalCode": "0152"
+      },
+      "rating": 3.8,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.3 km",
+          "distance_meters": 296,
+          "duration_text": "4 mins",
+          "duration_seconds": 239
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.8 km",
+          "distance_meters": 11839,
+          "duration_text": "53 mins",
+          "duration_seconds": 3154
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.5 km",
+          "distance_meters": 3472,
+          "duration_text": "16 mins",
+          "duration_seconds": 987
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.3 km",
+          "distance_meters": 6338,
+          "duration_text": "21 mins",
+          "duration_seconds": 1276
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.6 km",
+          "distance_meters": 2600,
+          "duration_text": "17 mins",
+          "duration_seconds": 1021
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.7 km",
+          "distance_meters": 1743,
+          "duration_text": "14 mins",
+          "duration_seconds": 855
+        }
+      ]
+    },
+    {
+      "name": "Gaustad Hotel",
+      "location": {
+        "lat": 59.95081140000001,
+        "lng": 10.7165883
+      },
+      "address": {
+        "streetNumber": "20",
+        "streetName": "Sognsvannsveien",
+        "postalCode": "0372"
+      },
+      "rating": 3.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "6.2 km",
+          "distance_meters": 6247,
+          "duration_text": "27 mins",
+          "duration_seconds": 1622
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "7.3 km",
+          "distance_meters": 7315,
+          "duration_text": "49 mins",
+          "duration_seconds": 2914
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "5.4 km",
+          "distance_meters": 5409,
+          "duration_text": "31 mins",
+          "duration_seconds": 1876
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "1.9 km",
+          "distance_meters": 1922,
+          "duration_text": "14 mins",
+          "duration_seconds": 866
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "8.8 km",
+          "distance_meters": 8764,
+          "duration_text": "36 mins",
+          "duration_seconds": 2148
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "5.7 km",
+          "distance_meters": 5711,
+          "duration_text": "33 mins",
+          "duration_seconds": 1975
+        }
+      ]
+    },
+    {
+      "name": "Ellingsen Pensjonat",
+      "location": {
+        "lat": 59.9229694,
+        "lng": 10.7224111
+      },
+      "address": {
+        "streetNumber": "25",
+        "streetName": "Holtegata",
+        "postalCode": "0355"
+      },
+      "rating": 4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.6 km",
+          "distance_meters": 2560,
+          "duration_text": "17 mins",
+          "duration_seconds": 1043
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "9.5 km",
+          "distance_meters": 9479,
+          "duration_text": "57 mins",
+          "duration_seconds": 3419
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "1.8 km",
+          "distance_meters": 1827,
+          "duration_text": "16 mins",
+          "duration_seconds": 945
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "3.7 km",
+          "distance_meters": 3665,
+          "duration_text": "26 mins",
+          "duration_seconds": 1579
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "4.9 km",
+          "distance_meters": 4872,
+          "duration_text": "28 mins",
+          "duration_seconds": 1673
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.4 km",
+          "distance_meters": 2385,
+          "duration_text": "22 mins",
+          "duration_seconds": 1299
+        }
+      ]
+    },
+    {
+      "name": "Smarthotel Oslo",
+      "location": {
+        "lat": 59.9177392,
+        "lng": 10.7366468
+      },
+      "address": {
+        "streetNumber": "26",
+        "streetName": "Sankt Olavs Gate",
+        "postalCode": "0166"
+      },
+      "rating": 3.9,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.5 km",
+          "distance_meters": 1506,
+          "duration_text": "10 mins",
+          "duration_seconds": 597
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "10.7 km",
+          "distance_meters": 10733,
+          "duration_text": "50 mins",
+          "duration_seconds": 2987
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.5 km",
+          "distance_meters": 2538,
+          "duration_text": "14 mins",
+          "duration_seconds": 813
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.2 km",
+          "distance_meters": 5232,
+          "duration_text": "18 mins",
+          "duration_seconds": 1109
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.9 km",
+          "distance_meters": 2929,
+          "duration_text": "20 mins",
+          "duration_seconds": 1206
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.1 km",
+          "distance_meters": 1134,
+          "duration_text": "16 mins",
+          "duration_seconds": 952
+        }
+      ]
+    },
+    {
+      "name": "Quality Hotel 33",
+      "location": {
+        "lat": 59.92875649999999,
+        "lng": 10.8182742
+      },
+      "address": {
+        "streetNumber": "33",
+        "streetName": "Østre Aker vei",
+        "postalCode": "0581"
+      },
+      "rating": 3.8,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "5.8 km",
+          "distance_meters": 5769,
+          "duration_text": "24 mins",
+          "duration_seconds": 1451
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "18.5 km",
+          "distance_meters": 18524,
+          "duration_text": "1 hour 16 mins",
+          "duration_seconds": 4554
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "8.9 km",
+          "distance_meters": 8904,
+          "duration_text": "42 mins",
+          "duration_seconds": 2530
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "7.8 km",
+          "distance_meters": 7772,
+          "duration_text": "26 mins",
+          "duration_seconds": 1547
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "4.6 km",
+          "distance_meters": 4596,
+          "duration_text": "27 mins",
+          "duration_seconds": 1596
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "7.5 km",
+          "distance_meters": 7474,
+          "duration_text": "36 mins",
+          "duration_seconds": 2164
+        }
+      ]
+    },
+    {
+      "name": "Scandic Vulkan",
+      "location": {
+        "lat": 59.9222391,
+        "lng": 10.7510158
+      },
+      "address": {
+        "streetNumber": "13A",
+        "streetName": "Maridalsveien",
+        "postalCode": "0178"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.9 km",
+          "distance_meters": 1936,
+          "duration_text": "13 mins",
+          "duration_seconds": 778
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "13.2 km",
+          "distance_meters": 13231,
+          "duration_text": "1 hour 2 mins",
+          "duration_seconds": 3722
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "5.7 km",
+          "distance_meters": 5742,
+          "duration_text": "30 mins",
+          "duration_seconds": 1785
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.0 km",
+          "distance_meters": 5000,
+          "duration_text": "31 mins",
+          "duration_seconds": 1844
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "5.2 km",
+          "distance_meters": 5183,
+          "duration_text": "28 mins",
+          "duration_seconds": 1653
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.6 km",
+          "distance_meters": 2618,
+          "duration_text": "27 mins",
+          "duration_seconds": 1615
+        }
+      ]
+    },
+    {
+      "name": "Hotel Continental, Oslo",
+      "location": {
+        "lat": 59.9141596,
+        "lng": 10.7335142
+      },
+      "address": {
+        "streetNumber": "24/26",
+        "streetName": "Stortingsgata",
+        "postalCode": "0117"
+      },
+      "rating": 4.6,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.6 km",
+          "distance_meters": 1649,
+          "duration_text": "10 mins",
+          "duration_seconds": 584
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "10.5 km",
+          "distance_meters": 10495,
+          "duration_text": "47 mins",
+          "duration_seconds": 2833
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.2 km",
+          "distance_meters": 2168,
+          "duration_text": "8 mins",
+          "duration_seconds": 507
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.0 km",
+          "distance_meters": 4994,
+          "duration_text": "16 mins",
+          "duration_seconds": 955
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.8 km",
+          "distance_meters": 3806,
+          "duration_text": "21 mins",
+          "duration_seconds": 1250
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.7 km",
+          "distance_meters": 680,
+          "duration_text": "10 mins",
+          "duration_seconds": 598
+        }
+      ]
+    },
+    {
+      "name": "Oslo Guldsmeden Hotels",
+      "location": {
+        "lat": 59.91229440000001,
+        "lng": 10.7192354
+      },
+      "address": {
+        "streetNumber": "78",
+        "streetName": "Parkveien",
+        "postalCode": "0254"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.6 km",
+          "distance_meters": 2631,
+          "duration_text": "16 mins",
+          "duration_seconds": 974
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.3 km",
+          "distance_meters": 11258,
+          "duration_text": "57 mins",
+          "duration_seconds": 3429
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "1.6 km",
+          "distance_meters": 1632,
+          "duration_text": "12 mins",
+          "duration_seconds": 698
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.8 km",
+          "distance_meters": 5761,
+          "duration_text": "26 mins",
+          "duration_seconds": 1551
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "4.9 km",
+          "distance_meters": 4946,
+          "duration_text": "29 mins",
+          "duration_seconds": 1740
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.1 km",
+          "distance_meters": 1083,
+          "duration_text": "11 mins",
+          "duration_seconds": 687
+        }
+      ]
+    },
+    {
+      "name": "Radisson Blu Nydalen Hotel, Oslo",
+      "location": {
+        "lat": 59.9490208,
+        "lng": 10.7659994
+      },
+      "address": {
+        "streetNumber": "33",
+        "streetName": "Nydalsveien",
+        "postalCode": "0484"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "6.0 km",
+          "distance_meters": 6036,
+          "duration_text": "16 mins",
+          "duration_seconds": 952
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "13.2 km",
+          "distance_meters": 13230,
+          "duration_text": "55 mins",
+          "duration_seconds": 3315
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "6.3 km",
+          "distance_meters": 6289,
+          "duration_text": "33 mins",
+          "duration_seconds": 1971
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "2.5 km",
+          "distance_meters": 2478,
+          "duration_text": "8 mins",
+          "duration_seconds": 467
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "4.9 km",
+          "distance_meters": 4863,
+          "duration_text": "18 mins",
+          "duration_seconds": 1097
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "7.7 km",
+          "distance_meters": 7741,
+          "duration_text": "28 mins",
+          "duration_seconds": 1665
+        }
+      ]
+    },
+    {
+      "name": "Comfort Hotel Grand Central",
+      "location": {
+        "lat": 59.9105843,
+        "lng": 10.7507837
+      },
+      "address": {
+        "streetNumber": "1",
+        "streetName": "Jernbanetorget",
+        "postalCode": "0154"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.1 km",
+          "distance_meters": 104,
+          "duration_text": "1 min",
+          "duration_seconds": 84
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.7 km",
+          "distance_meters": 11707,
+          "duration_text": "51 mins",
+          "duration_seconds": 3045
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.3 km",
+          "distance_meters": 3301,
+          "duration_text": "16 mins",
+          "duration_seconds": 968
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.2 km",
+          "distance_meters": 6206,
+          "duration_text": "19 mins",
+          "duration_seconds": 1167
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.5 km",
+          "distance_meters": 2459,
+          "duration_text": "15 mins",
+          "duration_seconds": 907
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.1 km",
+          "distance_meters": 2098,
+          "duration_text": "20 mins",
+          "duration_seconds": 1172
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Astoria",
+      "location": {
+        "lat": 59.91114099999999,
+        "lng": 10.746808
+      },
+      "address": {
+        "streetNumber": "21",
+        "streetName": "Dronningens gate",
+        "postalCode": "0154"
+      },
+      "rating": 3.9,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.3 km",
+          "distance_meters": 261,
+          "duration_text": "3 mins",
+          "duration_seconds": 206
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.8 km",
+          "distance_meters": 11773,
+          "duration_text": "52 mins",
+          "duration_seconds": 3099
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.1 km",
+          "distance_meters": 3095,
+          "duration_text": "13 mins",
+          "duration_seconds": 798
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.3 km",
+          "distance_meters": 6272,
+          "duration_text": "20 mins",
+          "duration_seconds": 1221
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.6 km",
+          "distance_meters": 2564,
+          "duration_text": "16 mins",
+          "duration_seconds": 988
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.7 km",
+          "distance_meters": 1664,
+          "duration_text": "13 mins",
+          "duration_seconds": 805
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Panorama",
+      "location": {
+        "lat": 59.9092376,
+        "lng": 10.7440608
+      },
+      "address": {
+        "streetNumber": "7B",
+        "streetName": "Rådhusgata",
+        "postalCode": "0151"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.0 km",
+          "distance_meters": 988,
+          "duration_text": "8 mins",
+          "duration_seconds": 468
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "12.1 km",
+          "distance_meters": 12097,
+          "duration_text": "56 mins",
+          "duration_seconds": 3362
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.3 km",
+          "distance_meters": 3304,
+          "duration_text": "16 mins",
+          "duration_seconds": 970
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.6 km",
+          "distance_meters": 6607,
+          "duration_text": "25 mins",
+          "duration_seconds": 1484
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.1 km",
+          "distance_meters": 3145,
+          "duration_text": "19 mins",
+          "duration_seconds": 1134
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.1 km",
+          "distance_meters": 1056,
+          "duration_text": "15 mins",
+          "duration_seconds": 912
+        }
+      ]
+    },
+    {
+      "name": "Radisson Blu Park Hotel, Oslo",
+      "location": {
+        "lat": 59.9035758,
+        "lng": 10.6316738
+      },
+      "address": {
+        "streetNumber": "80",
+        "streetName": "Fornebuveien",
+        "postalCode": "1366"
+      },
+      "rating": 3.9,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "9.3 km",
+          "distance_meters": 9298,
+          "duration_text": "34 mins",
+          "duration_seconds": 2057
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "18.2 km",
+          "distance_meters": 18152,
+          "duration_text": "1 hour 20 mins",
+          "duration_seconds": 4775
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "6.3 km",
+          "distance_meters": 6329,
+          "duration_text": "27 mins",
+          "duration_seconds": 1642
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "9.6 km",
+          "distance_meters": 9584,
+          "duration_text": "34 mins",
+          "duration_seconds": 2012
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "11.5 km",
+          "distance_meters": 11455,
+          "duration_text": "45 mins",
+          "duration_seconds": 2723
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "8.4 km",
+          "distance_meters": 8363,
+          "duration_text": "36 mins",
+          "duration_seconds": 2152
+        }
+      ]
+    },
+    {
+      "name": "Hotel Montebello",
+      "location": {
+        "lat": 59.93201140000001,
+        "lng": 10.6607831
+      },
+      "address": {
+        "streetNumber": "70",
+        "streetName": "Ullernchausseen",
+        "postalCode": "0379"
+      },
+      "rating": 3.6,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "7.2 km",
+          "distance_meters": 7202,
+          "duration_text": "37 mins",
+          "duration_seconds": 2229
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.0 km",
+          "distance_meters": 10951,
+          "duration_text": "1 hour 2 mins",
+          "duration_seconds": 3690
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "5.7 km",
+          "distance_meters": 5654,
+          "duration_text": "29 mins",
+          "duration_seconds": 1729
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.9 km",
+          "distance_meters": 5903,
+          "duration_text": "23 mins",
+          "duration_seconds": 1403
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "9.0 km",
+          "distance_meters": 8982,
+          "duration_text": "41 mins",
+          "duration_seconds": 2482
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "6.7 km",
+          "distance_meters": 6665,
+          "duration_text": "39 mins",
+          "duration_seconds": 2353
+        }
+      ]
+    },
+    {
+      "name": "Scandic Victoria",
+      "location": {
+        "lat": 59.9125404,
+        "lng": 10.7369184
+      },
+      "address": {
+        "streetNumber": "13",
+        "streetName": "Rosenkrantz' gate",
+        "postalCode": "0121"
+      },
+      "rating": 4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.9 km",
+          "distance_meters": 888,
+          "duration_text": "12 mins",
+          "duration_seconds": 724
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.5 km",
+          "distance_meters": 11453,
+          "duration_text": "53 mins",
+          "duration_seconds": 3162
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.5 km",
+          "distance_meters": 2512,
+          "duration_text": "13 mins",
+          "duration_seconds": 793
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.3 km",
+          "distance_meters": 5338,
+          "duration_text": "21 mins",
+          "duration_seconds": 1247
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.2 km",
+          "distance_meters": 3170,
+          "duration_text": "20 mins",
+          "duration_seconds": 1212
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.7 km",
+          "distance_meters": 696,
+          "duration_text": "10 mins",
+          "duration_seconds": 620
+        }
+      ]
+    },
+    {
+      "name": "Comfort Hotel Xpress Youngstorget",
+      "location": {
+        "lat": 59.9164346,
+        "lng": 10.7495221
+      },
+      "address": {
+        "streetNumber": "26",
+        "streetName": "Møllergata",
+        "postalCode": "0179"
+      },
+      "rating": 3.9,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.8 km",
+          "distance_meters": 782,
+          "duration_text": "10 mins",
+          "duration_seconds": 616
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.6 km",
+          "distance_meters": 11575,
+          "duration_text": "54 mins",
+          "duration_seconds": 3225
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.4 km",
+          "distance_meters": 3435,
+          "duration_text": "20 mins",
+          "duration_seconds": 1206
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.1 km",
+          "distance_meters": 6073,
+          "duration_text": "22 mins",
+          "duration_seconds": 1347
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.9 km",
+          "distance_meters": 2938,
+          "duration_text": "21 mins",
+          "duration_seconds": 1280
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.7 km",
+          "distance_meters": 2653,
+          "duration_text": "21 mins",
+          "duration_seconds": 1245
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Terminus",
+      "location": {
+        "lat": 59.91330839999999,
+        "lng": 10.7526292
+      },
+      "address": {
+        "streetNumber": "10",
+        "streetName": "Stenersgata",
+        "postalCode": "0184"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.4 km",
+          "distance_meters": 356,
+          "duration_text": "5 mins",
+          "duration_seconds": 283
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.6 km",
+          "distance_meters": 11620,
+          "duration_text": "50 mins",
+          "duration_seconds": 2983
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.9 km",
+          "distance_meters": 3940,
+          "duration_text": "19 mins",
+          "duration_seconds": 1146
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.1 km",
+          "distance_meters": 6119,
+          "duration_text": "18 mins",
+          "duration_seconds": 1105
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.5 km",
+          "distance_meters": 2516,
+          "duration_text": "16 mins",
+          "duration_seconds": 950
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.1 km",
+          "distance_meters": 2114,
+          "duration_text": "18 mins",
+          "duration_seconds": 1054
+        }
+      ]
+    },
+    {
+      "name": "Soria Moria hotel and conference center",
+      "location": {
+        "lat": 59.97527780000001,
+        "lng": 10.6552778
+      },
+      "address": {
+        "streetNumber": "60",
+        "streetName": "Voksenkollveien",
+        "postalCode": "0790"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "15.3 km",
+          "distance_meters": 15295,
+          "duration_text": "53 mins",
+          "duration_seconds": 3201
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "2.8 km",
+          "distance_meters": 2850,
+          "duration_text": "35 mins",
+          "duration_seconds": 2109
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "16.2 km",
+          "distance_meters": 16181,
+          "duration_text": "1 hour 3 mins",
+          "duration_seconds": 3762
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "15.0 km",
+          "distance_meters": 14965,
+          "duration_text": "1 hour 2 mins",
+          "duration_seconds": 3725
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "17.3 km",
+          "distance_meters": 17264,
+          "duration_text": "1 hour 3 mins",
+          "duration_seconds": 3766
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "14.8 km",
+          "distance_meters": 14751,
+          "duration_text": "59 mins",
+          "duration_seconds": 3554
+        }
+      ]
+    },
+    {
+      "name": "Scandic Holberg",
+      "location": {
+        "lat": 59.9196472,
+        "lng": 10.7345104
+      },
+      "address": {
+        "streetNumber": "1",
+        "streetName": "Holbergs Plass",
+        "postalCode": "0166"
+      },
+      "rating": 3.7,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.7 km",
+          "distance_meters": 1696,
+          "duration_text": "10 mins",
+          "duration_seconds": 583
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "10.9 km",
+          "distance_meters": 10885,
+          "duration_text": "51 mins",
+          "duration_seconds": 3080
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.0 km",
+          "distance_meters": 2952,
+          "duration_text": "18 mins",
+          "duration_seconds": 1062
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.4 km",
+          "distance_meters": 5384,
+          "duration_text": "20 mins",
+          "duration_seconds": 1202
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.1 km",
+          "distance_meters": 3118,
+          "duration_text": "20 mins",
+          "duration_seconds": 1192
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.5 km",
+          "distance_meters": 1515,
+          "duration_text": "16 mins",
+          "duration_seconds": 964
+        }
+      ]
+    },
+    {
+      "name": "Cochs Pension",
+      "location": {
+        "lat": 59.920624,
+        "lng": 10.728149
+      },
+      "address": {
+        "streetNumber": "25",
+        "streetName": "Parkveien",
+        "postalCode": "0350"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "2.0 km",
+          "distance_meters": 2007,
+          "duration_text": "14 mins",
+          "duration_seconds": 842
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.1 km",
+          "distance_meters": 11093,
+          "duration_text": "54 mins",
+          "duration_seconds": 3226
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.2 km",
+          "distance_meters": 2176,
+          "duration_text": "15 mins",
+          "duration_seconds": 914
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.6 km",
+          "distance_meters": 5596,
+          "duration_text": "22 mins",
+          "duration_seconds": 1348
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.6 km",
+          "distance_meters": 3638,
+          "duration_text": "23 mins",
+          "duration_seconds": 1380
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.5 km",
+          "distance_meters": 1465,
+          "duration_text": "21 mins",
+          "duration_seconds": 1254
+        }
+      ]
+    },
+    {
+      "name": "K7 Hotel Oslo",
+      "location": {
+        "lat": 59.9099283,
+        "lng": 10.741171
+      },
+      "address": {
+        "streetNumber": "7",
+        "streetName": "Kongens gate",
+        "postalCode": "0153"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.0 km",
+          "distance_meters": 1036,
+          "duration_text": "9 mins",
+          "duration_seconds": 537
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.5 km",
+          "distance_meters": 11493,
+          "duration_text": "53 mins",
+          "duration_seconds": 3191
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.3 km",
+          "distance_meters": 3260,
+          "duration_text": "16 mins",
+          "duration_seconds": 973
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.0 km",
+          "distance_meters": 5991,
+          "duration_text": "22 mins",
+          "duration_seconds": 1313
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.2 km",
+          "distance_meters": 3193,
+          "duration_text": "20 mins",
+          "duration_seconds": 1203
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.9 km",
+          "distance_meters": 877,
+          "duration_text": "13 mins",
+          "duration_seconds": 761
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Cecil",
+      "location": {
+        "lat": 59.9129731,
+        "lng": 10.7374329
+      },
+      "address": {
+        "streetNumber": "8",
+        "streetName": "Stortingsgata",
+        "postalCode": "0161"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.5 km",
+          "distance_meters": 1460,
+          "duration_text": "12 mins",
+          "duration_seconds": 700
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.4 km",
+          "distance_meters": 11372,
+          "duration_text": "52 mins",
+          "duration_seconds": 3093
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.5 km",
+          "distance_meters": 2476,
+          "duration_text": "13 mins",
+          "duration_seconds": 760
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.9 km",
+          "distance_meters": 5872,
+          "duration_text": "20 mins",
+          "duration_seconds": 1215
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.6 km",
+          "distance_meters": 3617,
+          "duration_text": "23 mins",
+          "duration_seconds": 1366
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.7 km",
+          "distance_meters": 745,
+          "duration_text": "11 mins",
+          "duration_seconds": 658
+        }
+      ]
+    },
+    {
+      "name": "Scandic St. Olavs plass",
+      "location": {
+        "lat": 59.91817400000001,
+        "lng": 10.739867
+      },
+      "address": {
+        "streetNumber": "1",
+        "streetName": "Sankt Olavs Plass",
+        "postalCode": "0165"
+      },
+      "rating": 4.1,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.6 km",
+          "distance_meters": 1584,
+          "duration_text": "11 mins",
+          "duration_seconds": 679
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "10.9 km",
+          "distance_meters": 10926,
+          "duration_text": "53 mins",
+          "duration_seconds": 3153
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.7 km",
+          "distance_meters": 2731,
+          "duration_text": "16 mins",
+          "duration_seconds": 983
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.4 km",
+          "distance_meters": 5429,
+          "duration_text": "21 mins",
+          "duration_seconds": 1275
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.0 km",
+          "distance_meters": 3007,
+          "duration_text": "21 mins",
+          "duration_seconds": 1288
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.4 km",
+          "distance_meters": 1388,
+          "duration_text": "15 mins",
+          "duration_seconds": 882
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Slottsparken",
+      "location": {
+        "lat": 59.91852859999999,
+        "lng": 10.7321257
+      },
+      "address": {
+        "streetNumber": "5",
+        "streetName": "Wergelandsveien",
+        "postalCode": "0167"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.8 km",
+          "distance_meters": 1809,
+          "duration_text": "11 mins",
+          "duration_seconds": 659
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "10.8 km",
+          "distance_meters": 10783,
+          "duration_text": "50 mins",
+          "duration_seconds": 3002
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.1 km",
+          "distance_meters": 3065,
+          "duration_text": "19 mins",
+          "duration_seconds": 1138
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.3 km",
+          "distance_meters": 5282,
+          "duration_text": "19 mins",
+          "duration_seconds": 1124
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.2 km",
+          "distance_meters": 3231,
+          "duration_text": "21 mins",
+          "duration_seconds": 1268
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.2 km",
+          "distance_meters": 1215,
+          "duration_text": "17 mins",
+          "duration_seconds": 1039
+        }
+      ]
+    },
+    {
+      "name": "Scandic Fornebu",
+      "location": {
+        "lat": 59.89369439999999,
+        "lng": 10.62915
+      },
+      "address": {
+        "streetNumber": "2",
+        "streetName": "Martin Linges vei",
+        "postalCode": "1364"
+      },
+      "rating": 4.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "10.1 km",
+          "distance_meters": 10113,
+          "duration_text": "35 mins",
+          "duration_seconds": 2077
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "19.0 km",
+          "distance_meters": 18967,
+          "duration_text": "1 hour 22 mins",
+          "duration_seconds": 4919
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "7.6 km",
+          "distance_meters": 7605,
+          "duration_text": "29 mins",
+          "duration_seconds": 1734
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "10.4 km",
+          "distance_meters": 10399,
+          "duration_text": "34 mins",
+          "duration_seconds": 2032
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "12.3 km",
+          "distance_meters": 12270,
+          "duration_text": "46 mins",
+          "duration_seconds": 2743
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "9.2 km",
+          "distance_meters": 9178,
+          "duration_text": "36 mins",
+          "duration_seconds": 2172
+        }
+      ]
+    },
+    {
+      "name": "Best Western Plus City Hotel",
+      "location": {
+        "lat": 59.9114742,
+        "lng": 10.7452061
+      },
+      "address": {
+        "streetNumber": "30",
+        "streetName": "Kirkegata",
+        "postalCode": "0153"
+      },
+      "rating": 3.8,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.4 km",
+          "distance_meters": 384,
+          "duration_text": "5 mins",
+          "duration_seconds": 298
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.4 km",
+          "distance_meters": 11353,
+          "duration_text": "51 mins",
+          "duration_seconds": 3069
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.2 km",
+          "distance_meters": 3214,
+          "duration_text": "16 mins",
+          "duration_seconds": 931
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.9 km",
+          "distance_meters": 5853,
+          "duration_text": "20 mins",
+          "duration_seconds": 1191
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.3 km",
+          "distance_meters": 2254,
+          "duration_text": "17 mins",
+          "duration_seconds": 1038
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.5 km",
+          "distance_meters": 1484,
+          "duration_text": "13 mins",
+          "duration_seconds": 799
+        }
+      ]
+    },
+    {
+      "name": "P-Hotel Oslo",
+      "location": {
+        "lat": 59.91443750000001,
+        "lng": 10.7418982
+      },
+      "address": {
+        "streetNumber": "19",
+        "streetName": "Grensen",
+        "postalCode": "0159"
+      },
+      "rating": 3.2,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.9 km",
+          "distance_meters": 894,
+          "duration_text": "6 mins",
+          "duration_seconds": 355
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.1 km",
+          "distance_meters": 11130,
+          "duration_text": "48 mins",
+          "duration_seconds": 2871
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.6 km",
+          "distance_meters": 3567,
+          "duration_text": "20 mins",
+          "duration_seconds": 1229
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.6 km",
+          "distance_meters": 5630,
+          "duration_text": "17 mins",
+          "duration_seconds": 993
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.9 km",
+          "distance_meters": 2882,
+          "duration_text": "15 mins",
+          "duration_seconds": 920
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.1 km",
+          "distance_meters": 1069,
+          "duration_text": "15 mins",
+          "duration_seconds": 893
+        }
+      ]
+    },
+    {
+      "name": "First Hotel Millennium",
+      "location": {
+        "lat": 59.91127319999999,
+        "lng": 10.7411802
+      },
+      "address": {
+        "streetNumber": "25",
+        "streetName": "Tollbugata",
+        "postalCode": "0157"
+      },
+      "rating": 3.8,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.3 km",
+          "distance_meters": 1258,
+          "duration_text": "9 mins",
+          "duration_seconds": 525
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.3 km",
+          "distance_meters": 11299,
+          "duration_text": "50 mins",
+          "duration_seconds": 3023
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.8 km",
+          "distance_meters": 2812,
+          "duration_text": "12 mins",
+          "duration_seconds": 721
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.8 km",
+          "distance_meters": 5799,
+          "duration_text": "19 mins",
+          "duration_seconds": 1145
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.4 km",
+          "distance_meters": 3415,
+          "duration_text": "20 mins",
+          "duration_seconds": 1191
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "1.4 km",
+          "distance_meters": 1381,
+          "duration_text": "12 mins",
+          "duration_seconds": 709
+        }
+      ]
+    },
+    {
+      "name": "Hotel Christiania Teater",
+      "location": {
+        "lat": 59.9135605,
+        "lng": 10.7359369
+      },
+      "address": {
+        "streetNumber": "16",
+        "streetName": "Stortingsgata",
+        "postalCode": "0161"
+      },
+      "rating": 4.4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "1.8 km",
+          "distance_meters": 1797,
+          "duration_text": "12 mins",
+          "duration_seconds": 708
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "10.6 km",
+          "distance_meters": 10642,
+          "duration_text": "49 mins",
+          "duration_seconds": 2961
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "2.3 km",
+          "distance_meters": 2315,
+          "duration_text": "11 mins",
+          "duration_seconds": 631
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "5.1 km",
+          "distance_meters": 5141,
+          "duration_text": "18 mins",
+          "duration_seconds": 1083
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "4.0 km",
+          "distance_meters": 3954,
+          "duration_text": "23 mins",
+          "duration_seconds": 1374
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "0.7 km",
+          "distance_meters": 729,
+          "duration_text": "11 mins",
+          "duration_seconds": 640
+        }
+      ]
+    },
+    {
+      "name": "Scandic Helsfyr",
+      "location": {
+        "lat": 59.9157343,
+        "lng": 10.8046742
+      },
+      "address": {
+        "streetNumber": "7",
+        "streetName": "Innspurten",
+        "postalCode": "0663"
+      },
+      "rating": 4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "4.1 km",
+          "distance_meters": 4102,
+          "duration_text": "20 mins",
+          "duration_seconds": 1188
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "15.3 km",
+          "distance_meters": 15314,
+          "duration_text": "1 hour 4 mins",
+          "duration_seconds": 3830
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "8.2 km",
+          "distance_meters": 8200,
+          "duration_text": "34 mins",
+          "duration_seconds": 2049
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "7.8 km",
+          "distance_meters": 7814,
+          "duration_text": "34 mins",
+          "duration_seconds": 2018
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "3.2 km",
+          "distance_meters": 3223,
+          "duration_text": "22 mins",
+          "duration_seconds": 1317
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "5.8 km",
+          "distance_meters": 5807,
+          "duration_text": "32 mins",
+          "duration_seconds": 1901
+        }
+      ]
+    },
+    {
+      "name": "Scandic Oslo City",
+      "location": {
+        "lat": 59.91196830000001,
+        "lng": 10.7492356
+      },
+      "address": {
+        "streetNumber": "1",
+        "streetName": "Europarådets Plass",
+        "postalCode": "0154"
+      },
+      "rating": 3.9,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "0.2 km",
+          "distance_meters": 204,
+          "duration_text": "3 mins",
+          "duration_seconds": 160
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "11.6 km",
+          "distance_meters": 11590,
+          "duration_text": "49 mins",
+          "duration_seconds": 2950
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "3.3 km",
+          "distance_meters": 3259,
+          "duration_text": "16 mins",
+          "duration_seconds": 932
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "6.1 km",
+          "distance_meters": 6089,
+          "duration_text": "18 mins",
+          "duration_seconds": 1072
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "2.4 km",
+          "distance_meters": 2392,
+          "duration_text": "14 mins",
+          "duration_seconds": 850
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.1 km",
+          "distance_meters": 2084,
+          "duration_text": "17 mins",
+          "duration_seconds": 1021
+        }
+      ]
+    },
+    {
+      "name": "Radisson Blu Hotel, Alna Oslo",
+      "location": {
+        "lat": 59.93013000000001,
+        "lng": 10.86825
+      },
+      "address": {
+        "streetNumber": "21",
+        "streetName": "Tevlingveien",
+        "postalCode": "1081"
+      },
+      "rating": 4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "8.8 km",
+          "distance_meters": 8808,
+          "duration_text": "29 mins",
+          "duration_seconds": 1767
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "20.0 km",
+          "distance_meters": 20033,
+          "duration_text": "1 hour 18 mins",
+          "duration_seconds": 4709
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "12.8 km",
+          "distance_meters": 12761,
+          "duration_text": "48 mins",
+          "duration_seconds": 2903
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "17.2 km",
+          "distance_meters": 17199,
+          "duration_text": "52 mins",
+          "duration_seconds": 3141
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "7.7 km",
+          "distance_meters": 7731,
+          "duration_text": "32 mins",
+          "duration_seconds": 1912
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "10.3 km",
+          "distance_meters": 10286,
+          "duration_text": "43 mins",
+          "duration_seconds": 2601
+        }
+      ]
+    },
+    {
+      "name": "Frogner House Apartments, Oslo. Bygdoy Alle 53",
+      "location": {
+        "lat": 59.9182033,
+        "lng": 10.7062412
+      },
+      "address": {
+        "streetNumber": "53",
+        "streetName": "Bygdøy allé",
+        "postalCode": "0265"
+      },
+      "rating": 4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "3.3 km",
+          "distance_meters": 3273,
+          "duration_text": "16 mins",
+          "duration_seconds": 969
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "12.1 km",
+          "distance_meters": 12127,
+          "duration_text": "1 hour 0 mins",
+          "duration_seconds": 3614
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "0.7 km",
+          "distance_meters": 711,
+          "duration_text": "6 mins",
+          "duration_seconds": 363
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "4.3 km",
+          "distance_meters": 4315,
+          "duration_text": "28 mins",
+          "duration_seconds": 1653
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "6.9 km",
+          "distance_meters": 6939,
+          "duration_text": "29 mins",
+          "duration_seconds": 1740
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "2.2 km",
+          "distance_meters": 2185,
+          "duration_text": "15 mins",
+          "duration_seconds": 898
+        }
+      ]
+    },
+    {
+      "name": "Thon Hotel Linne",
+      "location": {
+        "lat": 59.9394794,
+        "lng": 10.8291978
+      },
+      "address": {
+        "streetNumber": "12",
+        "streetName": "Statsråd Mathiesens vei",
+        "postalCode": "0598"
+      },
+      "rating": 4,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "7.1 km",
+          "distance_meters": 7084,
+          "duration_text": "23 mins",
+          "duration_seconds": 1373
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "18.9 km",
+          "distance_meters": 18910,
+          "duration_text": "1 hour 14 mins",
+          "duration_seconds": 4435
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "10.2 km",
+          "distance_meters": 10219,
+          "duration_text": "41 mins",
+          "duration_seconds": 2452
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "8.2 km",
+          "distance_meters": 8158,
+          "duration_text": "24 mins",
+          "duration_seconds": 1428
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "5.9 km",
+          "distance_meters": 5911,
+          "duration_text": "25 mins",
+          "duration_seconds": 1518
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "8.8 km",
+          "distance_meters": 8789,
+          "duration_text": "35 mins",
+          "duration_seconds": 2086
+        }
+      ]
+    },
+    {
+      "name": "Scandic Holmenkollen Park Hotel",
+      "location": {
+        "lat": 59.9627894,
+        "lng": 10.6628325
+      },
+      "address": {
+        "streetNumber": "26",
+        "streetName": "Kongeveien",
+        "postalCode": "0787"
+      },
+      "rating": 4.3,
+      "distances": [
+        {
+          "venue": "Oslo Sentrum",
+          "distance_text": "11.1 km",
+          "distance_meters": 11086,
+          "duration_text": "40 mins",
+          "duration_seconds": 2397
+        },
+        {
+          "venue": "Holmenkollen",
+          "distance_text": "1.3 km",
+          "distance_meters": 1297,
+          "duration_text": "19 mins",
+          "duration_seconds": 1125
+        },
+        {
+          "venue": "Frogner",
+          "distance_text": "9.1 km",
+          "distance_meters": 9066,
+          "duration_text": "43 mins",
+          "duration_seconds": 2598
+        },
+        {
+          "venue": "Ullevål",
+          "distance_text": "10.8 km",
+          "distance_meters": 10755,
+          "duration_text": "49 mins",
+          "duration_seconds": 2921
+        },
+        {
+          "venue": "Tøyenbadet",
+          "distance_text": "13.1 km",
+          "distance_meters": 13054,
+          "duration_text": "49 mins",
+          "duration_seconds": 2962
+        },
+        {
+          "venue": "Aker Brygge",
+          "distance_text": "10.5 km",
+          "distance_meters": 10542,
+          "duration_text": "46 mins",
+          "duration_seconds": 2750
+        }
+      ]
+    }
+  ]
+}
