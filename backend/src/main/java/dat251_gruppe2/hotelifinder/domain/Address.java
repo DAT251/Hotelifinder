@@ -28,7 +28,7 @@ public class Address {
 	}
 
 	public Integer getStreetNumber() {
-		return streetNumber;
+		return this.streetNumber;
 	}
 
 	public void setStreetNumber(Integer streetNumber) {
