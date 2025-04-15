@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Citybox Oslo",
+    "website": "",
+    "address": {
+      "postalCode": "0152",
+      "streetName": "Prinsens gate",
+      "streetNumber": 6
+    },
+    "location": {
+      "latitude": 59.913818,
+      "longitude": 10.738740
+    }
+  },
+  {
+    "name": "Scandic Vulkan",
+    "website": "",
+    "address": {
+      "postalCode": "0178",
+      "streetName": "Maridalsveien",
+      "streetNumber": 13
+    },
+    "location": {
+      "latitude": 59.922505,
+      "longitude": 10.751979
+    }
+  },
+  {
+    "name": "Clarion Hotel The Hub",
+    "website": "",
+    "address": {
+      "postalCode": "0155",
+      "streetName": "Biskop Gunnerus gate",
+      "streetNumber": 3
+    },
+    "location": {
+      "latitude": 59.91264337173403,
+      "longitude": 10.749970155823531
+    }
+  },
+  {
+    "name": "Scandic Holmenkollen Park Hotel",
+    "website": "",
+    "address": {
+      "postalCode": "0787",
+      "streetName": "Kongeveien",
+      "streetNumber": 26
+    },
+    "location": {
+      "latitude": 59.962810881797445,
+      "longitude": 10.663046976705882
+    }
+  }
+]
