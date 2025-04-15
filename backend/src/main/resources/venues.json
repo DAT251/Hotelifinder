@@ -1,183 +1,216 @@
 [
-    {
-        "name": "Vestkanten",
-        "city": "Bergen",
-        "imageURL": "http://localhost:8080/images/vestkanten.jpg",
-        "address": {
-            "streetName": "Loddefjordveien",
-            "streetNumber": 2,
-            "postalCode": "5171"
-        },
-        "location": {
-            "latitude": 60.3962,
-            "longitude": 5.3094
-        },
-        "tags": ["Shopping", "Waterpark", "Bowling"]
+  {
+    "name": "Vestkanten",
+    "city": "Bergen",
+    "imageURL": "http://localhost:8080/images/vestkanten.jpg",
+    "address": {
+      "streetName": "Loddefjordveien",
+      "streetNumber": 2,
+      "postalCode": "5171"
     },
-
-    {
-        "name": "Fana Golfbane",
-        "city": "Bergen",
-        "imageURL": "http://localhost:8080/images/fanagolf.jpg",
-        "address": {
-            "streetName": "Vestre Rå",
-            "streetNumber": 82,
-            "postalCode": "5239"
-        },
-        "location": {
-        "latitude": 6685881.5643,
-        "longitude": 5.3100442
+    "location": {
+      "latitude": 60.3962,
+      "longitude": 5.3094
     },
-        "tags": ["Golf"]
+    "tags": [
+      "Shopping",
+      "Waterpark",
+      "Bowling"
+    ]
+  },
+  {
+    "name": "Fana Golfbane",
+    "city": "Bergen",
+    "imageURL": "http://localhost:8080/images/fanagolf.jpg",
+    "address": {
+      "streetName": "Vestre Rå",
+      "streetNumber": 82,
+      "postalCode": "5239"
     },
-    {
-        "name": "Oasen",
-        "city": "Bergen",
-        "imageURL": "http://localhost:8080/images/oasen.jpg",
-        "address": {
-            "streetName": "Folke Bernadottes vei",
-            "streetNumber": 52,
-            "postalCode": "5147"
-        },    "location": {
-        "latitude": 60.3489559,
-        "longitude": 5.2917955
+    "location": {
+      "latitude": 6685881.5643,
+      "longitude": 5.3100442
     },
-        "tags": ["Shopping", "Museum"]
+    "tags": [
+      "Golf"
+    ]
+  },
+  {
+    "name": "Oasen",
+    "city": "Bergen",
+    "imageURL": "http://localhost:8080/images/oasen.jpg",
+    "address": {
+      "streetName": "Folke Bernadottes vei",
+      "streetNumber": 52,
+      "postalCode": "5147"
     },
-    {
-        "name": "Lagunen",
-        "city": "Bergen",
-        "imageURL": "http://localhost:8080/images/lagunen.jpg",
-        "address": {
-            "streetName": "Laguneveien",
-            "streetNumber": 3,
-            "postalCode": "5239"
-        }, "location": {
-        "latitude": 60.2962474,
-        "longitude": 5.3273734
+    "location": {
+      "latitude": 60.3489559,
+      "longitude": 5.2917955
     },
-        "tags": ["Shopping", "Cinema"]
+    "tags": [
+      "Shopping",
+      "Museum"
+    ]
+  },
+  {
+    "name": "Lagunen",
+    "city": "Bergen",
+    "imageURL": "http://localhost:8080/images/lagunen.jpg",
+    "address": {
+      "streetName": "Laguneveien",
+      "streetNumber": 3,
+      "postalCode": "5239"
     },
-    {
-        "name": "Oslo Sentrum",
-        "city": "Oslo",
-        "imageURL": "http://localhost:8080/images/oslosentrum.jpg",
-        "address": {
-            "streetName": "Jernbanetorget",
-            "streetNumber": 1,
-            "postalCode": "0154"
-        },
-        "location": {
-            "latitude": 59.9108748,
-            "longitude": 10.7507367
-        },
-        "tags": ["Shopping", "Sightseeing", "Opera"]
+    "location": {
+      "latitude": 60.2962474,
+      "longitude": 5.3273734
     },
-    {
-        "name": "Holmenkollen",
-        "city": "Oslo",
-        "imageURL": "http://localhost:8080/images/holmenkollen.jpg",
-        "address": {
-            "streetName": "Kongeveien",
-            "streetNumber": 40,
-            "postalCode": "0747"
-        },
-        "location": {
-        "latitude": 59.9647125,
-        "longitude": 10.6665728
+    "tags": [
+      "Shopping",
+      "Cinema"
+    ]
+  },
+  {
+    "name": "Oslo Sentrum",
+    "city": "Oslo",
+    "imageURL": "http://localhost:8080/images/oslosentrum.jpg",
+    "address": {
+      "streetName": "Jernbanetorget",
+      "streetNumber": 1,
+      "postalCode": "0154"
     },
-
-        "tags": ["Museum", "Sports"]
+    "location": {
+      "latitude": 59.9108748,
+      "longitude": 10.7507367
     },
-
-    {
-        "name": "Frogner",
-        "city": "Oslo",
-        "imageURL": "http://localhost:8080/images/frogner.jpg",
-        "address": {
-            "streetName": "Frogner Plass",
-            "streetNumber": 1,
-            "postalCode": "0266"
-        },
-        "location": {
-        "latitude": 59.922676,
-        "longitude": 10.7055405
+    "tags": [
+      "Shopping",
+      "Sightseeing",
+      "Opera"
+    ]
+  },
+  {
+    "name": "Holmenkollen",
+    "city": "Oslo",
+    "imageURL": "http://localhost:8080/images/holmenkollen.jpg",
+    "address": {
+      "streetName": "Kongeveien",
+      "streetNumber": 40,
+      "postalCode": "0747"
     },
-        "tags": ["Park", "Museum"]
+    "location": {
+      "latitude": 59.9647125,
+      "longitude": 10.6665728
     },
-    {
-        "name": "Ullevål",
-        "city": "Oslo",
-        "imageURL": "http://localhost:8080/images/ullevaal.jpg",
-        "address": {
-            "streetName": "Sognsveien",
-            "streetNumber": 75,
-            "postalCode": "0855"
-        },
-        "location": {
-            "latitude": 59.9485577,
-            "longitude": 10.7328228
-        },
-        "tags": ["Football", "Concerts"]
+    "tags": [
+      "Museum",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Frogner",
+    "city": "Oslo",
+    "imageURL": "http://localhost:8080/images/frogner.jpg",
+    "address": {
+      "streetName": "Frogner Plass",
+      "streetNumber": 1,
+      "postalCode": "0266"
     },
-    {
-        "name": "Nidaros Cathedral",
-        "city": "Trondheim",
-        "imageURL": "http://localhost:8080/images/nidaros.jpg",
-        "address": {
-            "streetName": "Kongsgårdsveien",
-            "streetNumber": 2,
-            "postalCode": "7013"
-        },
-        "location": {
-            "latitude": 63.4305,
-            "longitude": 10.3951
-        },
-        "tags": ["Sightseeing"]
+    "location": {
+      "latitude": 59.922676,
+      "longitude": 10.7055405
     },
-    {
-        "name": "Sverresborg",
-        "city": "Trondheim",
-        "imageURL": "http://localhost:8080/images/sverresborg.jpg",
-        "address": {
-            "streetName": "Sverresborg Alle",
-            "streetNumber": 13,
-            "postalCode": "7020"
-        },
-        "location": {
-            "latitude": 63.4261,
-            "longitude": 10.3922
-        },
-        "tags": ["Museum", "Hiking"]
+    "tags": [
+      "Park",
+      "Museum"
+    ]
+  },
+  {
+    "name": "Ullevål",
+    "city": "Oslo",
+    "imageURL": "http://localhost:8080/images/ullevaal.jpg",
+    "address": {
+      "streetName": "Sognsveien",
+      "streetNumber": 75,
+      "postalCode": "0855"
     },
-    {
-        "name": "Rosendal Theater",
-        "city": "Trondheim",
-        "imageURL": "http://localhost:8080/images/rosendalteater.jpg",
-        "address": {
-            "streetName": "Innherredsveien",
-            "streetNumber": 73,
-            "postalCode": "7068"
-        },
-        "location": {
-            "latitude": 63.4305,
-            "longitude": 10.3951
-        },
-        "tags": ["Theater"]
+    "location": {
+      "latitude": 59.9485577,
+      "longitude": 10.7328228
     },
-    {
-        "name": "Byhaven",
-        "city": "Trondheim",
-        "imageURL": "http://localhost:8080/images/byhaven.jpg",
-        "address": {
-            "streetName": "Olav Tryggvasons gt",
-            "streetNumber": 28,
-            "postalCode": "7011"
-        },
-        "location": {
-            "latitude": 63.4305,
-            "longitude": 10.3951
-        },
-        "tags": ["Shopping"]
-    }
+    "tags": [
+      "Football",
+      "Concerts"
+    ]
+  },
+  {
+    "name": "Nidaros Cathedral",
+    "city": "Trondheim",
+    "imageURL": "http://localhost:8080/images/nidaros.jpg",
+    "address": {
+      "streetName": "Kongsgårdsveien",
+      "streetNumber": 2,
+      "postalCode": "7013"
+    },
+    "location": {
+      "latitude": 63.4305,
+      "longitude": 10.3951
+    },
+    "tags": [
+      "Sightseeing"
+    ]
+  },
+  {
+    "name": "Sverresborg",
+    "city": "Trondheim",
+    "imageURL": "http://localhost:8080/images/sverresborg.jpg",
+    "address": {
+      "streetName": "Sverresborg Alle",
+      "streetNumber": 13,
+      "postalCode": "7020"
+    },
+    "location": {
+      "latitude": 63.4261,
+      "longitude": 10.3922
+    },
+    "tags": [
+      "Museum",
+      "Hiking"
+    ]
+  },
+  {
+    "name": "Rosendal Theater",
+    "city": "Trondheim",
+    "imageURL": "http://localhost:8080/images/rosendalteater.jpg",
+    "address": {
+      "streetName": "Innherredsveien",
+      "streetNumber": 73,
+      "postalCode": "7068"
+    },
+    "location": {
+      "latitude": 63.4305,
+      "longitude": 10.3951
+    },
+    "tags": [
+      "Theater"
+    ]
+  },
+  {
+    "name": "Byhaven",
+    "city": "Trondheim",
+    "imageURL": "http://localhost:8080/images/byhaven.jpg",
+    "address": {
+      "streetName": "Olav Tryggvasons gt",
+      "streetNumber": 28,
+      "postalCode": "7011"
+    },
+    "location": {
+      "latitude": 63.4305,
+      "longitude": 10.3951
+    },
+    "tags": [
+      "Shopping"
+    ]
+  }
 ]
