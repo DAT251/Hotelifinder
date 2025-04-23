@@ -25,6 +25,14 @@ public class Location {
 		return longitude;
 	}
 
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
 	/**
 	 * Calculate the distance between two locations
 	 *

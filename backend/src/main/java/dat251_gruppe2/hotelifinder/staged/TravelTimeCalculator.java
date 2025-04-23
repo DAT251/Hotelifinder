@@ -1,7 +1,8 @@
-package dat251_gruppe2.hotelifinder.services;
+package dat251_gruppe2.hotelifinder.staged;
 
 import dat251_gruppe2.hotelifinder.domain.Location;
 
+// not in use
 public interface TravelTimeCalculator {
     /**
      * Get the travel time between two locations.

@@ -1,4 +1,4 @@
-package dat251_gruppe2.hotelifinder.services;
+package dat251_gruppe2.hotelifinder.staged;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,6 +11,8 @@ import dat251_gruppe2.hotelifinder.domain.Venue;
 /**
  * MockDataInstantiator
  */
+
+//not in use
 public class MockDataInstantiator {
 
     private static final String HOTELS = """
