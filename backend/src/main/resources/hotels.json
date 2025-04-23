@@ -16,7 +16,7 @@
     "name": "Anker Hotel",
     "website": "",
     "address": {
-      "streetNumber": "55",
+      "streetNumber": 55,
       "streetName": "Storgata",
       "postalCode": "0182"
     },
@@ -29,7 +29,7 @@
     "name": "Karl Johan Hotel",
     "website": "",
     "address": {
-      "streetNumber": "33",
+      "streetNumber": 33,
       "streetName": "Karl Johans gate",
       "postalCode": "0162"
     },
@@ -42,7 +42,7 @@
     "name": "Oslo Hotel Apartments",
     "website": "",
     "address": {
-      "streetNumber": "52",
+      "streetNumber": 52,
       "streetName": "Brinken",
       "postalCode": "0654"
     },
@@ -55,7 +55,7 @@
     "name": "Scandic Byporten Oslo",
     "website": "",
     "address": {
-      "streetNumber": "6",
+      "streetNumber": 6,
       "streetName": "Jernbanetorget",
       "postalCode": "0154"
     },
@@ -68,7 +68,7 @@
     "name": "Thon Hotel Europa",
     "website": "",
     "address": {
-      "streetNumber": "31",
+      "streetNumber": 31,
       "streetName": "Sankt Olavs Gate",
       "postalCode": "0166"
     },
@@ -81,7 +81,7 @@
     "name": "Saga Hotel Oslo, WorldHotels Crafted",
     "website": "",
     "address": {
-      "streetNumber": "39",
+      "streetNumber": 39,
       "streetName": "Eilert Sundts gate",
       "postalCode": "0259"
     },
@@ -94,7 +94,7 @@
     "name": "Quality Hotel Expo",
     "website": "",
     "address": {
-      "streetNumber": "20",
+      "streetNumber": 20,
       "streetName": "Snarøyveien",
       "postalCode": "1360"
     },
@@ -107,7 +107,7 @@
     "name": "Home Hotel Folketeateret",
     "website": "",
     "address": {
-      "streetNumber": "21-23",
+      "streetNumber": 21,
       "streetName": "Storgata",
       "postalCode": "0184"
     },
@@ -120,7 +120,7 @@
     "name": "Home Hotel Gabelshus",
     "website": "",
     "address": {
-      "streetNumber": "16",
+      "streetNumber": 16,
       "streetName": "Gabels gate",
       "postalCode": "0272"
     },
@@ -133,7 +133,7 @@
     "name": "Thon Hotel Opera",
     "website": "",
     "address": {
-      "streetNumber": "4",
+      "streetNumber": 4,
       "streetName": "Dronning Eufemias gate",
       "postalCode": "0191"
     },
@@ -159,7 +159,7 @@
     "name": "Thon Hotel Vika Atrium",
     "website": "",
     "address": {
-      "streetNumber": "45",
+      "streetNumber": 45,
       "streetName": "Munkedamsveien",
       "postalCode": "0250"
     },
@@ -172,7 +172,7 @@
     "name": "Hotel Bristol",
     "website": "",
     "address": {
-      "streetNumber": "7",
+      "streetNumber": 7,
       "streetName": "Kristian IVs gate",
       "postalCode": "0164"
     },
@@ -185,7 +185,7 @@
     "name": "Oslo Youth Hostel Haraldsheim",
     "website": "",
     "address": {
-      "streetNumber": "4",
+      "streetNumber": 4,
       "streetName": "Haraldsheimveien",
       "postalCode": "0587"
     },
@@ -198,7 +198,7 @@
     "name": "Radisson Blu Plaza Hotel, Oslo",
     "website": "",
     "address": {
-      "streetNumber": "3",
+      "streetNumber": 3,
       "streetName": "Sonja Henies plass",
       "postalCode": "0185"
     },
@@ -211,7 +211,7 @@
     "name": "Scandic Solli",
     "website": "",
     "address": {
-      "streetNumber": "68",
+      "streetNumber": 68,
       "streetName": "Parkveien",
       "postalCode": "0254"
     },
@@ -224,7 +224,7 @@
     "name": "Thon Hotel Ullevaal Stadion",
     "website": "",
     "address": {
-      "streetNumber": "77C",
+      "streetNumber": 77,
       "streetName": "Sognsveien",
       "postalCode": "0855"
     },
@@ -237,7 +237,7 @@
     "name": "Scandic Sjølyst",
     "website": "",
     "address": {
-      "streetNumber": "28",
+      "streetNumber": 28,
       "streetName": "Karenslyst Allé",
       "postalCode": "0278"
     },
@@ -250,7 +250,7 @@
     "name": "Citybox Oslo",
     "website": "",
     "address": {
-      "streetNumber": "6",
+      "streetNumber": 6,
       "streetName": "Prinsens gate",
       "postalCode": "0152"
     },
@@ -263,7 +263,7 @@
     "name": "Grand Hotel Oslo",
     "website": "",
     "address": {
-      "streetNumber": "31",
+      "streetNumber": 31,
       "streetName": "Karl Johans gate",
       "postalCode": "0159"
     },
@@ -276,7 +276,7 @@
     "name": "Radisson Blu Scandinavia Hotel, Oslo",
     "website": "",
     "address": {
-      "streetNumber": "30",
+      "streetNumber": 30,
       "streetName": "Holbergs gate",
       "postalCode": "0166"
     },
@@ -289,7 +289,7 @@
     "name": "Home Hotel Bastion",
     "website": "",
     "address": {
-      "streetNumber": "7",
+      "streetNumber": 7,
       "streetName": "Skippergata",
       "postalCode": "0152"
     },
@@ -302,7 +302,7 @@
     "name": "Thon Hotel Spectrum",
     "website": "",
     "address": {
-      "streetNumber": "7",
+      "streetNumber": 7,
       "streetName": "Brugata",
       "postalCode": "0186"
     },
@@ -315,7 +315,7 @@
     "name": "Voksenåsen Hotell, BW Signature Collection",
     "website": "",
     "address": {
-      "streetNumber": "4",
+      "streetNumber": 4,
       "streetName": "Ullveien",
       "postalCode": "0791"
     },
@@ -328,7 +328,7 @@
     "name": "Hotell Bondeheimen",
     "website": "",
     "address": {
-      "streetNumber": "2",
+      "streetNumber": 2,
       "streetName": "Kristian IVs gate",
       "postalCode": "0159"
     },
@@ -341,7 +341,7 @@
     "name": "Comfort Hotel Børsparken",
     "website": "",
     "address": {
-      "streetNumber": "4",
+      "streetNumber": 4,
       "streetName": "Tollbugata",
       "postalCode": "0152"
     },
@@ -354,7 +354,7 @@
     "name": "Gaustad Hotel",
     "website": "",
     "address": {
-      "streetNumber": "20",
+      "streetNumber": 20,
       "streetName": "Sognsvannsveien",
       "postalCode": "0372"
     },
@@ -367,7 +367,7 @@
     "name": "Ellingsen Pensjonat",
     "website": "",
     "address": {
-      "streetNumber": "25",
+      "streetNumber": 25,
       "streetName": "Holtegata",
       "postalCode": "0355"
     },
@@ -380,7 +380,7 @@
     "name": "Smarthotel Oslo",
     "website": "",
     "address": {
-      "streetNumber": "26",
+      "streetNumber": 26,
       "streetName": "Sankt Olavs Gate",
       "postalCode": "0166"
     },
@@ -393,7 +393,7 @@
     "name": "Quality Hotel 33",
     "website": "",
     "address": {
-      "streetNumber": "33",
+      "streetNumber": 33,
       "streetName": "Østre Aker vei",
       "postalCode": "0581"
     },
@@ -406,7 +406,7 @@
     "name": "Scandic Vulkan",
     "website": "",
     "address": {
-      "streetNumber": "13A",
+      "streetNumber": 13,
       "streetName": "Maridalsveien",
       "postalCode": "0178"
     },
@@ -419,7 +419,7 @@
     "name": "Hotel Continental, Oslo",
     "website": "",
     "address": {
-      "streetNumber": "24/26",
+      "streetNumber": 24,
       "streetName": "Stortingsgata",
       "postalCode": "0117"
     },
@@ -432,7 +432,7 @@
     "name": "Oslo Guldsmeden Hotels",
     "website": "",
     "address": {
-      "streetNumber": "78",
+      "streetNumber": 78,
       "streetName": "Parkveien",
       "postalCode": "0254"
     },
@@ -445,7 +445,7 @@
     "name": "Radisson Blu Nydalen Hotel, Oslo",
     "website": "",
     "address": {
-      "streetNumber": "33",
+      "streetNumber": 33,
       "streetName": "Nydalsveien",
       "postalCode": "0484"
     },
@@ -458,7 +458,7 @@
     "name": "Comfort Hotel Grand Central",
     "website": "",
     "address": {
-      "streetNumber": "1",
+      "streetNumber": 1,
       "streetName": "Jernbanetorget",
       "postalCode": "0154"
     },
@@ -471,7 +471,7 @@
     "name": "Thon Hotel Astoria",
     "website": "",
     "address": {
-      "streetNumber": "21",
+      "streetNumber": 21,
       "streetName": "Dronningens gate",
       "postalCode": "0154"
     },
@@ -484,7 +484,7 @@
     "name": "Thon Hotel Panorama",
     "website": "",
     "address": {
-      "streetNumber": "7B",
+      "streetNumber": 7,
       "streetName": "Rådhusgata",
       "postalCode": "0151"
     },
@@ -497,7 +497,7 @@
     "name": "Radisson Blu Park Hotel, Oslo",
     "website": "",
     "address": {
-      "streetNumber": "80",
+      "streetNumber": 80,
       "streetName": "Fornebuveien",
       "postalCode": "1366"
     },
@@ -510,7 +510,7 @@
     "name": "Hotel Montebello",
     "website": "",
     "address": {
-      "streetNumber": "70",
+      "streetNumber": 70,
       "streetName": "Ullernchausseen",
       "postalCode": "0379"
     },
@@ -523,7 +523,7 @@
     "name": "Scandic Victoria",
     "website": "",
     "address": {
-      "streetNumber": "13",
+      "streetNumber": 13,
       "streetName": "Rosenkrantz' gate",
       "postalCode": "0121"
     },
@@ -536,7 +536,7 @@
     "name": "Comfort Hotel Xpress Youngstorget",
     "website": "",
     "address": {
-      "streetNumber": "26",
+      "streetNumber": 26,
       "streetName": "Møllergata",
       "postalCode": "0179"
     },
@@ -549,7 +549,7 @@
     "name": "Thon Hotel Terminus",
     "website": "",
     "address": {
-      "streetNumber": "10",
+      "streetNumber": 10,
       "streetName": "Stenersgata",
       "postalCode": "0184"
     },
@@ -562,7 +562,7 @@
     "name": "Soria Moria hotel and conference center",
     "website": "",
     "address": {
-      "streetNumber": "60",
+      "streetNumber": 60,
       "streetName": "Voksenkollveien",
       "postalCode": "0790"
     },
@@ -575,7 +575,7 @@
     "name": "Scandic Holberg",
     "website": "",
     "address": {
-      "streetNumber": "1",
+      "streetNumber": 1,
       "streetName": "Holbergs Plass",
       "postalCode": "0166"
     },
@@ -588,7 +588,7 @@
     "name": "Cochs Pension",
     "website": "",
     "address": {
-      "streetNumber": "25",
+      "streetNumber": 25,
       "streetName": "Parkveien",
       "postalCode": "0350"
     },
@@ -601,7 +601,7 @@
     "name": "K7 Hotel Oslo",
     "website": "",
     "address": {
-      "streetNumber": "7",
+      "streetNumber": 7,
       "streetName": "Kongens gate",
       "postalCode": "0153"
     },
@@ -614,7 +614,7 @@
     "name": "Thon Hotel Cecil",
     "website": "",
     "address": {
-      "streetNumber": "8",
+      "streetNumber": 8,
       "streetName": "Stortingsgata",
       "postalCode": "0161"
     },
@@ -627,7 +627,7 @@
     "name": "Scandic St. Olavs plass",
     "website": "",
     "address": {
-      "streetNumber": "1",
+      "streetNumber": 1,
       "streetName": "Sankt Olavs Plass",
       "postalCode": "0165"
     },
@@ -640,7 +640,7 @@
     "name": "Thon Hotel Slottsparken",
     "website": "",
     "address": {
-      "streetNumber": "5",
+      "streetNumber": 5,
       "streetName": "Wergelandsveien",
       "postalCode": "0167"
     },
@@ -653,7 +653,7 @@
     "name": "Scandic Fornebu",
     "website": "",
     "address": {
-      "streetNumber": "2",
+      "streetNumber": 2,
       "streetName": "Martin Linges vei",
       "postalCode": "1364"
     },
@@ -666,7 +666,7 @@
     "name": "Best Western Plus City Hotel",
     "website": "",
     "address": {
-      "streetNumber": "30",
+      "streetNumber": 30,
       "streetName": "Kirkegata",
       "postalCode": "0153"
     },
@@ -679,7 +679,7 @@
     "name": "P-Hotel Oslo",
     "website": "",
     "address": {
-      "streetNumber": "19",
+      "streetNumber": 19,
       "streetName": "Grensen",
       "postalCode": "0159"
     },
@@ -692,7 +692,7 @@
     "name": "First Hotel Millennium",
     "website": "",
     "address": {
-      "streetNumber": "25",
+      "streetNumber": 25,
       "streetName": "Tollbugata",
       "postalCode": "0157"
     },
@@ -705,7 +705,7 @@
     "name": "Hotel Christiania Teater",
     "website": "",
     "address": {
-      "streetNumber": "16",
+      "streetNumber": 16,
       "streetName": "Stortingsgata",
       "postalCode": "0161"
     },
@@ -718,7 +718,7 @@
     "name": "Scandic Helsfyr",
     "website": "",
     "address": {
-      "streetNumber": "7",
+      "streetNumber": 7,
       "streetName": "Innspurten",
       "postalCode": "0663"
     },
@@ -731,7 +731,7 @@
     "name": "Scandic Oslo City",
     "website": "",
     "address": {
-      "streetNumber": "1",
+      "streetNumber": 1,
       "streetName": "Europarådets Plass",
       "postalCode": "0154"
     },
@@ -744,7 +744,7 @@
     "name": "Radisson Blu Hotel, Alna Oslo",
     "website": "",
     "address": {
-      "streetNumber": "21",
+      "streetNumber": 21,
       "streetName": "Tevlingveien",
       "postalCode": "1081"
     },
@@ -757,7 +757,7 @@
     "name": "Frogner House Apartments, Oslo. Bygdoy Alle 53",
     "website": "",
     "address": {
-      "streetNumber": "53",
+      "streetNumber": 53,
       "streetName": "Bygdøy allé",
       "postalCode": "0265"
     },
@@ -770,7 +770,7 @@
     "name": "Thon Hotel Linne",
     "website": "",
     "address": {
-      "streetNumber": "12",
+      "streetNumber": 12,
       "streetName": "Statsråd Mathiesens vei",
       "postalCode": "0598"
     },
@@ -783,7 +783,7 @@
     "name": "Scandic Holmenkollen Park Hotel",
     "website": "",
     "address": {
-      "streetNumber": "26",
+      "streetNumber": 26,
       "streetName": "Kongeveien",
       "postalCode": "0787"
     },
