@@ -32,11 +32,11 @@ public class Venue {
 		this.location = location;
 	}
 
-	public Integer getStreetNumber() {
+	public String getStreetNumber() {
 		return this.address.getStreetNumber();
 	}
 
-	public void setStreetNumber(Integer streetNumber) {
+	public void setStreetNumber(String streetNumber) {
 		this.address.setStreetNumber(streetNumber);
 	}
 

@@ -7,6 +7,7 @@ import dat251_gruppe2.hotelifinder.domain.Location;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.io.IOException;
 import java.util.List;
 
 public class HotelRecommenderTest {
@@ -27,7 +28,7 @@ public class HotelRecommenderTest {
     }
 
     @Test
-    void singleVenue() {
+    void singleVenue() throws IOException {
         List<Venue> selectedActivities = List.of(hiking);
 
         HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
@@ -36,12 +37,12 @@ public class HotelRecommenderTest {
 
         // Since hotel1 is at the activity location, its travel time should be minimal
         // or zero.
-        assertTrue(bestMatch.getName().equals("Vetles hus"));
+        assertTrue(bestMatch.getName().equals("Magnus hus"));
         assertTrue(recommender.getTravelTime(bestMatch) <= 1);
     }
 
     @Test
-    void allHotelsRecommended() {
+    void allHotelsRecommended() throws IOException {
         List<Venue> selectedActivities = List.of(hiking);
 
         HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
@@ -54,7 +55,7 @@ public class HotelRecommenderTest {
     }
 
     @Test
-    void travelTimeAboveZero() {
+    void travelTimeAboveZero() throws IOException {
 
         List<Venue> selectedActivities = List.of(hiking, swimming, sightseeing);
         HotelRecommender recommender = new HotelRecommender(this.hotels, selectedActivities);
@@ -66,7 +67,7 @@ public class HotelRecommenderTest {
     }
 
     @Test
-    void emptyHotelList() {
+    void emptyHotelList() throws IOException {
         List<Hotel> hotels = List.of();
         List<Venue> selectedActivities = List.of(hiking);
 

@@ -6,7 +6,7 @@ public class Address {
 
 	private String postalCode;
 	private String streetName;
-	private Integer streetNumber;
+	private String streetNumber;
 
 	public Address() {
 	}
@@ -27,11 +27,11 @@ public class Address {
 		this.streetName = streetName;
 	}
 
-	public Integer getStreetNumber() {
+	public String getStreetNumber() {
 		return this.streetNumber;
 	}
 
-	public void setStreetNumber(Integer streetNumber) {
+	public void setStreetNumber(String streetNumber) {
 		this.streetNumber = streetNumber;
 	}
 
