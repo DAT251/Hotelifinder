@@ -35,8 +35,7 @@ public class HotelRecommenderTest {
 
         Hotel bestMatch = recommender.getBestHotel();
 
-        // Since hotel1 is at the activity location, its travel time should be minimal
-        // or zero.
+
         assertTrue(bestMatch.getName().equals("Magnus hus"));
         assertTrue(recommender.getTravelTime(bestMatch) <= 1);
     }
@@ -49,7 +48,7 @@ public class HotelRecommenderTest {
 
         List<Hotel> recommendedHotels = recommender.getHotels();
 
-        assertEquals(2, recommendedHotels.size()); // Both hotels should be recommended
+        assertEquals(2, recommendedHotels.size());
         assertTrue(recommendedHotels.contains(hotel1));
         assertTrue(recommendedHotels.contains(hotel2));
     }
@@ -62,7 +61,7 @@ public class HotelRecommenderTest {
 
         List<Hotel> recommendedHotels = recommender.getHotels();
 
-        // Verify that the total travel time is calculated.
+
         assertTrue(recommendedHotels.stream().allMatch(hotel -> recommender.getTravelTime(hotel) >= 0));
     }
 
@@ -75,6 +74,6 @@ public class HotelRecommenderTest {
 
         List<Hotel> recommendedHotels = recommender.getHotels();
 
-        assertTrue(recommendedHotels.isEmpty()); // Should return an empty list when no hotels are available.
+        assertTrue(recommendedHotels.isEmpty());
     }
 }
