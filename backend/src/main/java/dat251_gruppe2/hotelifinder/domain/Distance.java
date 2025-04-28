@@ -1,32 +1,47 @@
 package dat251_gruppe2.hotelifinder.domain;
 
-import java.util.Comparator;
+public class Distance {
 
-/**
- * Problem: Hva skal egentlig distance brukes til, og hvordan gjør man det?
- *
- * Eg innså imens eg jobbet at distance blir et litt dårlig grensesnitt.
- * Eg introduserte en ny klasse - Route.
- *
- * Route er et reiseforslag.
- *
- * Distance eksisterer for å kunne sammenligne avstander til clusters,
- * Route eksisterer for å vise reiseforslag på kartet, og representerer
- * strategien på hvordan man kommer seg til reisemålet.
- *
- * Nå har eg extendet comparator, men er usikker på om dette er riktig.
- * Eg vet ikke hva eg driver med, hjelp.
- * - Eivind
- */
-public interface Distance extends Comparator<Distance> {
+	private Hotel origin;
+	private Venue destination;
 
-	public void setLocationFrom();
+	private Integer distanceMeters;
 
-	public Location getLocationFrom();
+	public Distance() {
+	}
 
-	public void setLocationTo();
+	public Hotel getOrigin() {
+		return origin;
+	}
 
-	public Location getLocationTo();
+	public void setOrigin(Hotel origin) {
+		this.origin = origin;
+	}
 
-	public Route getRoute();
+	public Venue getDestination() {
+		return destination;
+	}
+
+	public void setDestination(Venue destination) {
+		this.destination = destination;
+	}
+
+	public Integer getDistanceMeters() {
+		return distanceMeters;
+	}
+
+	public void setDistanceMeters(Integer distanceMeters) {
+		this.distanceMeters = distanceMeters;
+	}
+
+	public Integer getDistanceSeconds() {
+		return distanceSeconds;
+	}
+
+	public void setDistanceSeconds(Integer distanceSeconds) {
+		this.distanceSeconds = distanceSeconds;
+	}
+
+	private Integer distanceSeconds;
+
 }

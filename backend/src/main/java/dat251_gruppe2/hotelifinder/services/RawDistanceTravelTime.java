@@ -1,18 +1,24 @@
-package dat251_gruppe2.hotelifinder.staged;
+package dat251_gruppe2.hotelifinder.services;
 
+import dat251_gruppe2.hotelifinder.domain.Hotel;
 import dat251_gruppe2.hotelifinder.domain.Location;
+import dat251_gruppe2.hotelifinder.domain.Venue;
 
 public class RawDistanceTravelTime implements TravelTimeCalculator {
 
     /**
      * This is a primitive implementation for prototyping / testing purposes.
-     * Implement a new one that calls the google maps distance api.
+     * The plan for prod is to implement a new one that calls the google maps
+     * distance api.
      */
     public RawDistanceTravelTime() {
     }
 
     @Override
-    public Integer calculateTravelTime(Location origin, Location destination) {
+    public Integer calculateTravelTime(Hotel hotel, Venue venue) {
+        Location origin = hotel.getLocation();
+        Location destination = venue.getLocation();
+
         // Calculate the difference in latitude and longitude
         double latDifference = Math.abs(origin.getLatitude() - destination.getLatitude());
         double lonDifference = Math.abs(origin.getLongitude() - destination.getLongitude());
