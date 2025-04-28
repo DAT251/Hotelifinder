@@ -2,36 +2,53 @@ package dat251_gruppe2.hotelifinder.services;
 
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
-import java.io.IOException;
+
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class HotelRecommender {
-    private final List<Hotel> hotels;
-    private final List<Venue> selectedActivities;
-    private final Map<Hotel, Integer> recommendations;
-    private final List<Hotel> sortedHotels;
+    /**
+     * Input hotels
+     */
+    private List<Hotel> hotels;
+    /**
+     * Input activities
+     */
+    private List<Venue> selectedActivities;
 
-    public HotelRecommender(List<Hotel> hotels, List<Venue> selectedActivities) throws IOException {
+    /**
+     * Calculated recommendations.
+     * This contains hotels with their total travel time.
+     */
+    private Map<Hotel, Integer> recommendations;
+    /**
+     * The same hotels as input, sorted by total travel time.
+     */
+    private List<Hotel> sortedHotels;
+
+    /**
+     * The strategy to calculate distance.
+     * To be changed to Google API in production.
+     */
+    private TravelTimeCalculator travelTimeService = new RawDistanceTravelTime();
+
+    public HotelRecommender(List<Hotel> hotels, List<Venue> selectedActivities) {
         this.hotels = hotels;
         this.selectedActivities = selectedActivities;
 
-        List<String> venueNames = selectedActivities.stream()
-                .map(Venue::getName)
-                .collect(Collectors.toList());
-
-        JsonDistanceTravelTime travelTimeService = new JsonDistanceTravelTime("hotels.json", venueNames);
-        this.recommendations = calculateRecommendations(travelTimeService);
+        this.recommendations = calculateRecommendations();
         this.sortedHotels = sortHotels(recommendations);
     }
 
-    private Map<Hotel, Integer> calculateRecommendations(JsonDistanceTravelTime travelTimeService) {
-        Map<Hotel, Integer> recommendations = new HashMap<>();
+    private Map<Hotel, Integer> calculateRecommendations() {
+        HashMap<Hotel, Integer> recommendations = new HashMap<Hotel, Integer>();
 
         for (Hotel hotel : hotels) {
             int totalTravelTime = 0;
             for (Venue venue : selectedActivities) {
-                totalTravelTime += travelTimeService.getTravelTime(hotel.getName(), venue.getName());
+                Integer travelTime = travelTimeService.calculateTravelTime(
+                        hotel.getLocation(),
+                        venue.getLocation());
+                totalTravelTime += travelTime;
             }
             recommendations.put(hotel, totalTravelTime);
         }
@@ -39,17 +56,22 @@ public class HotelRecommender {
         return recommendations;
     }
 
-    // Rest of your existing methods remain the same...
     private List<Hotel> sortHotels(Map<Hotel, Integer> recommendations) {
-        List<Hotel> sorted = new ArrayList<>(recommendations.keySet());
-        sorted.sort(Comparator.comparingInt(recommendations::get));
-        return sorted;
+        sortedHotels = new ArrayList<Hotel>(recommendations.keySet());
+        sortedHotels.sort(Comparator.comparingInt(recommendations::get));
+        return sortedHotels;
     }
 
     public Hotel getBestHotel() {
-        return sortedHotels.isEmpty() ? null : sortedHotels.get(0);
+        Hotel hotel = this.sortedHotels.getFirst();
+        return hotel;
     }
 
+    /**
+     * Get the recommended hotels.
+     *
+     * @return A list of hotels sorted by total travel time (ascending order).
+     */
     public List<Hotel> getHotels() {
         return sortedHotels.stream().limit(3).toList();
     }
