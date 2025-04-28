@@ -1,6 +1,7 @@
-package dat251_gruppe2.hotelifinder.staged;
+package dat251_gruppe2.hotelifinder.services;
 
-import dat251_gruppe2.hotelifinder.domain.Location;
+import dat251_gruppe2.hotelifinder.domain.Hotel;
+import dat251_gruppe2.hotelifinder.domain.Venue;
 
 // not in use
 public interface TravelTimeCalculator {
@@ -11,5 +12,5 @@ public interface TravelTimeCalculator {
      * @param destination The destination location.
      * @return Simulated travel time in seconds.
      */
-    Integer calculateTravelTime(Location origin, Location destination);
+    Integer calculateTravelTime(Hotel origin, Venue destination);
 }

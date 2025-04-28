@@ -3,6 +3,7 @@ package dat251_gruppe2.hotelifinder.controllers;
 import dat251_gruppe2.hotelifinder.domain.Hotel;
 import dat251_gruppe2.hotelifinder.domain.Venue;
 import dat251_gruppe2.hotelifinder.repositories.HotelRepository;
+import dat251_gruppe2.hotelifinder.services.CacheService;
 import dat251_gruppe2.hotelifinder.services.HotelRecommender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,10 +20,13 @@ public class HotelRecommenderController {
     @Autowired
     HotelRepository hotelRepository;
 
+    @Autowired
+    CacheService cacheService;
+
     @PostMapping("/best")
     public ResponseEntity<Hotel> getBestHotel(@RequestBody List<Venue> venues) throws IOException {
         List<Hotel> hotels = hotelRepository.findAll();
-        HotelRecommender recommender = new HotelRecommender(hotels, venues);
+        HotelRecommender recommender = new HotelRecommender(cacheService, hotels, venues);
         Hotel bestMatch = recommender.getBestHotel();
         return ResponseEntity.ok(bestMatch);
     }
@@ -30,7 +34,7 @@ public class HotelRecommenderController {
     @PostMapping
     public ResponseEntity<List<Hotel>> getRecommendations(@RequestBody List<Venue> venues) throws IOException {
         List<Hotel> hotels = hotelRepository.findAll();
-        HotelRecommender recommender = new HotelRecommender(hotels, venues);
+        HotelRecommender recommender = new HotelRecommender(cacheService, hotels, venues);
         List<Hotel> bestHotels = recommender.getHotels();
         System.out.println(bestHotels);
         return ResponseEntity.ok(bestHotels);

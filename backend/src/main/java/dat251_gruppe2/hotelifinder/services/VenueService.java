@@ -23,6 +23,18 @@ public class VenueService {
         return venues;
     }
 
+    public Venue getVenueByName(String name) {
+        if (name == "") {
+            return null;
+        }
+        for (Venue venue : venues) {
+            if (venue.getName().equals(name)) {
+                return venue;
+            }
+        }
+        return null;
+    }
+
     public Venue getVenueById(int index) {
         if (index < 0 || index >= venues.size()) {
             return null;

@@ -6,6 +6,7 @@ import dat251_gruppe2.hotelifinder.domain.Hotel;
 import java.util.*;
 
 public class HotelRecommender {
+
     /**
      * Input hotels
      */
@@ -29,9 +30,10 @@ public class HotelRecommender {
      * The strategy to calculate distance.
      * To be changed to Google API in production.
      */
-    private TravelTimeCalculator travelTimeService = new RawDistanceTravelTime();
+    private TravelTimeCalculator travelTimeService;
 
-    public HotelRecommender(List<Hotel> hotels, List<Venue> selectedActivities) {
+    public HotelRecommender(CacheService cacheService, List<Hotel> hotels, List<Venue> selectedActivities) {
+        this.travelTimeService = new CacheTravelTime(cacheService);
         this.hotels = hotels;
         this.selectedActivities = selectedActivities;
 
@@ -46,8 +48,8 @@ public class HotelRecommender {
             int totalTravelTime = 0;
             for (Venue venue : selectedActivities) {
                 Integer travelTime = travelTimeService.calculateTravelTime(
-                        hotel.getLocation(),
-                        venue.getLocation());
+                        hotel,
+                        venue);
                 totalTravelTime += travelTime;
             }
             recommendations.put(hotel, totalTravelTime);

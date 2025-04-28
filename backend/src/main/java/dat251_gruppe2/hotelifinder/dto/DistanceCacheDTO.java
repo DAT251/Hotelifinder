@@ -3,7 +3,7 @@ package dat251_gruppe2.hotelifinder.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
-public class HotelDistanceData {
+public class DistanceCacheDTO {
     private Metadata metadata;
     private List<HotelWithDistances> hotels;
 
@@ -55,7 +55,7 @@ public class HotelDistanceData {
         public void setVenueCount(int venueCount) {
             this.venueCount = venueCount;
         }
-// Getters and setters
+        // Getters and setters
     }
 
     public static class HotelWithDistances {
@@ -104,7 +104,7 @@ public class HotelDistanceData {
         public void setDistances(List<VenueDistance> distances) {
             this.distances = distances;
         }
-// Getters and setters
+        // Getters and setters
     }
 
     public static class VenueDistance {
@@ -157,7 +157,7 @@ public class HotelDistanceData {
         public void setDurationSeconds(int durationSeconds) {
             this.durationSeconds = durationSeconds;
         }
-// Getters and setters
+        // Getters and setters
     }
 
     public static class Location {
@@ -179,7 +179,7 @@ public class HotelDistanceData {
         public void setLat(double lat) {
             this.lat = lat;
         }
-// Getters and setters
+        // Getters and setters
     }
 
     public static class Address {
@@ -213,6 +213,6 @@ public class HotelDistanceData {
         public void setPostalCode(String postalCode) {
             this.postalCode = postalCode;
         }
-// Getters and setters
+        // Getters and setters
     }
 }
