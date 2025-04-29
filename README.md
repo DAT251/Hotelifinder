@@ -28,7 +28,7 @@ Hotelifinder is a web application that helps users find hotel accommodations bas
    ````
 2. Start the backend server
    ```bash
-   spring-boot:run
+   mvn spring-boot:run
    ````
 
 ### After Starting Both Servers
@@ -39,7 +39,7 @@ Once both the frontend and backend servers are running:
 ## How to Use the App
 
 1. Open your browser and go to [http://localhost:3000/](http://localhost:3000/).
-2. Enter the name of the city you wish to travel to.
+2. Enter the name of the city you wish to travel to. (NOTE: Only Oslo is fully supported!)
 3. Select the activities you are interested in from the available options.
 4. Choose one of the following:
     * Want to live close to a specific activity?
@@ -52,8 +52,8 @@ Once both the frontend and backend servers are running:
 
 ## Known Issues and Limitations
 
-* As of now, you can only search for the cities: Bergen, Oslo and Trondheim
-* As of now, the algorithm only works for hotels in Oslo
+* As of now, you can only search for the cities: Bergen, Oslo and Trondheim.
+* As of now, there is only data for Oslo. The application will not work for the other cities.
 * If you select a venue with no hotels nearby, a console error will appear. Click reset map to get back to venue selection and continue to use the app.
 
 ## Project Management
@@ -64,7 +64,7 @@ The team used agile practices throughout the project, organizing development tas
 
 ## Authors
 
-This project was developed by Group B as part of the course DAT251
+This project was developed by Group B as part of the course DAT251.
 
 **Team members:**
 - Vetle M. Knutsen
