@@ -46,8 +46,10 @@ public class CacheService {
                         Distance distance = new Distance();
                         distance.setOrigin(hotel);
                         distance.setDestination(venueService.getVenueByName(jsonDistance.getVenue()));
-                        distance.setDistanceMeters(jsonDistance.getDistanceMeters());
-                        distance.setDistanceSeconds(jsonDistance.getDurationSeconds());
+                        distance.setDistanceCaption(jsonDistance.getDistanceText());
+                        distance.setDurationCaption(jsonDistance.getDurationText());
+                        distance.setDistance(jsonDistance.getDistanceMeters());
+                        distance.setDistance(jsonDistance.getDurationSeconds());
                         return distance;
                     }).collect(Collectors.toList());
             this.distances.put(hotel, dists);

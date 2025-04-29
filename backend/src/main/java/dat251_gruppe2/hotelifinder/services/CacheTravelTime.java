@@ -22,7 +22,7 @@ public class CacheTravelTime implements TravelTimeCalculator {
         // Try to fetch the distance from cache, null means miss
         Distance distance = cacheService.getDistance(hotel, venue);
         if (distance != null) {
-            return distance.getDistanceSeconds();
+            return distance.getDistance();
         }
 
         // If the distance is not cached, use absolute distance
