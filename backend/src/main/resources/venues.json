@@ -5,7 +5,7 @@
     "imageURL": "http://localhost:8080/images/vestkanten.jpg",
     "address": {
       "streetName": "Loddefjordveien",
-      "streetNumber": 2,
+      "streetNumber": "2",
       "postalCode": "5171"
     },
     "location": {
@@ -24,7 +24,7 @@
     "imageURL": "http://localhost:8080/images/fanagolf.jpg",
     "address": {
       "streetName": "Vestre Rå",
-      "streetNumber": 82,
+      "streetNumber": "82",
       "postalCode": "5239"
     },
     "location": {
@@ -41,7 +41,7 @@
     "imageURL": "http://localhost:8080/images/oasen.jpg",
     "address": {
       "streetName": "Folke Bernadottes vei",
-      "streetNumber": 52,
+      "streetNumber": "52",
       "postalCode": "5147"
     },
     "location": {
@@ -59,7 +59,7 @@
     "imageURL": "http://localhost:8080/images/lagunen.jpg",
     "address": {
       "streetName": "Laguneveien",
-      "streetNumber": 3,
+      "streetNumber": "3",
       "postalCode": "5239"
     },
     "location": {
@@ -77,7 +77,7 @@
     "imageURL": "http://localhost:8080/images/akvariet.png",
     "address": {
       "streetName": "Nordnesbakken",
-      "streetNumber": 4,
+      "streetNumber": "4",
       "postalCode": "5005"
     },
     "location": {
@@ -95,7 +95,7 @@
     "imageURL": "http://localhost:8080/images/koengen.png",
     "address": {
       "streetName": "Koengen",
-      "streetNumber": 1,
+      "streetNumber": "1",
       "postalCode": "5003"
     },
     "location": {
@@ -114,7 +114,7 @@
     "imageURL": "http://localhost:8080/images/oslosentrum.jpg",
     "address": {
       "streetName": "Jernbanetorget",
-      "streetNumber": 1,
+      "streetNumber": "1",
       "postalCode": "0154"
     },
     "location": {
@@ -133,7 +133,7 @@
     "imageURL": "http://localhost:8080/images/holmenkollen.jpg",
     "address": {
       "streetName": "Kongeveien",
-      "streetNumber": 40,
+      "streetNumber": "40",
       "postalCode": "0747"
     },
     "location": {
@@ -151,7 +151,7 @@
     "imageURL": "http://localhost:8080/images/frogner.jpg",
     "address": {
       "streetName": "Frogner Plass",
-      "streetNumber": 1,
+      "streetNumber": "1",
       "postalCode": "0266"
     },
     "location": {
@@ -169,7 +169,7 @@
     "imageURL": "http://localhost:8080/images/ullevaal.jpg",
     "address": {
       "streetName": "Sognsveien",
-      "streetNumber": 75,
+      "streetNumber": "75",
       "postalCode": "0855"
     },
     "location": {
@@ -187,7 +187,7 @@
     "imageURL": "http://localhost:8080/images/tøyenbadet.png",
     "address": {
       "streetName": "Helgesens gate",
-      "streetNumber": 90,
+      "streetNumber": "90",
       "postalCode": "0563"
     },
     "location": {
@@ -204,7 +204,7 @@
     "imageURL": "http://localhost:8080/images/akerbrygge.png",
     "address": {
       "streetName": "Bryggegata",
-      "streetNumber": 9,
+      "streetNumber": "9",
       "postalCode": "0250"
     },
     "location": {
@@ -223,7 +223,7 @@
     "imageURL": "http://localhost:8080/images/nidaros.jpg",
     "address": {
       "streetName": "Kongsgårdsveien",
-      "streetNumber": 2,
+      "streetNumber": "2",
       "postalCode": "7013"
     },
     "location": {
@@ -240,7 +240,7 @@
     "imageURL": "http://localhost:8080/images/sverresborg.jpg",
     "address": {
       "streetName": "Sverresborg Alle",
-      "streetNumber": 13,
+      "streetNumber": "13",
       "postalCode": "7020"
     },
     "location": {
@@ -258,7 +258,7 @@
     "imageURL": "http://localhost:8080/images/rosendalteater.jpg",
     "address": {
       "streetName": "Innherredsveien",
-      "streetNumber": 73,
+      "streetNumber": "73",
       "postalCode": "7068"
     },
     "location": {
@@ -275,7 +275,7 @@
     "imageURL": "http://localhost:8080/images/byhaven.jpg",
     "address": {
       "streetName": "Olav Tryggvasons gt",
-      "streetNumber": 28,
+      "streetNumber": "28",
       "postalCode": "7011"
     },
     "location": {
@@ -292,7 +292,7 @@
     "imageURL": "http://localhost:8080/images/rockheim.png",
     "address": {
       "streetName": "Brattørkaia",
-      "streetNumber": 14,
+      "streetNumber": "14",
       "postalCode": "7010"
     },
     "location": {
@@ -310,7 +310,7 @@
     "imageURL": "http://localhost:8080/images/ladeparken.png",
     "address": {
       "streetName": "Haakon VIIs gate",
-      "streetNumber": 2,
+      "streetNumber": "2",
       "postalCode": "7041"
     },
     "location": {
