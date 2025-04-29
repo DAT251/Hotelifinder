@@ -38,7 +38,7 @@ Hotelifinder is a web application that helps users find hotel accommodations bas
      * Roads API
      * Distance Matrix API
 
-3. Add the API key to the an `.env` file in the project under the `/frontend` folder.
+3. Add the API key to a `.env` file in the project under the `/frontend` folder:
      * `NEXT_PUBLIC_API_KEY=YOUR_API_KEY`
 
 ### Backend (SpringBoot)
