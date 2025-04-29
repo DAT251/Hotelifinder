@@ -5,7 +5,11 @@ public class Distance {
 	private Hotel origin;
 	private Venue destination;
 
-	private Integer distanceMeters;
+	private String distanceCaption;
+	private String durationCaption;
+
+	private Integer distance;
+	private Integer duration;
 
 	public Distance() {
 	}
@@ -26,22 +30,35 @@ public class Distance {
 		this.destination = destination;
 	}
 
-	public Integer getDistanceMeters() {
-		return distanceMeters;
+	public String getDistanceCaption() {
+		return distanceCaption;
 	}
 
-	public void setDistanceMeters(Integer distanceMeters) {
-		this.distanceMeters = distanceMeters;
+	public void setDistanceCaption(String distanceCaption) {
+		this.distanceCaption = distanceCaption;
 	}
 
-	public Integer getDistanceSeconds() {
-		return distanceSeconds;
+	public String getDurationCaption() {
+		return durationCaption;
 	}
 
-	public void setDistanceSeconds(Integer distanceSeconds) {
-		this.distanceSeconds = distanceSeconds;
+	public void setDurationCaption(String durationCaption) {
+		this.durationCaption = durationCaption;
 	}
 
-	private Integer distanceSeconds;
+	public Integer getDistance() {
+		return distance;
+	}
 
+	public void setDistance(Integer distanceMeters) {
+		this.distance = distanceMeters;
+	}
+
+	public Integer getDuration() {
+		return duration;
+	}
+
+	public void setDuration(Integer distanceSeconds) {
+		this.duration = distanceSeconds;
+	}
 }
