@@ -20,6 +20,27 @@ Hotelifinder is a web application that helps users find hotel accommodations bas
    npm run dev
    ```
 
+#### Get your own Google API key
+1. Create an API key.
+     * Follow whole the guide on how to create your own Google API key [here](https://developers.google.com/maps/documentation/javascript/get-api-key=). In order to create an API key, a project with a billing account is needed.
+
+2. Allow the following APIs (or allow all by not restricting the key):
+     * Places API (New)
+     * Routes API
+     * Maps Embed API
+     * Maps Static API
+     * Navigation SDK
+     * Maps JavaScript API
+     * Directions API
+     * Places API
+     * Geocoding API
+     * Geolocation API
+     * Roads API
+     * Distance Matrix API
+
+3. Add the API key to the an `.env` file in the project under the `/frontend` folder.
+     * `NEXT_PUBLIC_API_KEY=YOUR_API_KEY`
+
 ### Backend (SpringBoot)
 
 1. Navigate to the backend folder:
