@@ -3,6 +3,11 @@
 ## DAT251 web app for Hotel Booking.
 Hotelifinder is a web application that helps users find hotel accommodations based on their planned activities and access to public transportation. Unlike traditional hotel booking platforms, Hotelifinder prioritizes proximity to activities and promotes sustainable travel options. The application was developed with a strong focus on user-centered design and eco-friendly planning.
 
+## Dependencies
+To run the application, you need `Java 23`, `nodejs` and `npm` installed.
+You also need a valid API-key for google maps integration.
+Follow the instructions below to generate one!
+
 ## How to Run Locally
 
 ### Frontend (Next.js + React)
