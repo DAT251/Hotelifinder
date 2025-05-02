@@ -19,11 +19,11 @@ interface MapContentProps {
 
 const MapContent = ({ selectedVenues, recommendedHotels  }: MapContentProps) => {
   const city = useSearchParams().get('city')?.toLowerCase();
-
   if (city === 'bergen') {center = { lat: 60.3913, lng: 5.3221 };} 
   else if (city === 'trondheim') {center = { lat: 63.4305, lng: 10.3951 };} 
   const [hotels, setHotels] = useState<any[]>([]);
   const [selectedPoint, setSelectedPoint] = useState<{ name: string; lat: number; lng: number } | null>(null);
+  const [isRecommendedHotelClicked, setIsRecommendedHotelClicked] = useState(false);
   const [showInitialMarkers, setShowInitialMarkers] = useState(true);
   const [selectedHotel, setSelectedHotel] = useState<any | null>(null);
   const [geocodedVenues, setGeocodedVenues] = useState<{ name: string; lat: number; lng: number }[]>([]);
@@ -132,6 +132,7 @@ const MapContent = ({ selectedVenues, recommendedHotels  }: MapContentProps) => 
 
   const resetMap = () => {
     setSelectedPoint(null);
+    setIsRecommendedHotelClicked(false);
     setHotels([]);
     setShowInitialMarkers(true);
     setSelectedHotel(null);
@@ -192,9 +193,20 @@ const MapContent = ({ selectedVenues, recommendedHotels  }: MapContentProps) => 
     const newDirectionsRenderers: any[] = [];
     const newTransportLabels: any[] = [];
 
+    const origin = selectedHotel
+        ? {
+          lat: typeof selectedHotel.geometry.location.lat === 'function'
+              ? selectedHotel.geometry.location.lat()
+              : selectedHotel.geometry.location.lat,
+          lng: typeof selectedHotel.geometry.location.lng === 'function'
+              ? selectedHotel.geometry.location.lng()
+              : selectedHotel.geometry.location.lng
+        }
+        : selectedPoint;
+
     geocodedVenues.forEach((venue) => {
       const request = {
-        origin: { lat: selectedHotel.geometry.location.lat(), lng: selectedHotel.geometry.location.lng() },
+        origin: origin ,
         destination: { lat: venue.lat, lng: venue.lng },
         travelMode: window.google.maps.TravelMode.TRANSIT,
       };
@@ -233,7 +245,111 @@ const MapContent = ({ selectedVenues, recommendedHotels  }: MapContentProps) => 
     });
   };
 
+  const handleRecommendedHotelClick = async (hotel: { name: string; lat: number; lng: number }) => {
+    if (!window.google || !window.google.maps || !window.google.maps.places) {
+      console.error('Google Maps Places library not loaded');
+      return;
+    }
+    setIsRecommendedHotelClicked(true);
 
+
+    directionsRenderers.forEach(renderer => renderer.setMap(null));
+    setDirectionsRenderers([]);
+    transportLabels.forEach(label => label.setMap(null));
+    setTransportLabels([]);
+
+    try {
+
+      const place = await findPlaceDetails(hotel);
+
+      if (place) {
+        setSelectedHotel(place);
+      } else {
+
+        setSelectedHotel(createBasicHotelInfo(hotel));
+      }
+    } catch (error) {
+      console.error('Error fetching hotel details:', error);
+      setSelectedHotel(createBasicHotelInfo(hotel));
+    }
+  };
+
+
+  const findPlaceDetails = async (hotel: { name: string; lat: number; lng: number }) => {
+    return new Promise<any>((resolve) => {
+      const map = new window.google.maps.Map(document.createElement('div'));
+      const service = new window.google.maps.places.PlacesService(map);
+
+
+      const textSearchRequest = {
+        location: new window.google.maps.LatLng(hotel.lat, hotel.lng),
+        radius: 100,
+        query: hotel.name,
+        fields: ['place_id', 'name', 'geometry']
+      };
+
+      service.textSearch(textSearchRequest, (results, status) => {
+        if (status === window.google.maps.places.PlacesServiceStatus.OK && results?.[0]?.place_id) {
+
+          const detailRequest = {
+            placeId: results[0].place_id,
+            fields: ['name', 'geometry', 'rating', 'formatted_address', 'photos', 'website', 'formatted_phone_number', 'reviews']
+          };
+
+          service.getDetails(detailRequest, (place, detailStatus) => {
+            if (detailStatus === window.google.maps.places.PlacesServiceStatus.OK) {
+              resolve(place);
+            } else {
+              resolve(null);
+            }
+          });
+        } else {
+
+          const nearbyRequest = {
+            location: new window.google.maps.LatLng(hotel.lat, hotel.lng),
+            radius: 100,
+            name: hotel.name,
+            types: ['lodging'],
+            fields: ['place_id', 'name', 'geometry']
+          };
+
+          service.nearbySearch(nearbyRequest, (nearbyResults, nearbyStatus) => {
+            if (nearbyStatus === window.google.maps.places.PlacesServiceStatus.OK && nearbyResults?.[0]?.place_id) {
+              const detailRequest = {
+                placeId: nearbyResults[0].place_id,
+                fields: ['name', 'geometry', 'rating', 'formatted_address', 'photos', 'website', 'formatted_phone_number', 'reviews']
+              };
+
+              service.getDetails(detailRequest, (place, detailStatus) => {
+                if (detailStatus === window.google.maps.places.PlacesServiceStatus.OK) {
+                  resolve(place);
+                } else {
+                  resolve(null);
+                }
+              });
+            } else {
+              resolve(null);
+            }
+          });
+        }
+      });
+    });
+  };
+
+
+  const createBasicHotelInfo = (hotel: { name: string; lat: number; lng: number }) => {
+    return {
+      name: hotel.name,
+      geometry: {
+        location: {
+          lat: () => hotel.lat,
+          lng: () => hotel.lng
+        }
+      },
+      formatted_address: 'Address not available',
+      rating: 'N/A'
+    };
+  };
 
 
   return (
@@ -285,6 +401,7 @@ const MapContent = ({ selectedVenues, recommendedHotels  }: MapContentProps) => 
                       url: iconUrl,
                       scaledSize: new window.google.maps.Size(50, 50),
                     }}
+                    onClick={() => handleRecommendedHotelClick(hotel)}
                 />
             );
           })}
@@ -330,7 +447,7 @@ const MapContent = ({ selectedVenues, recommendedHotels  }: MapContentProps) => 
               </InfoWindow>
           )}
         </Map>
-        {selectedPoint && (
+        {(isRecommendedHotelClicked || selectedPoint) && (
             <div>
               <button
                   onClick={resetMap}
