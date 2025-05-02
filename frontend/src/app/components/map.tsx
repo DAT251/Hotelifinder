@@ -255,7 +255,7 @@ const MapContent = ({ selectedVenues, recommendedHotels  }: MapContentProps) => 
                   />
               ))}
 
-          {hotels.map((hotel, index) => (
+          {map && hotels.map((hotel, index) => (
               <Marker
                   key={index}
                   position={{
